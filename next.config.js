@@ -11,4 +11,10 @@ const nextConfig = nextTranslate({
   },
 })
 
+nextConfig.images = {
+  domains: [
+    "avatars.githubusercontent.com"
+  ],
+}
+
 module.exports = nextConfig

@@ -3,5 +3,10 @@
     "greeting": "Hello, Burt! You have 10 unread messages.",
     "ar": "Arabic",
     "en": "English",
-    "show notification": "Show notification"
+    "show notification": "Show notification",
+    "obaidQatan": "Obaid Qatan",
+    "obaidQatanEn": "Obaid Qatan",
+    "builtWithHeartBy": "Built with ❤️ by",
+    "profile": "Profile",
+    "portfolio": "Portfolio"
 }

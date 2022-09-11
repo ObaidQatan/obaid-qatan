@@ -1,74 +1,76 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import useTranslation from 'next-translate/useTranslation';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { Button } from '@mantine/core';
-import { showNotification } from '@mantine/notifications';
+import type { NextPage } from "next";
+import Head from "next/head";
+import useTranslation from "next-translate/useTranslation";
+import { useRouter } from "next/router";
+import Header from "../src/components/Layout/Header";
+import { useHotkeys, useLocalStorage } from "@mantine/hooks";
+import { ColorScheme } from "@mantine/core";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   const { lang, t } = useTranslation("common");
+  const isArabic = lang === "ar";
   const router = useRouter();
+  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+    key: "mantine-color-scheme",
+    defaultValue: "dark",
+    getInitialValueInEffect: true,
+  });
+  const isDark = colorScheme === "dark";
+
+  const toggleColorScheme = (value?: ColorScheme) => {
+    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+  };
+
+  useHotkeys([["mod+J", () => toggleColorScheme()]]);
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`flex flex-col items-center ${
+        isDark ? "bg-[#03101c] text-white" : "bg-[#fff] text-black"
+      }`}
+    >
       <Head>
-
-        <title>{ t("appName") }</title>
         <link rel="icon" href="/favicon.ico" />
-        
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          {t("appName")}
-        </h1>
-        
-        <ul>
-          {router.locales?.map((locale) =>
-          (locale !== router.locale)?
-           (
-            <li key={locale}>
-              <Link href={router.asPath} locale={locale}>
-                <a>
-                  <Button className='mt-5' variant='outline' onClick={()=> showNotification({
-                    title: t("appName"),
-                    message: t("greeting")
-                  })}>
-                    {t(locale)}
-                  </Button>
-                </a>
-              </Link>
-            </li>
-          )
-          : null)}
-        </ul>
-
-        <Button className='mt-5' variant='filled' onClick={()=> showNotification({
-          title: t("appName"),
-          message: t("greeting")
-        })}>
-          {t("show notification")}
-        </Button>
-        
+      <Header />
+      <main className="min-h-[calc(100vh-2.5rem)] flex flex-col grow justify-center items-center max-w-7xl w-full">
+        <div className="flex flex-1">
+          <div className="flex flex-col flex-1 justify-center p-10 break-words">
+            <h1>{t("obaidQatan")}</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              accusamus fuga, earum hic, ipsum perspiciatis recusandae
+              asperiores facilis sint reiciendis autem laboriosam error iusto
+              ratione ea omnis, quod quae. Porro.
+            </p>
+          </div>
+          <div className="w-[300px] h-[300px] overflow-hidden rounded-full relative m-5 self-center p-2 border border-[#43D2D6]">
+            <Image
+              objectFit="fill"
+              layout="fill"
+              src="https://avatars.githubusercontent.com/u/75757127?v=4"
+              alt="obaid"
+            />
+          </div>
+        </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className="text-center p-2 border-t border-t-[#696969] text-[#C3C3C3] max-w-7xl w-full">
+        {t("builtWithHeartBy")}{" "}
+        <span className="underline text-[#43D2D6]">
+          <a
+            href="https://github.com/ObaidQatan/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("obaidQatanEn")}
+          </a>
+        </span>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
