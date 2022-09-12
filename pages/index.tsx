@@ -35,18 +35,32 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="min-h-[calc(100vh-2.5rem)] flex flex-col grow justify-center items-center max-w-7xl w-full">
-        <div className="flex flex-1">
-          <div className="flex flex-col flex-1 justify-center p-10 break-words">
-            <h1>{t("obaidQatan")}</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              accusamus fuga, earum hic, ipsum perspiciatis recusandae
-              asperiores facilis sint reiciendis autem laboriosam error iusto
-              ratione ea omnis, quod quae. Porro.
-            </p>
+      <main className="min-h-[calc(100vh-6.4rem)] flex flex-col justify-center items-center max-w-7xl w-full">
+        <div className="flex flex-1 flex-col-reverse lg:flex-row justify-between w-full">
+          <div className="flex flex-col flex-1 justify-center p-10 break-words max-w-2xl">
+            <h1 className="border-b border-b-[#696969] mb-2 font-bold">
+              {t("hiObaidHere")}
+            </h1>
+            {[t("item.webDeveloper"), t("item.computerScienceEngineer")].map(
+              (title) => (
+                <h3 key={title} className="text-[#43D2D6]">
+                  {title}
+                </h3>
+              )
+            )}
+            <br />
+            {[
+              t("feature.keepLearning"),
+              t("feature.willingToContribute"),
+              t("feature.amazedBySeniors"),
+              t("feature.mvcFan"),
+            ].map((title) => (
+              <h3 key={title} className="text-[#C3C3C3]">
+                {title}
+              </h3>
+            ))}
           </div>
-          <div className="w-[300px] h-[300px] overflow-hidden rounded-full relative m-5 self-center p-2 border border-[#43D2D6]">
+          <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] overflow-hidden rounded-full relative m-5 self-center p-2 border border-[#43D2D6]">
             <Image
               objectFit="fill"
               layout="fill"

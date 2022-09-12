@@ -1,12 +1,23 @@
 {
-    "appName": "Mobarmej Academy",
-    "greeting": "Hello, Burt! You have 10 unread messages.",
-    "ar": "Arabic",
-    "en": "English",
-    "show notification": "Show notification",
-    "obaidQatan": "Obaid Qatan",
-    "obaidQatanEn": "Obaid Qatan",
-    "builtWithHeartBy": "Built with ❤️ by",
-    "profile": "Profile",
-    "portfolio": "Portfolio"
+  "appName": "Mobarmej Academy",
+  "greeting": "Hello, Burt! You have 10 unread messages.",
+  "ar": "العربية",
+  "en": "English",
+  "show notification": "Show notification",
+  "obaidQatan": "Obaid Qatan",
+  "obaidQatanEn": "Obaid Qatan",
+  "builtWithHeartBy": "Built with ❤️ by",
+  "profile": "Profile",
+  "portfolio": "Portfolio",
+  "hiObaidHere": "Hi Obaid Here! 👋",
+  "item": {
+    "webDeveloper": "-🖥️ Web Developer",
+    "computerScienceEngineer": "-🏫 Computer Science & Engineering"
+  },
+  "feature": {
+    "keepLearning": "⚉ ❤️‍🔥 Keep learning with full passion",
+    "willingToContribute": "⚉ 🚀 Willing to contribute and work with other developers",
+    "amazedBySeniors": "⚉ 🤩 Amazed by seniors on Github",
+    "mvcFan": "⚉ ✨ MVC Fan"
+  }
 }

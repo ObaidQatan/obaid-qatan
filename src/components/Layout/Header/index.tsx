@@ -1,9 +1,12 @@
 import { Button } from "@mantine/core";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const { lang, t } = useTranslation("common");
+  const isArabic = lang === "ar";
+  const router = useRouter();
   return (
     <header className="flex justify-between p-3 max-w-7xl w-full">
       <Link href="/">
@@ -27,6 +30,19 @@ const Header = () => {
         </a>
       </Link>
       <ul className="flex justify-end items-center grow">
+        <li className="mx-2">
+          <Link href={router.asPath} locale={isArabic ? "en" : "ar"}>
+            <a>
+              <Button
+                variant="outline"
+                color="gray"
+                className="text-[#C3C3C3] hover:text-[#43D2D6]"
+              >
+                {isArabic ? t("en") : t("ar")}
+              </Button>
+            </a>
+          </Link>
+        </li>
         <li className="mx-2">
           <Link href="/profile">
             <a>
