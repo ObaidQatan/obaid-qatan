@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import useDarkMode from "../../../hooks/useDarkMode";
 import useDetectSmallScreen from "../../../hooks/useDetectSmallScreen";
-import useSideBar from "../../../hooks/useSideBar";
 
 const Header = () => {
   const { lang, t } = useTranslation("common");
@@ -12,7 +11,6 @@ const Header = () => {
   const router = useRouter();
   const isMobile = useDetectSmallScreen();
   const { isDark, toggleColorScheme } = useDarkMode();
-  const { isOpened, setIsOpened } = useSideBar();
 
   return (
     <header className="flex justify-between p-3 max-w-7xl w-full sticky top-0 z-[100] bg-inherit text-[#43D2D6]">
