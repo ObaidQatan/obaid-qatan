@@ -19,5 +19,13 @@
     "willingToContribute": "⚉ 🚀 Willing to contribute and work with other developers",
     "amazedBySeniors": "⚉ 🤩 Amazed by seniors on Github",
     "mvcFan": "⚉ ✨ MVC Fan"
+  },
+  "social": {
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "youtube": "Youtube"
   }
 }

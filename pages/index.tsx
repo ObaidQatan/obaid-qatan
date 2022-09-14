@@ -1,38 +1,32 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import useTranslation from "next-translate/useTranslation";
-import { useRouter } from "next/router";
 import Header from "../src/components/Layout/Header";
-import { useHotkeys, useLocalStorage } from "@mantine/hooks";
-import { ColorScheme } from "@mantine/core";
+import { useHotkeys } from "@mantine/hooks";
 import Image from "next/image";
+import Link from "next/link";
+import useDarkMode from "../src/hooks/useDarkMode";
+import SideBar from "../src/components/Layout/SideBar";
+import useDetectSmallScreen from "../src/hooks/useDetectSmallScreen";
 
 const Home: NextPage = () => {
-  const { lang, t } = useTranslation("common");
-  const isArabic = lang === "ar";
-  const router = useRouter();
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: "mantine-color-scheme",
-    defaultValue: "dark",
-    getInitialValueInEffect: true,
-  });
-  const isDark = colorScheme === "dark";
-
-  const toggleColorScheme = (value?: ColorScheme) => {
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
-  };
+  const { t } = useTranslation("common");
+  const { isDark, toggleColorScheme } = useDarkMode();
+  const isMobile = useDetectSmallScreen();
 
   useHotkeys([["mod+J", () => toggleColorScheme()]]);
 
   return (
     <div
       className={`flex flex-col items-center ${
-        isDark ? "bg-[#03101c] text-white" : "bg-[#fff] text-black"
+        isDark ? "bg-[#03101c] text-white" : "bg-[#fff] text-slate-600"
       }`}
     >
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {isMobile && <SideBar />}
 
       <Header />
       <main className="min-h-[calc(100vh-6.4rem)] flex flex-col justify-center items-center max-w-7xl w-full">
@@ -43,7 +37,10 @@ const Home: NextPage = () => {
             </h1>
             {[t("item.webDeveloper"), t("item.computerScienceEngineer")].map(
               (title) => (
-                <h3 key={title} className="text-[#43D2D6]">
+                <h3
+                  key={title}
+                  className={`${isDark ? "text-[#43D2D6]" : "text-[darkcyan]"}`}
+                >
                   {title}
                 </h3>
               )
@@ -55,12 +52,64 @@ const Home: NextPage = () => {
               t("feature.amazedBySeniors"),
               t("feature.mvcFan"),
             ].map((title) => (
-              <h3 key={title} className="text-[#C3C3C3]">
+              <h3
+                key={title}
+                className={`text-[${isDark ? "#C3C3C3" : "#000"}]`}
+              >
                 {title}
               </h3>
             ))}
+            <div className="mt-5 flex flex-col">
+              {[
+                {
+                  link: "https://github.com/ObaidQatan",
+                  icon: "/img/github.svg",
+                  alt: "github",
+                  background: isDark ? "" : "bg-black",
+                  color: "text-white",
+                  border: isDark ? "border-gray-700" : "",
+                  hover: {
+                    background: "hover:bg-black",
+                    color: "",
+                    border: "hover:border-white",
+                  },
+                },
+                {
+                  link: "https://www.linkedin.com/in/obaid-qatan-7699bb185/",
+                  icon: "/img/linkedin.svg",
+                  alt: "linkedin",
+                  background: "bg-cyan-500",
+                  color: "text-white",
+                  border: isDark ? "border-gray-700" : "",
+                  hover: {
+                    background: "",
+                    color: "",
+                    border: "hover:border-[#000]",
+                  },
+                },
+              ].map((item) => (
+                <Link key={item.alt} href={item.link}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex my-2 py-3 px-5 justify-center items-center rounded-lg ${item.background} ${item.color} ${item.border} ${item.hover.background} ${item.hover.color} border ${item.border}`}
+                  >
+                    <h3 className="px-1 font-bold">
+                      {t(`social.${item.alt}`)}
+                    </h3>
+                    <Image
+                      src={item.icon}
+                      alt={item.alt}
+                      width={30}
+                      height={30}
+                      layout="fixed"
+                    />
+                  </a>
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] overflow-hidden rounded-full relative m-5 self-center p-2 border border-[#43D2D6]">
+          <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] overflow-hidden rounded-full relative m-5 self-center p-2">
             <Image
               objectFit="fill"
               layout="fill"
@@ -73,15 +122,15 @@ const Home: NextPage = () => {
 
       <footer className="text-center p-2 border-t border-t-[#696969] text-[#C3C3C3] max-w-7xl w-full">
         {t("builtWithHeartBy")}{" "}
-        <span className="underline text-[#43D2D6]">
+        <Link href="https://github.com/ObaidQatan/">
           <a
-            href="https://github.com/ObaidQatan/"
+            className="underline text-[#43D2D6]"
             target="_blank"
             rel="noopener noreferrer"
           >
             {t("obaidQatanEn")}
           </a>
-        </span>
+        </Link>
       </footer>
     </div>
   );
