@@ -19,7 +19,7 @@ const SideBar = () => {
       } fixed top-0 h-screen w-[50%] max-w-md z-[200] items-center`}
       style={{
         boxShadow: "0 0 10px 0 rgba(0, 0, 0)",
-        borderRadius: "0 0 0 20px",
+        borderRadius: isArabic ? "0 0 20px 0" : "0 0 0 20px",
         outlineStyle: "dashed",
         outlineWidth: "thin",
         outlineColor: isDark ? "#fff" : "cyan",
