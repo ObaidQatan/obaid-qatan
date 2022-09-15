@@ -38,6 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NextNProgress />
       <Head>
         <title>{t("common:appName")}</title>
+        <link rel="icon" href="/favicon.ico" />
         <SEO />
         <meta
           name="viewport"

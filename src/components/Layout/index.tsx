@@ -27,10 +27,6 @@ const Layout = ({
 
   return (
     <PageWrapper>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       {isMobile && <SideBar />}
 
       <Header />

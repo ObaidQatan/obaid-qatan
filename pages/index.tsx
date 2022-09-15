@@ -1,21 +1,14 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import useTranslation from "next-translate/useTranslation";
-import Header from "../src/components/Layout/Header";
 import { useHotkeys } from "@mantine/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import useDarkMode from "../src/hooks/useDarkMode";
-import SideBar from "../src/components/Layout/SideBar";
-import useDetectSmallScreen from "../src/hooks/useDetectSmallScreen";
-import Main from "../src/components/Layout/Main";
-import Footer from "../src/components/Layout/Footer";
 import Layout from "../src/components/Layout";
 
 const Home: NextPage = () => {
   const { t } = useTranslation("common");
   const { isDark, toggleColorScheme } = useDarkMode();
-  const isMobile = useDetectSmallScreen();
 
   useHotkeys([["mod+J", () => toggleColorScheme()]]);
 
