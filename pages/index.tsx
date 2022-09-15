@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   useHotkeys([["mod+J", () => toggleColorScheme()]]);
 
   return (
-    <Layout>
+    <Layout className="flex-col-reverse lg:flex-row">
       <div className="flex flex-col flex-1 justify-center p-10 break-words max-w-2xl">
         <h1 className="border-b border-b-[#696969] mb-2 font-bold">
           {t("hiObaidHere")}

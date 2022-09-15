@@ -9,9 +9,7 @@ const Main = ({
 }) => {
   return (
     <main className="min-h-[calc(100vh-6.4rem)] flex flex-col justify-center items-center max-w-7xl w-full">
-      <div
-        className={`flex flex-1 flex-col-reverse lg:flex-row justify-between w-full ${className}`}
-      >
+      <div className={`flex flex-1 justify-between w-full ${className}`}>
         {children}
       </div>
     </main>

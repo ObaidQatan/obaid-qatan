@@ -30,7 +30,7 @@ const Layout = ({
       {isMobile && <SideBar />}
 
       <Header />
-      <Main>{children}</Main>
+      <Main className={className}>{children}</Main>
 
       <Footer>
         {t("builtWithHeartBy")}{" "}
