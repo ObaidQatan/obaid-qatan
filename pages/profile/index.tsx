@@ -2,6 +2,7 @@ import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../../src/components/Layout";
+import ScrollUp from "../../src/components/Layout/ScrollUp";
 import { fields } from "../../src/fake/profile";
 import useDarkMode from "../../src/hooks/useDarkMode";
 
@@ -26,6 +27,7 @@ const Profile = () => {
       </div>
 
       <div
+        id="quickLinks"
         className={`flex flex-col p-2 pt-4 rounded-lg ${
           isDark ? "bg-[#ffffff4d]" : "bg-[#43D2D64d]"
         } min-h-[300px] min-w-[300px] w-[90%] -translate-y-5`}
@@ -44,6 +46,29 @@ const Profile = () => {
           ))}
         </ul>
       </div>
+
+      <ScrollUp />
+
+      {fields.map((f) => (
+        <div
+          key={f.id}
+          id={f.name}
+          className="flex flex-col w-[90%] min-h-[200px] min-w-[300px] p-2 mt-4"
+        >
+          <h3 className="border-b border-b-cyan-500 text-cyan-500">
+            {f.name.toUpperCase()}
+          </h3>
+          {f.timelines.reverse().map((t) => (
+            <div
+              key={t.id}
+              className="flex flex-col w-full min-h-[300px] min-w-[300px] p-2 mt-4"
+            >
+              <h4 className="text-gray opacity-20">{t.title.toUpperCase()}</h4>
+              <p className="text-slate-400">{t.content}</p>
+            </div>
+          ))}
+        </div>
+      ))}
     </Layout>
   );
 };
