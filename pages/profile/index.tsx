@@ -13,7 +13,7 @@ const Profile = () => {
         <title>{_("appName") + "|" + t("profile")}</title>
       </Head>
 
-      <div className="w-[100px] h-[100px] rounded-full relative overflow-hidden">
+      <div className="w-[150px] h-[150px] rounded-full relative overflow-hidden">
         <Image
           layout="fill"
           objectFit="fill"
