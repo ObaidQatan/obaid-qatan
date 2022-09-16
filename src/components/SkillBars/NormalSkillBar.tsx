@@ -9,8 +9,6 @@ const NormaSkillBar = ({ value }: { value: number }) => {
         transition: "0.3s",
         width: `${percentage}%`,
       }}
-      onMouseOver={() => {}}
-      onMouseLeave={() => {}}
     >
       <span>{percentage}%</span>
     </div>

@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import { camelCase } from "lodash";
 import useTranslation from "next-translate/useTranslation";
 import { personalInformation } from "../../../fake/profile";
@@ -11,7 +12,7 @@ const PersonalInformationContent = () => {
     <table className="break-all break-words">
       <tbody>
         {personalInformation.map((infoPair) => (
-          <tr key={infoPair.property}>
+          <tr key={infoPair.property} className="border-b">
             <td
               className="text-left w-20 p-1 font-bold"
               style={{
@@ -26,7 +27,9 @@ const PersonalInformationContent = () => {
                 wordBreak: "break-word",
               }}
             >
-              {infoPair.value}
+              {infoPair.property === "Age"
+                ? new Date().getFullYear() - dayjs(infoPair.value).year()
+                : _(camelCase(infoPair.value))}
             </td>
           </tr>
         ))}

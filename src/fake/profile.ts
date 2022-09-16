@@ -103,7 +103,7 @@ export const personalInformation: { property: string; value: string }[] = [
   },
   {
     property: "Age",
-    value: "22",
+    value: new Date(2000, 11, 12).toISOString(),
   },
   {
     property: "Location",
