@@ -1,5 +1,6 @@
 import { camelCase } from "lodash";
 import useTranslation from "next-translate/useTranslation";
+import NormaSkillBar from "../../SkillBars/NormalSkillBar";
 
 const Interest = ({ data }: { data: { interest: string; level: number } }) => {
   const { t } = useTranslation("profile");
@@ -14,7 +15,9 @@ const Interest = ({ data }: { data: { interest: string; level: number } }) => {
       >
         {t(`fieldOfInterestContent.${camelCase(data.interest)}`)}:{" "}
       </h3>
-      <div className="h-8 flex-1"></div>
+      <div className="h-8 flex-1">
+        <NormaSkillBar value={data.level} />
+      </div>
     </div>
   );
 };

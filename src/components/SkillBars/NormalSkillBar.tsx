@@ -1,14 +1,18 @@
-const NormaSkillBar = () => {
+import { useState } from "react";
+
+const NormaSkillBar = ({ value }: { value: number }) => {
+  const [percentage, setPercentage] = useState((value / 5) * 100);
   return (
-    <div className="skillbar clearfix " data-percent="90%">
-      <div className="skillbar-title" style={{ background: "#d35400" }}>
-        <span>HTML5</span>
-      </div>
-      <div
-        className="skillbar-bar"
-        style={{ background: "#e67e22", width: "90%" }}
-      ></div>
-      <div className="skill-bar-percent">90%</div>
+    <div
+      className={`bg-[#41bdbd] h-full text-center hover:bg-[#68a1a1] hover:scale-[1.03] hover:text-white hover:border-[2px] hover:border-white hover:shadow-center hover:shadow-cyan-500`}
+      style={{
+        transition: "0.3s",
+        width: `${percentage}%`,
+      }}
+      onMouseOver={() => {}}
+      onMouseLeave={() => {}}
+    >
+      <span>{percentage}%</span>
     </div>
   );
 };
