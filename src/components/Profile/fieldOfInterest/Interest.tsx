@@ -5,11 +5,16 @@ const Interest = ({ data }: { data: { interest: string; level: number } }) => {
   const { t } = useTranslation("profile");
 
   return (
-    <div>
-      <h3>
+    <div className="flex p-2">
+      <h3
+        className="w-[100px]"
+        style={{
+          wordBreak: "break-word",
+        }}
+      >
         {t(`fieldOfInterestContent.${camelCase(data.interest)}`)}:{" "}
-        {(data.level / 5) * 100} %
       </h3>
+      <div className="h-8 flex-1"></div>
     </div>
   );
 };

@@ -12,10 +12,22 @@ const PersonalInformationContent = () => {
       <tbody>
         {personalInformation.map((infoPair) => (
           <tr key={infoPair.property}>
-            <td className="text-left w-20 p-1">
+            <td
+              className="text-left w-20 p-1 font-bold"
+              style={{
+                wordBreak: "break-word",
+              }}
+            >
               {t("personalInformationContent." + camelCase(infoPair.property))}
             </td>
-            <td className="text-left p-1">{infoPair.value}</td>
+            <td
+              className="text-left p-1"
+              style={{
+                wordBreak: "break-word",
+              }}
+            >
+              {infoPair.value}
+            </td>
           </tr>
         ))}
       </tbody>

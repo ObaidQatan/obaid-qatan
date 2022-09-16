@@ -9,9 +9,10 @@ const FieldsOfInterestContent = () => {
 
   return (
     <div>
-      {fieldOfInterest.map((f) => (
+      {/* {fieldOfInterest.map((f) => (
         <Interest key={f.interest} data={f} />
-      ))}
+      ))} */}
+      <Interest key={fieldOfInterest[0].interest} data={fieldOfInterest[0]} />
     </div>
   );
 };
