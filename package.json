@@ -23,6 +23,7 @@
     "@mantine/prism": "^5.1.5",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.1",
+    "lodash": "^4.17.21",
     "next": "12.2.5",
     "next-translate": "^1.5.0",
     "nextjs-progressbar": "^0.0.14",
@@ -31,6 +32,7 @@
     "stylis-plugin-rtl": "^2.1.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.185",
     "@types/node": "18.7.1",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",

@@ -1,3 +1,4 @@
+import { camelCase, upperCase } from "lodash";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Image from "next/image";
@@ -41,7 +42,7 @@ const Profile = () => {
               key={f.id}
               className="transition-none py-1 tracking-wide text-slate-400 hover:text-cyan-400"
             >
-              <a href={`#${f.name}`}>- {f.name}</a>
+              <a href={`#${f.name}`}>- {t(camelCase(f.name))}</a>
             </li>
           ))}
         </ul>
@@ -56,17 +57,19 @@ const Profile = () => {
           className="flex flex-col w-[90%] min-h-[200px] min-w-[300px] p-2 mt-4"
         >
           <h3 className="border-b border-b-cyan-500 text-cyan-500">
-            {f.name.toUpperCase()}
+            {t(camelCase(f.name)).toUpperCase()}
           </h3>
-          {f.timelines.reverse().map((t) => (
-            <div
-              key={t.id}
-              className="flex flex-col w-full min-h-[300px] min-w-[300px] p-2 mt-4"
-            >
-              <h4 className="text-gray opacity-20">{t.title.toUpperCase()}</h4>
-              <p className="text-slate-400">{t.content}</p>
-            </div>
-          ))}
+          {Array.from(f.timelines)
+            .reverse()
+            .map((tl) => (
+              <div
+                key={tl.id}
+                className="flex flex-col w-full min-h-[300px] min-w-[300px] p-2 mt-4"
+              >
+                <h3 className="text-gray opacity-20">{tl.title}</h3>
+                <tl.content />
+              </div>
+            ))}
         </div>
       ))}
     </Layout>

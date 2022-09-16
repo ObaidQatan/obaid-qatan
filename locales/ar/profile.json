@@ -1,4 +1,22 @@
 {
-  "profileAr": "الملف الشخصي",
-  "quickLinks": "روابط سريعة"
+  "profile": "الملف الشخصي",
+  "quickLinks": "روابط سريعة",
+  "personalInformation": "المعلومات الشخصية",
+  "fieldOfInterest": "مجال الاهتمام",
+  "education": "التعليم",
+  "workExperience": "الخبرة العملية",
+  "skills": "المهارات",
+  "links": "روابط",
+  "personalInformationContent": {
+    "name": "الاسم",
+    "email": "البريد الالكتروني",
+    "phone": "رقم الهاتف",
+    "location": "الموقع",
+    "age": "العمر"
+  },
+  "fieldOfInterestContent": {
+    "interest": "الاهتمام",
+    "softwareDevelopment": "تطوير البرمجيات",
+    "webDevelopment": "تطوير الويب"
+  }
 }

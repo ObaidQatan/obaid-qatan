@@ -1,3 +1,6 @@
+import Footer from "../components/Layout/Footer";
+import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/FieldOfInterest.content";
+import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
 import { Field } from "../types/Field";
 
 export const fields: Field[] = [
@@ -8,7 +11,7 @@ export const fields: Field[] = [
       {
         id: 0,
         title: "",
-        content: "some Content",
+        content: PersonalInformationContent,
       },
     ],
   },
@@ -19,23 +22,23 @@ export const fields: Field[] = [
       {
         id: 1,
         title: "",
-        content: "some Content",
+        content: FieldsOfInterestContent,
       },
     ],
   },
   {
     id: 2,
-    name: "Education",
+    name: "Skills",
     timelines: [
       {
         id: 2,
         title: "2019 - 2020",
-        content: "some Content",
+        content: Footer,
       },
       {
         id: 3,
         title: "2020 - 2021",
-        content: "some Content",
+        content: Footer,
       },
     ],
   },
@@ -46,29 +49,75 @@ export const fields: Field[] = [
       {
         id: 4,
         title: "2019 - 2020",
-        content: "some Content",
+        content: Footer,
       },
       {
         id: 5,
         title: "2020 - 2021",
-        content: "some Content",
-      },
-      {
-        id: 6,
-        title: "2020 - 2021",
-        content: "some Content",
+        content: Footer,
       },
     ],
   },
   {
     id: 4,
+    name: "Education",
+    timelines: [
+      {
+        id: 6,
+        title: "2019 - 2020",
+        content: Footer,
+      },
+      {
+        id: 7,
+        title: "2020 - 2021",
+        content: Footer,
+      },
+      {
+        id: 8,
+        title: "2020 - 2021",
+        content: Footer,
+      },
+    ],
+  },
+  {
+    id: 5,
     name: "Links",
     timelines: [
       {
-        id: 7,
+        id: 9,
         title: "",
-        content: "some Content",
+        content: Footer,
       },
     ],
+  },
+];
+
+export const personalInformation: { property: string; value: string }[] = [
+  {
+    property: "Name",
+    value: "Obaid Qatan",
+  },
+  {
+    property: "Email",
+    value: "ogaten27@gmail.com",
+  },
+  {
+    property: "Age",
+    value: "22",
+  },
+  {
+    property: "Location",
+    value: "Bangalore, India",
+  },
+];
+
+export const fieldOfInterest: { interest: string; level: number }[] = [
+  {
+    interest: "Software Development",
+    level: 4,
+  },
+  {
+    interest: "Web Development",
+    level: 5,
   },
 ];

@@ -1,4 +1,22 @@
 {
   "profile": "Profile",
-  "quickLinks": "Quick Links"
+  "quickLinks": "Quick Links",
+  "personalInformation": "Personal Information",
+  "fieldOfInterest": "Field of Interest",
+  "education": "Education",
+  "workExperience": "Work Experience",
+  "skills": "Skills",
+  "links": "Links",
+  "personalInformationContent": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "age": "Age"
+  },
+  "fieldOfInterestContent": {
+    "interest": "Interest",
+    "softwareDevelopment": "Software Development",
+    "webDevelopment": "Web Development"
+  }
 }
