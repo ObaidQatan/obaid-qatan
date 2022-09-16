@@ -1,7 +1,11 @@
 import Footer from "../components/Layout/Footer";
 import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/FieldOfInterest.content";
 import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
+import SkillsContent from "../components/Profile/skills/Skills.content";
 import { Field } from "../types/Field";
+import { InterestField } from "../types/InterestField";
+import { PersonalInfoField } from "../types/PersonalInfoField";
+import { Skill } from "../types/Skill";
 
 export const fields: Field[] = [
   {
@@ -32,13 +36,8 @@ export const fields: Field[] = [
     timelines: [
       {
         id: 2,
-        title: "2019 - 2020",
-        content: Footer,
-      },
-      {
-        id: 3,
-        title: "2020 - 2021",
-        content: Footer,
+        title: "Favourite Tools",
+        content: SkillsContent,
       },
     ],
   },
@@ -92,7 +91,7 @@ export const fields: Field[] = [
   },
 ];
 
-export const personalInformation: { property: string; value: string }[] = [
+export const personalInformation: PersonalInfoField[] = [
   {
     property: "Name",
     value: "Obaid Qatan",
@@ -111,13 +110,72 @@ export const personalInformation: { property: string; value: string }[] = [
   },
 ];
 
-export const fieldOfInterest: { interest: string; level: number }[] = [
+export const fieldOfInterest: InterestField[] = [
   {
     interest: "Software Development",
-    level: 4,
+    level: 5,
   },
   {
     interest: "Web Development",
-    level: 5,
+    level: 4,
   },
+];
+
+export const favouriteSkills: Skill[][] = [
+  [
+    {
+      name: "Next.js",
+      img: "https://j.top4top.io/p_2450n9zue3.png",
+      link: "https://nextjs.org/",
+    },
+    {
+      name: "React",
+      img: "https://l.top4top.io/p_2450h8wpt5.png",
+      link: "https://reactjs.org/",
+    },
+    {
+      name: "Node.js",
+      img: "https://a.top4top.io/p_2450sk1bs6.png",
+      link: "https://nodejs.org/en/",
+    },
+    {
+      name: "GraphQL",
+      img: "https://i.top4top.io/p_24500xfba2.png",
+      link: "https://graphql.org/",
+    },
+  ],
+  [
+    {
+      name: "Astro",
+      img: "https://i.top4top.io/p_2450pro4z1.png",
+      link: "https://astro.build/",
+    },
+    {
+      name: "Nest.js",
+      img: "https://e.top4top.io/p_2450fknfk1.png",
+      link: "https://nestjs.com/",
+    },
+    {
+      name: "PostgreSQL",
+      img: "https://k.top4top.io/p_24502i3n54.png",
+      link: "https://www.postgresql.org/",
+    },
+    {
+      name: "Prisma",
+      img: "https://h.top4top.io/p_245089iz11.png",
+      link: "https://www.prisma.io/",
+    },
+  ],
+  [
+    {
+      name: "Electron",
+      img: "https://d.top4top.io/p_24507jdrd1.png",
+      link: "https://www.electronjs.org/",
+    },
+    {
+      name: "React Native",
+      img: "https://e.top4top.io/p_2450jt6002.png",
+      link: "https://reactnative.dev/",
+    },
+  ],
 ];

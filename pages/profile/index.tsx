@@ -66,7 +66,7 @@ const Profile = () => {
                 key={tl.id}
                 className="flex flex-col w-full min-h-[300px] min-w-[300px] p-2 mt-4"
               >
-                <h3 className="text-gray opacity-20">{tl.title}</h3>
+                <h3 className="text-gray opacity-40 font-bold">{tl.title}</h3>
                 <tl.content />
               </div>
             ))}

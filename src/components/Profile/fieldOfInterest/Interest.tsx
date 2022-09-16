@@ -8,7 +8,7 @@ const Interest = ({ data }: { data: { interest: string; level: number } }) => {
   return (
     <div className="flex p-2">
       <h3
-        className="w-[100px]"
+        className="w-[100px] text-[13px] font-bold"
         style={{
           wordBreak: "break-word",
         }}
