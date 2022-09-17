@@ -2,19 +2,19 @@ import { SimpleGrid } from "@mantine/core";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
-import { favouriteSkills } from "../../../fake/profile";
+import { otherSkills } from "../../../fake/profile";
 
-const SkillsContent = () => {
+const OtherSkillsContent = () => {
   const { t } = useTranslation("profile");
 
   return (
     <div className="flex flex-col items-center">
-      {favouriteSkills.map((collection, i) => (
+      {otherSkills.map((collection, i) => (
         <SimpleGrid
           cols={5}
           breakpoints={[{ maxWidth: 600, cols: 3 }]}
           key={i}
-          className="mb-5"
+          className="mb-5 shadow-md p-2"
         >
           {collection.map((skill, j) => (
             <Link href={skill.link} key={j}>
@@ -37,4 +37,4 @@ const SkillsContent = () => {
   );
 };
 
-export default SkillsContent;
+export default OtherSkillsContent;

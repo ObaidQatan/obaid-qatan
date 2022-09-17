@@ -1,7 +1,8 @@
 import Footer from "../components/Layout/Footer";
 import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/FieldOfInterest.content";
 import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
-import SkillsContent from "../components/Profile/skills/Skills.content";
+import FavouriteSkillsContent from "../components/Profile/skills/FavouriteSkills.content";
+import OtherSkillsContent from "../components/Profile/skills/OtherSkills.content";
 import { Field } from "../types/Field";
 import { InterestField } from "../types/InterestField";
 import { PersonalInfoField } from "../types/PersonalInfoField";
@@ -35,9 +36,14 @@ export const fields: Field[] = [
     name: "Skills",
     timelines: [
       {
+        id: 3,
+        title: "Other Tools",
+        content: OtherSkillsContent,
+      },
+      {
         id: 2,
         title: "Favourite Tools",
-        content: SkillsContent,
+        content: FavouriteSkillsContent,
       },
     ],
   },
@@ -125,7 +131,7 @@ export const favouriteSkills: Skill[][] = [
   [
     {
       name: "Next.js",
-      img: "https://j.top4top.io/p_2450n9zue3.png",
+      img: "https://b.top4top.io/p_2451yjef86.png",
       link: "https://nextjs.org/",
     },
     {
@@ -135,47 +141,167 @@ export const favouriteSkills: Skill[][] = [
     },
     {
       name: "Node.js",
-      img: "https://a.top4top.io/p_2450sk1bs6.png",
+      img: "https://c.top4top.io/p_24518wn0a7.png",
       link: "https://nodejs.org/en/",
     },
     {
       name: "GraphQL",
-      img: "https://i.top4top.io/p_24500xfba2.png",
+      img: "https://l.top4top.io/p_2451uyb0g4.png",
       link: "https://graphql.org/",
     },
   ],
   [
     {
       name: "Astro",
-      img: "https://i.top4top.io/p_2450pro4z1.png",
+      img: "https://i.top4top.io/p_2451m5n6r1.png",
       link: "https://astro.build/",
     },
     {
       name: "Nest.js",
-      img: "https://e.top4top.io/p_2450fknfk1.png",
+      img: "https://a.top4top.io/p_2451gd4md5.png",
       link: "https://nestjs.com/",
     },
     {
       name: "PostgreSQL",
-      img: "https://k.top4top.io/p_24502i3n54.png",
+      img: "https://d.top4top.io/p_2451rkpfk8.png",
       link: "https://www.postgresql.org/",
     },
     {
       name: "Prisma",
-      img: "https://h.top4top.io/p_245089iz11.png",
+      img: "https://e.top4top.io/p_2451iz5x39.png",
       link: "https://www.prisma.io/",
     },
   ],
   [
     {
       name: "Electron",
-      img: "https://d.top4top.io/p_24507jdrd1.png",
+      img: "https://k.top4top.io/p_24518f9qo3.png",
       link: "https://www.electronjs.org/",
     },
     {
       name: "React Native",
-      img: "https://e.top4top.io/p_2450jt6002.png",
+      img: "https://j.top4top.io/p_2451r74tj2.png",
       link: "https://reactnative.dev/",
+    },
+  ],
+];
+
+export const otherSkills: Skill[][] = [
+  [
+    {
+      name: "JavaScript",
+      img: "https://img.icons8.com/color/48/000000/javascript.png",
+      link: "https://www.javascript.com/",
+    },
+    {
+      name: "HTML",
+      img: "https://img.icons8.com/color/48/000000/html-5.png",
+      link: "https://www.w3schools.com/html/",
+    },
+    {
+      name: "CSS",
+      img: "https://img.icons8.com/color/48/000000/css3.png",
+      link: "https://www.w3schools.com/css/",
+    },
+    {
+      name: "TypeScript",
+      img: "https://img.icons8.com/color/48/000000/typescript.png",
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      name: "Vue.js",
+      img: "https://img.icons8.com/color/48/000000/vue-js.png",
+      link: "https://vuejs.org/",
+    },
+    {
+      name: "Sass",
+      img: "https://img.icons8.com/color/48/000000/sass.png",
+      link: "https://sass-lang.com/",
+    },
+    {
+      name: "Tailwind CSS",
+      img: "https://l.top4top.io/p_24514xxow7.png",
+      link: "https://tailwindcss.com/",
+    },
+    {
+      name: "Bootstrap",
+      img: "https://img.icons8.com/color/48/000000/bootstrap.png",
+      link: "https://getbootstrap.com/",
+    },
+    {
+      name: "Material UI",
+      img: "https://img.icons8.com/color/48/000000/material-ui.png",
+      link: "https://material-ui.com/",
+    },
+    {
+      name: "Docker",
+      img: "https://img.icons8.com/color/48/000000/docker.png",
+      link: "https://www.docker.com/",
+    },
+    {
+      name: "EJS",
+      img: "https://f.top4top.io/p_2451crrp01.png",
+      link: "https://ejs.co/",
+    },
+    {
+      name: "Express.js",
+      img: "https://img.icons8.com/color/48/000000/express.png",
+      link: "https://expressjs.com/",
+    },
+    {
+      name: "Apollo Server",
+      img: "https://img.icons8.com/color/48/000000/apollo.png",
+      link: "https://www.apollographql.com/",
+    },
+    {
+      name: "Fastify",
+      img: "https://g.top4top.io/p_2451j7cea2.png",
+      link: "https://www.fastify.io/",
+    },
+    {
+      name: "Socket.io",
+      img: "https://j.top4top.io/p_2451p6a1x5.png",
+      link: "https://socket.io/",
+    },
+    {
+      name: "MongoDB",
+      img: "https://img.icons8.com/color/48/000000/mongodb.png",
+      link: "https://www.mongodb.com/",
+    },
+    {
+      name: "MySQL",
+      img: "https://img.icons8.com/color/48/000000/mysql-logo.png",
+      link: "https://www.mysql.com/",
+    },
+    {
+      name: "Firebase",
+      img: "https://img.icons8.com/color/48/000000/firebase.png",
+      link: "https://firebase.google.com/",
+    },
+    {
+      name: "SQLite",
+      img: "https://k.top4top.io/p_2451zsppt6.png",
+      link: "https://www.sqlite.org/index.html",
+    },
+    {
+      name: "Vuex",
+      img: "https://a.top4top.io/p_2451rxi768.png",
+      link: "https://vuex.vuejs.org/",
+    },
+    {
+      name: "Redux",
+      img: "https://img.icons8.com/color/48/000000/redux.png",
+      link: "https://redux.js.org/",
+    },
+    {
+      name: "Recoil",
+      img: "https://i.top4top.io/p_2451hw2s14.png",
+      link: "https://recoiljs.org/",
+    },
+    {
+      name: "Laravel",
+      img: "https://h.top4top.io/p_2451wuqe73.png",
+      link: "https://laravel.com/",
     },
   ],
 ];
