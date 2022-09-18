@@ -392,7 +392,7 @@ export const linksGroups: LinksGroup[] = [
       {
         id: 2,
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/obaidqatan/",
+        url: "https://www.linkedin.com/in/obaid-qatan-7699bb185/",
       },
       {
         id: 3,
@@ -433,7 +433,7 @@ export const linksGroups: LinksGroup[] = [
       },
       {
         id: 2,
-        name: "Mobramej Academy",
+        name: "Mobarmej Academy",
         url: "https://mobarmejacademy.vercel.app/",
       },
     ],

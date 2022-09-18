@@ -82,5 +82,18 @@
     "soelInstituteForEnglishLearning": "معهد سول لتعليم اللغة الانجليزية",
     "englishDiplomaWithAGradeOfA": "شهادة اللغة الانجليزية بمعدل (A+)",
     "msRamaiahInstituteOfTechnology": "معهد رمايا للتكنولوجيا"
+  },
+  "link": {
+    "followMe": "تابعنا",
+    "contactMe": "تواصل معنا",
+    "links": "روابط",
+    "github": "قيتهب",
+    "linkedIn": "لينكد إن",
+    "youTube": "يوتيوب",
+    "instagram": "انستغرام",
+    "email": "البريد الالكتروني",
+    "facebook": "فيسبوك",
+    "cv": "السيرة ذاتية",
+    "mobarmejAcademy": "أكاديمية مبرمج"
   }
 }

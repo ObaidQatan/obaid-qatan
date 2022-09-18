@@ -83,5 +83,17 @@
     "englishDiplomaWithAGradeOfA": "English Diploma with a grade of +A",
     "msRamaiahInstituteOfTechnology": "MS Ramaiah Institute of Technology"
   },
-  "link": {}
+  "link": {
+    "followMe": "Follow Me",
+    "contactMe": "Contact Me",
+    "links": "Links",
+    "github": "GitHub",
+    "linkedIn": "LinkedIn",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "email": "Email",
+    "facebook": "Facebook",
+    "cv": "CV",
+    "mobarmejAcademy": "Mobarmej Academy"
+  }
 }
