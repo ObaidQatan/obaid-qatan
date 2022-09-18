@@ -1,4 +1,5 @@
 import { SimpleGrid } from "@mantine/core";
+import { camelCase } from "lodash";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,7 +31,9 @@ const OtherSkillsContent = () => {
                     objectFit="contain"
                   />
                 </div>
-                <strong className="opacity-75">{t(skill.name)}</strong>
+                <strong className="opacity-75">
+                  {t(`skill.${camelCase(skill.name)}`)}
+                </strong>
               </a>
             </Link>
           ))}
