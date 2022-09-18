@@ -28,7 +28,7 @@ a {
 * {
   box-sizing: border-box;
   transition: 0.2s;
-  user-select: none;
+  /* user-select: none; */
   -webkit-tap-highlight-color: transparent;
 }
 

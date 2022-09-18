@@ -58,27 +58,43 @@ export const fields: Field[] = [
     timelines: [
       {
         id: 4,
-        title: "1st December 2018 - 30 December 2020",
+        title: {
+          // NOTE: Date(Month - Day - Year)
+          from: new Date("12-1-2018").toISOString(),
+          to: new Date("12-30-2020").toISOString(),
+        },
         content: TimeLine1,
       },
       {
         id: 5,
-        title: "1st January 2021 - 12 December 2021",
+        title: {
+          from: new Date("1-1-2021").toISOString(),
+          to: new Date("12-12-2021").toISOString(),
+        },
         content: TimeLine2,
       },
       {
         id: 6,
-        title: "13 December 2021 - 27 March 2022",
+        title: {
+          from: new Date("12-13-2021").toISOString(),
+          to: new Date("3-27-2022").toISOString(),
+        },
         content: TimeLine3,
       },
       {
         id: 7,
-        title: "28 March 2022 - 28 June 2022",
+        title: {
+          from: new Date("3-28-2022").toISOString(),
+          to: new Date("6-28-2022").toISOString(),
+        },
         content: TimeLine4,
       },
       {
         id: 8,
-        title: "1 July 2022 - Present",
+        title: {
+          from: new Date("7-1-2022").toISOString(),
+          to: new Date().toISOString(),
+        },
         content: TimeLine5,
       },
     ],

@@ -52,6 +52,21 @@
     "sqLite": "SQLite",
     "redux": "Redux",
     "recoil": "Recoil",
-    "laravel": "Laravel"
+    "laravel": "Laravel",
+    "java": "Java"
+  },
+  "workExperienceContent": {
+    "freelancing": "العمل الحر",
+    "webDesign": "تصميم ويب",
+    "graphicDesign": "تصميم جرافيك",
+    "workedAtBobAppsTechCompanyForItSolutions": "شركة بوب ابس لحلول تكنولوجيا المعلومات",
+    "fullStackWebDeveloper": "مطور ويب فل ستاك",
+    "mevnStack": "ستاك MEVN",
+    "webDevelopment": "تطوير الويب",
+    "apIs": "واجهات برمجة التطبيقات (APIs)",
+    "softwareConsultancy": "استشارات برمجية",
+    "personalTrainer": "مدرب شخصي",
+    "objectOrientedProgramming": "برمجة كائنية التوجه (OOP)",
+    "dataStructuresAndAlgorithms": "هياكل البيانات والخوارزميات"
   }
 }

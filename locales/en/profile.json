@@ -52,6 +52,21 @@
     "sqLite": "SQLite",
     "redux": "Redux",
     "recoil": "Recoil",
-    "laravel": "Laravel"
+    "laravel": "Laravel",
+    "java": "Java"
+  },
+  "workExperienceContent": {
+    "freelancing": "Freelancing",
+    "webDesign": "Web Design",
+    "graphicDesign": "Graphic Design",
+    "workedAtBobAppsTechCompanyForItSolutions": "Worked at Bob Apps Tech Company for IT Solutions",
+    "fullStackWebDeveloper": "Full Stack Web Developer",
+    "mevnStack": "MEVN Stack",
+    "webDevelopment": "Web Development",
+    "apIs": "APIs",
+    "softwareConsultancy": "Software Consultancy",
+    "personalTrainer": "Personal Trainer",
+    "objectOrientedProgramming": "Object Oriented Programming",
+    "dataStructuresAndAlgorithms": "Data Structures and Algorithms"
   }
 }

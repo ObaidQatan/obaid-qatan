@@ -1,5 +1,5 @@
 export type Timeline = {
   id: number;
-  title: string;
+  title: string | { from: string; to: string };
   content: any;
 };

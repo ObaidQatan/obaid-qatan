@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import { camelCase, upperCase } from "lodash";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
@@ -66,7 +67,17 @@ const Profile = () => {
                 key={tl.id}
                 className="flex flex-col w-full min-h-[300px] min-w-[300px] p-2 mt-4"
               >
-                <h3 className="text-gray opacity-40 font-bold">{tl.title}</h3>
+                <h3 className="text-gray opacity-40 font-bold">
+                  {typeof tl.title === "string"
+                    ? tl.title
+                    : `${dayjs(tl.title.from).date()} ${_(
+                        "month." + (dayjs(tl.title.from).month() + 1).toString()
+                      )} ${dayjs(tl.title.from).year()} - ${dayjs(
+                        tl.title.to
+                      ).date()} ${_(
+                        "month." + (dayjs(tl.title.to).month() + 1).toString()
+                      )} ${dayjs(tl.title.to).year()}`}
+                </h3>
                 <tl.content />
               </div>
             ))}
