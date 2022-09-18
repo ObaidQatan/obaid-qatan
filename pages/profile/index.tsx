@@ -72,11 +72,18 @@ const Profile = () => {
                     ? tl.title
                     : `${dayjs(tl.title.from).date()} ${_(
                         "month." + (dayjs(tl.title.from).month() + 1).toString()
-                      )} ${dayjs(tl.title.from).year()} - ${dayjs(
-                        tl.title.to
-                      ).date()} ${_(
-                        "month." + (dayjs(tl.title.to).month() + 1).toString()
-                      )} ${dayjs(tl.title.to).year()}`}
+                      )} ${dayjs(tl.title.from).year()} - ${
+                        tl.title.to.toLowerCase() === "present"
+                          ? t(camelCase(tl.title.to))
+                          : dayjs(tl.title.to).date() +
+                            " " +
+                            _(
+                              "month." +
+                                (dayjs(tl.title.to).month() + 1).toString()
+                            ) +
+                            " " +
+                            dayjs(tl.title.to).year()
+                      }`}
                 </h3>
                 <tl.content />
               </div>

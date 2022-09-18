@@ -3,11 +3,11 @@ import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/Field
 import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
 import FavouriteSkillsContent from "../components/Profile/skills/FavouriteSkills.content";
 import OtherSkillsContent from "../components/Profile/skills/OtherSkills.content";
-import TimeLine1 from "../components/Profile/workExperience/TimeLine1";
-import TimeLine2 from "../components/Profile/workExperience/TimeLine2";
-import TimeLine3 from "../components/Profile/workExperience/TimeLine3";
-import TimeLine4 from "../components/Profile/workExperience/TimeLine4";
-import TimeLine5 from "../components/Profile/workExperience/TimeLine5";
+import WorkExperienceTimeLine1 from "../components/Profile/workExperience/TimeLine1";
+import WorkExperienceTimeLine2 from "../components/Profile/workExperience/TimeLine2";
+import WorkExperienceTimeLine3 from "../components/Profile/workExperience/TimeLine3";
+import WorkExperienceTimeLine4 from "../components/Profile/workExperience/TimeLine4";
+import WorkExperienceTimeLine5 from "../components/Profile/workExperience/TimeLine5";
 import { Field } from "../types/Field";
 import { InterestField } from "../types/InterestField";
 import { PersonalInfoField } from "../types/PersonalInfoField";
@@ -63,7 +63,7 @@ export const fields: Field[] = [
           from: new Date("12-1-2018").toISOString(),
           to: new Date("12-30-2020").toISOString(),
         },
-        content: TimeLine1,
+        content: WorkExperienceTimeLine1,
       },
       {
         id: 5,
@@ -71,7 +71,7 @@ export const fields: Field[] = [
           from: new Date("1-1-2021").toISOString(),
           to: new Date("12-12-2021").toISOString(),
         },
-        content: TimeLine2,
+        content: WorkExperienceTimeLine2,
       },
       {
         id: 6,
@@ -79,7 +79,7 @@ export const fields: Field[] = [
           from: new Date("12-13-2021").toISOString(),
           to: new Date("3-27-2022").toISOString(),
         },
-        content: TimeLine3,
+        content: WorkExperienceTimeLine3,
       },
       {
         id: 7,
@@ -87,15 +87,15 @@ export const fields: Field[] = [
           from: new Date("3-28-2022").toISOString(),
           to: new Date("6-28-2022").toISOString(),
         },
-        content: TimeLine4,
+        content: WorkExperienceTimeLine4,
       },
       {
         id: 8,
         title: {
           from: new Date("7-1-2022").toISOString(),
-          to: new Date().toISOString(),
+          to: "Present",
         },
-        content: TimeLine5,
+        content: WorkExperienceTimeLine5,
       },
     ],
   },
@@ -104,18 +104,26 @@ export const fields: Field[] = [
     name: "Education",
     timelines: [
       {
-        id: 6,
+        id: 9,
+        title: "2006 - 2014",
+        content: Footer,
+      },
+      {
+        id: 10,
+        title: "2015 - 2018",
+        content: Footer,
+      },
+      {
+        id: 11,
         title: "2019 - 2020",
         content: Footer,
       },
       {
-        id: 7,
-        title: "2020 - 2021",
-        content: Footer,
-      },
-      {
-        id: 8,
-        title: "2020 - 2021",
+        id: 12,
+        title: {
+          from: new Date("12-10-2020").toISOString(),
+          to: new Date().toISOString(),
+        },
         content: Footer,
       },
     ],
