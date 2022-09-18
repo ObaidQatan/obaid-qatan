@@ -3,6 +3,11 @@ import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/Field
 import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
 import FavouriteSkillsContent from "../components/Profile/skills/FavouriteSkills.content";
 import OtherSkillsContent from "../components/Profile/skills/OtherSkills.content";
+import TimeLine1 from "../components/Profile/workExperience/TimeLine1";
+import TimeLine2 from "../components/Profile/workExperience/TimeLine2";
+import TimeLine3 from "../components/Profile/workExperience/TimeLine3";
+import TimeLine4 from "../components/Profile/workExperience/TimeLine4";
+import TimeLine5 from "../components/Profile/workExperience/TimeLine5";
 import { Field } from "../types/Field";
 import { InterestField } from "../types/InterestField";
 import { PersonalInfoField } from "../types/PersonalInfoField";
@@ -36,12 +41,12 @@ export const fields: Field[] = [
     name: "Skills",
     timelines: [
       {
-        id: 3,
+        id: 2,
         title: "Other Tools",
         content: OtherSkillsContent,
       },
       {
-        id: 2,
+        id: 3,
         title: "Favourite Tools",
         content: FavouriteSkillsContent,
       },
@@ -53,13 +58,28 @@ export const fields: Field[] = [
     timelines: [
       {
         id: 4,
-        title: "2019 - 2020",
-        content: Footer,
+        title: "1st December 2018 - 30 December 2020",
+        content: TimeLine1,
       },
       {
         id: 5,
-        title: "2020 - 2021",
-        content: Footer,
+        title: "1st January 2021 - 12 December 2021",
+        content: TimeLine2,
+      },
+      {
+        id: 6,
+        title: "13 December 2021 - 27 March 2022",
+        content: TimeLine3,
+      },
+      {
+        id: 7,
+        title: "28 March 2022 - 28 June 2022",
+        content: TimeLine4,
+      },
+      {
+        id: 8,
+        title: "1 July 2022 - Present",
+        content: TimeLine5,
       },
     ],
   },

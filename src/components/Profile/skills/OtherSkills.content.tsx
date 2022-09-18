@@ -18,7 +18,10 @@ const OtherSkillsContent = () => {
         >
           {collection.map((skill, j) => (
             <Link href={skill.link} key={j}>
-              <a className="border rounded-md text-center flex flex-col items-center w-fit p-2 h-fit hover:shadow hover:shadow-cyan-500 bg-black bg-opacity-10">
+              <a
+                target="_blank"
+                className="border rounded-md text-center flex flex-col items-center w-fit p-2 h-fit hover:shadow hover:shadow-cyan-500 bg-black bg-opacity-10"
+              >
                 <div className="relative w-20 h-20">
                   <Image
                     src={skill.img}
