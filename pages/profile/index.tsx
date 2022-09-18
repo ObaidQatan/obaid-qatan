@@ -69,7 +69,7 @@ const Profile = () => {
               >
                 <h3 className="text-gray opacity-40 font-bold">
                   {typeof tl.title === "string"
-                    ? tl.title
+                    ? t(camelCase(tl.title))
                     : `${dayjs(tl.title.from).date()} ${_(
                         "month." + (dayjs(tl.title.from).month() + 1).toString()
                       )} ${dayjs(tl.title.from).year()} - ${
