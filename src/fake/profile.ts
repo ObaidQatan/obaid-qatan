@@ -379,7 +379,7 @@ export const educationFields: EducationField[] = [
   },
 ];
 
-const linksGroups: LinksGroup[] = [
+export const linksGroups: LinksGroup[] = [
   {
     id: 1,
     title: "Follow Me",
@@ -433,7 +433,7 @@ const linksGroups: LinksGroup[] = [
       },
       {
         id: 2,
-        name: "Mobranej Academy",
+        name: "Mobramej Academy",
         url: "https://mobarmejacademy.vercel.app/",
       },
     ],
