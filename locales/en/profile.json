@@ -69,5 +69,16 @@
     "personalTrainer": "Personal Trainer",
     "objectOrientedProgramming": "Object Oriented Programming",
     "dataStructuresAndAlgorithms": "Data Structures and Algorithms"
+  },
+  "educationContent": {
+    "alNobanSchool": "Al Noban School",
+    "graduatedFromAlNobanSchoolIn2014WithAGradeOf9557": "Graduated from Al Noban School in 2014 with a grade of 95.57 %",
+    "mukallaModelSecondarySchoolMmss": "Mukalla Model Secondary School (MMSS)",
+    "10thClassWithAGradeOf9080": "10th Class with a grade of 90.80 %",
+    "11ThClassWithAGradeOf9400": "11th Class with a grade of 94.00 %",
+    "12ThClassWithAGradeOf9650": "12th Class with a grade of 96.50 %",
+    "soelInstituteForEnglishLearning": "SOEL Institute for English Learning",
+    "englishDiplomaWithAGradeOfA": "English Diploma with a grade of +A",
+    "msRamaiahInstituteOfTechnology": "MS Ramaiah Institute of Technology"
   }
 }

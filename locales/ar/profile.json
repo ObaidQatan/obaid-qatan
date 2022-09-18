@@ -69,5 +69,16 @@
     "personalTrainer": "مدرب شخصي",
     "objectOrientedProgramming": "برمجة كائنية التوجه (OOP)",
     "dataStructuresAndAlgorithms": "هياكل البيانات والخوارزميات"
+  },
+  "educationContent": {
+    "alNobanSchool": "مدرسة النوبان للتعليم الأساسي",
+    "graduatedFromAlNobanSchoolIn2014WithAGradeOf9557": "تخرجت من مدرسة النوبان للتعليم الأساسي في عام 2014 بمعدل 95.57 %",
+    "mukallaModelSecondarySchoolMmss": "ثانوية المكلا النموذجية",
+    "10thClassWithAGradeOf9080": "الصف الأول الثانوي بمعدل 90.80 %",
+    "11ThClassWithAGradeOf9400": "الصف الثاني الثانوي بمعدل 94.00 %",
+    "12ThClassWithAGradeOf9650": "الصف الثالث الثانوي بمعدل 96.50 %",
+    "soelInstituteForEnglishLearning": "معهد سول لتعليم اللغة الانجليزية",
+    "englishDiplomaWithAGradeOfA": "شهادة اللغة الانجليزية بمعدل (A+)",
+    "msR(a+)maiahInstituteOfTechnology": "معهد رمايا للتكنولوجيا"
   }
 }

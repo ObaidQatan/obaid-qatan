@@ -1,5 +1,8 @@
 import Footer from "../components/Layout/Footer";
 import EducationTimeLine1 from "../components/Profile/education/TimeLine1";
+import EducationTimeLine2 from "../components/Profile/education/TimeLine2";
+import EducationTimeLine3 from "../components/Profile/education/TimeLine3";
+import EducationTimeLine4 from "../components/Profile/education/TimeLine4";
 import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/FieldOfInterest.content";
 import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
 import FavouriteSkillsContent from "../components/Profile/skills/FavouriteSkills.content";
@@ -113,12 +116,12 @@ export const fields: Field[] = [
       {
         id: 10,
         title: "2015 - 2018",
-        content: EducationTimeLine1,
+        content: EducationTimeLine2,
       },
       {
         id: 11,
         title: "2019 - 2020",
-        content: EducationTimeLine1,
+        content: EducationTimeLine3,
       },
       {
         id: 12,
@@ -126,7 +129,7 @@ export const fields: Field[] = [
           from: new Date("12-10-2020").toISOString(),
           to: "Present",
         },
-        content: EducationTimeLine1,
+        content: EducationTimeLine4,
       },
     ],
   },
@@ -364,5 +367,13 @@ export const educationFields: EducationField[] = [
       "11th class with a grade of 94.00 %",
       "12th class with a grade of 96.50 %",
     ],
+  },
+  {
+    facility: "SOEL Institute For English Learning",
+    details: ["English Diploma with a grade of +A"],
+  },
+  {
+    facility: "MS Ramaiah Institute of Technology",
+    details: [],
   },
 ];

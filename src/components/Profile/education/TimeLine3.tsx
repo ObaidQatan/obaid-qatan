@@ -2,7 +2,7 @@ import { camelCase } from "lodash";
 import useTranslation from "next-translate/useTranslation";
 import { educationFields } from "../../../fake/profile";
 
-const TimeLine1 = () => {
+const TimeLine3 = () => {
   const { t } = useTranslation("profile");
 
   return (
@@ -23,11 +23,11 @@ const TimeLine1 = () => {
           />
         </svg>
         <h3 className="px-2">
-          {t(`educationContent.${camelCase(educationFields[0].facility)}`)}
+          {t(`educationContent.${camelCase(educationFields[2].facility)}`)}
         </h3>
       </div>
       <ul>
-        {educationFields[0].details.map((detail, index) => (
+        {educationFields[2].details.map((detail, index) => (
           <li key={index}>
             <h3>- {t(`educationContent.${camelCase(detail)}`)}.</h3>
           </li>
@@ -37,4 +37,4 @@ const TimeLine1 = () => {
   );
 };
 
-export default TimeLine1;
+export default TimeLine3;
