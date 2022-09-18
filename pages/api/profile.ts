@@ -6,5 +6,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Field[]>
 ) {
-  res.status(200).json();
+  res.status(200).json([]);
 }
