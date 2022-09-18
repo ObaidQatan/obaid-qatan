@@ -1,9 +1,9 @@
-import Footer from "../components/Layout/Footer";
 import EducationTimeLine1 from "../components/Profile/education/TimeLine1";
 import EducationTimeLine2 from "../components/Profile/education/TimeLine2";
 import EducationTimeLine3 from "../components/Profile/education/TimeLine3";
 import EducationTimeLine4 from "../components/Profile/education/TimeLine4";
 import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/FieldOfInterest.content";
+import LinksContent from "../components/Profile/links/Links.content";
 import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
 import FavouriteSkillsContent from "../components/Profile/skills/FavouriteSkills.content";
 import OtherSkillsContent from "../components/Profile/skills/OtherSkills.content";
@@ -15,6 +15,7 @@ import WorkExperienceTimeLine5 from "../components/Profile/workExperience/TimeLi
 import { EducationField } from "../types/EducationField";
 import { Field } from "../types/Field";
 import { InterestField } from "../types/InterestField";
+import { LinksGroup } from "../types/Links";
 import { PersonalInfoField } from "../types/PersonalInfoField";
 import { Skill } from "../types/Skill";
 
@@ -140,7 +141,7 @@ export const fields: Field[] = [
       {
         id: 9,
         title: "",
-        content: Footer,
+        content: LinksContent,
       },
     ],
   },
@@ -375,5 +376,66 @@ export const educationFields: EducationField[] = [
   {
     facility: "MS Ramaiah Institute of Technology",
     details: [],
+  },
+];
+
+const linksGroups: LinksGroup[] = [
+  {
+    id: 1,
+    title: "Follow Me",
+    links: [
+      {
+        id: 1,
+        name: "Github",
+        url: "https://github.com/ObaidQatan/",
+      },
+      {
+        id: 2,
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/obaidqatan/",
+      },
+      {
+        id: 3,
+        name: "YouTube",
+        url: "https://www.youtube.com/channel/mobarmejAcademy/",
+      },
+      {
+        id: 4,
+        name: "Instagram",
+        url: "https://www.instagram.com/obekas_dono/",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Contact Me",
+    links: [
+      {
+        id: 1,
+        name: "Email",
+        url: "mailto:ogaten27@gmail.com",
+      },
+      {
+        id: 2,
+        name: "Facebook",
+        url: "https://www.facebook.com/obead.gaten/",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Links",
+    links: [
+      {
+        id: 1,
+        name: "CV",
+        url: "https://sem4-algo.herokuapp.com/other/cv.pdf",
+      },
+      {
+        id: 2,
+        name: "Mobranej Academy",
+        url: "https://mobarmejacademy.vercel.app/",
+      },
+    ],
   },
 ];
