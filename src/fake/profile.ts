@@ -1,4 +1,5 @@
 import Footer from "../components/Layout/Footer";
+import EducationTimeLine1 from "../components/Profile/education/TimeLine1";
 import FieldsOfInterestContent from "../components/Profile/fieldOfInterest/FieldOfInterest.content";
 import PersonalInformationContent from "../components/Profile/personalInformation/PersonalInformation.content";
 import FavouriteSkillsContent from "../components/Profile/skills/FavouriteSkills.content";
@@ -8,6 +9,7 @@ import WorkExperienceTimeLine2 from "../components/Profile/workExperience/TimeLi
 import WorkExperienceTimeLine3 from "../components/Profile/workExperience/TimeLine3";
 import WorkExperienceTimeLine4 from "../components/Profile/workExperience/TimeLine4";
 import WorkExperienceTimeLine5 from "../components/Profile/workExperience/TimeLine5";
+import { EducationField } from "../types/EducationField";
 import { Field } from "../types/Field";
 import { InterestField } from "../types/InterestField";
 import { PersonalInfoField } from "../types/PersonalInfoField";
@@ -106,25 +108,25 @@ export const fields: Field[] = [
       {
         id: 9,
         title: "2006 - 2014",
-        content: Footer,
+        content: EducationTimeLine1,
       },
       {
         id: 10,
         title: "2015 - 2018",
-        content: Footer,
+        content: EducationTimeLine1,
       },
       {
         id: 11,
         title: "2019 - 2020",
-        content: Footer,
+        content: EducationTimeLine1,
       },
       {
         id: 12,
         title: {
           from: new Date("12-10-2020").toISOString(),
-          to: new Date().toISOString(),
+          to: "Present",
         },
-        content: Footer,
+        content: EducationTimeLine1,
       },
     ],
   },
@@ -348,4 +350,19 @@ export const otherSkills: Skill[][] = [
       link: "https://laravel.com/",
     },
   ],
+];
+
+export const educationFields: EducationField[] = [
+  {
+    facility: "Al-Noban School",
+    details: ["Graduated from Al-Noban School in 2014 with a grade of 95.57 %"],
+  },
+  {
+    facility: "Mukalla Model Secondary School (MMSS)",
+    details: [
+      "10th class with a grade of 90.80 %",
+      "11th class with a grade of 94.00 %",
+      "12th class with a grade of 96.50 %",
+    ],
+  },
 ];
