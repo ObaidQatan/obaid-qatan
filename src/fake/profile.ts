@@ -66,39 +66,39 @@ export const fields: Field[] = [
         id: 4,
         title: {
           // NOTE: Date(Month - Day - Year)
-          from: new Date("12-1-2018").toISOString(),
-          to: new Date("12-30-2020").toISOString(),
+          from: "12-1-2018",
+          to: "12-30-2020",
         },
         content: WorkExperienceTimeLine1,
       },
       {
         id: 5,
         title: {
-          from: new Date("1-1-2021").toISOString(),
-          to: new Date("12-12-2021").toISOString(),
+          from: "1-1-2021",
+          to: "12-12-2021",
         },
         content: WorkExperienceTimeLine2,
       },
       {
         id: 6,
         title: {
-          from: new Date("12-13-2021").toISOString(),
-          to: new Date("3-27-2022").toISOString(),
+          from: "12-13-2021",
+          to: "3-27-2022",
         },
         content: WorkExperienceTimeLine3,
       },
       {
         id: 7,
         title: {
-          from: new Date("3-28-2022").toISOString(),
-          to: new Date("6-28-2022").toISOString(),
+          from: "3-28-2022",
+          to: "6-28-2022",
         },
         content: WorkExperienceTimeLine4,
       },
       {
         id: 8,
         title: {
-          from: new Date("7-1-2022").toISOString(),
+          from: "7-1-2022",
           to: "Present",
         },
         content: WorkExperienceTimeLine5,
@@ -111,23 +111,32 @@ export const fields: Field[] = [
     timelines: [
       {
         id: 9,
-        title: "2006 - 2014",
+        title: {
+          from: "2006",
+          to: "2014",
+        },
         content: EducationTimeLine1,
       },
       {
         id: 10,
-        title: "2015 - 2018",
+        title: {
+          from: "2015",
+          to: "2018",
+        },
         content: EducationTimeLine2,
       },
       {
         id: 11,
-        title: "2019 - 2020",
+        title: {
+          from: "2019",
+          to: "2020",
+        },
         content: EducationTimeLine3,
       },
       {
         id: 12,
         title: {
-          from: new Date("12-10-2020").toISOString(),
+          from: "12-10-2020",
           to: "Present",
         },
         content: EducationTimeLine4,
