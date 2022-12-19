@@ -37,8 +37,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div dir={isAR ? "rtl" : "ltr"}>
       <NextNProgress />
       <Head>
-        <title>{t("common:appName")}</title>
-        <link rel="icon" href="/favicon.ico" />
         <SEO />
         <meta
           name="viewport"
