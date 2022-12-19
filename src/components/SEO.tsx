@@ -1,6 +1,5 @@
 const SEO = () => (
   <>
-    <title>Obaid Qatan | عبيد قطن</title>
     <meta name="title" content="Obaid Qatan" />
     <meta
       name="description"

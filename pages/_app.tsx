@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div dir={isAR ? "rtl" : "ltr"}>
       <NextNProgress />
       <Head>
+        <title>Obaid Qatan | عبيد قطن</title>
         <SEO />
         <meta
           name="viewport"
