@@ -1,0 +1,17 @@
+Output 1:
+Enter 4 bits of data one by one 1010
+Encoded data is
+1010010
+Enter received data bits one by one 1010010
+No error while transmission of data
+Output
+2
+:
+Enter 4 bits of data one by one 1010
+Encoded data is
+1010010
+Enter received data bits one by one 1010110
+Error on position 3
+Data sent : 1010010
+Data received : 1010110
+Correct message is1010010
