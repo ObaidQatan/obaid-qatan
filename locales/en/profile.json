@@ -56,7 +56,10 @@
     "redux": "Redux",
     "recoil": "Recoil",
     "laravel": "Laravel",
-    "java": "Java"
+    "java": "Java",
+    "tRpc": "tRPC",
+    "docusaurus": "Docusaurus",
+    "supabase": "Supabase"
   },
   "workExperienceContent": {
     "freelancing": "Freelancing",
@@ -70,7 +73,12 @@
     "softwareConsultancy": "Software Consultancy",
     "personalTrainer": "Personal Trainer",
     "objectOrientedProgramming": "Object Oriented Programming",
-    "dataStructuresAndAlgorithms": "Data Structures and Algorithms"
+    "dataStructuresAndAlgorithms": "Data Structures and Algorithms",
+    "workedAtZeviAi": "Worked at Zevi AI",
+    "frontendEngineer": "Frontend Engineer",
+    "buildingRichUserInterfacesAndComponentsUsingReact": "Building rich user interfaces and components using React",
+    "convertingUiDesignsIntoScalableReactComponents": "Converting UI designs into scalable React components",
+    "documentationPagesUsingDocusaurusAndReact": "Documentation pages using Docusaurus and React"
   },
   "educationContent": {
     "alNobanSchool": "Al Noban School",

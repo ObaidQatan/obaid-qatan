@@ -56,7 +56,10 @@
     "redux": "Redux",
     "recoil": "Recoil",
     "laravel": "Laravel",
-    "java": "Java"
+    "java": "Java",
+    "tRpc": "tRPC",
+    "docusaurus": "Docusaurus",
+    "supabase": "Supabase"
   },
   "workExperienceContent": {
     "freelancing": "العمل الحر",
@@ -70,7 +73,12 @@
     "softwareConsultancy": "استشارات برمجية",
     "personalTrainer": "مدرب شخصي",
     "objectOrientedProgramming": "برمجة كائنية التوجه (OOP)",
-    "dataStructuresAndAlgorithms": "هياكل البيانات والخوارزميات"
+    "dataStructuresAndAlgorithms": "هياكل البيانات والخوارزميات",
+    "workedAtZeviAi": "شركة زيفي للذكاء الاصطناعي",
+    "frontendEngineer": "مهندس واجهات مستخدم",
+    "buildingRichUserInterfacesAndComponentsUsingReact": "بناء واجهات مستخدم متطورة باستخدام React",
+    "convertingUiDesignsIntoScalableReactComponents": "تحويل تصاميم واجهات المستخدم إلى مكونات React قابلة للتوسع",
+    "documentationPagesUsingDocusaurusAndReact": "صفحات التوثيق باستخدام Docusaurus و React"
   },
   "educationContent": {
     "alNobanSchool": "مدرسة النوبان للتعليم الأساسي",

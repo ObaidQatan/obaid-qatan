@@ -8,6 +8,11 @@ const TimeLine6 = () => {
       <ul>
         <li>
           <h3 className="font-bold text-[20px]">
+            - {t(`workExperienceContent.${camelCase("Worked At Zevi AI")}`)}.
+          </h3>
+        </li>
+        <li>
+          <h3>
             - {t(`workExperienceContent.${camelCase("Frontend Engineer")}`)}.
           </h3>
         </li>
