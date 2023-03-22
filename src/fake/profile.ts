@@ -216,7 +216,7 @@ export const favouriteSkills: Skill[][] = [
       name: "GraphQL",
       img: "https://l.top4top.io/p_2451uyb0g4.png",
       link: "https://graphql.org/",
-    },
+    }
   ],
   [
     {
@@ -250,6 +250,16 @@ export const favouriteSkills: Skill[][] = [
       name: "React Native",
       img: "https://j.top4top.io/p_2451r74tj2.png",
       link: "https://reactnative.dev/",
+    },
+    {
+      name: "Supabase",
+      img: "https://j.top4top.io/p_263731n2n1.png",
+      link: "https://supabase.com/",
+    },
+    {
+      name: "Tailwind CSS",
+      img: "https://l.top4top.io/p_24514xxow7.png",
+      link: "https://tailwindcss.com/",
     },
   ],
 ];
@@ -285,11 +295,6 @@ export const otherSkills: Skill[][] = [
       name: "Sass",
       img: "https://img.icons8.com/color/48/000000/sass.png",
       link: "https://sass-lang.com/",
-    },
-    {
-      name: "Tailwind CSS",
-      img: "https://l.top4top.io/p_24514xxow7.png",
-      link: "https://tailwindcss.com/",
     },
     {
       name: "Bootstrap",
@@ -371,6 +376,16 @@ export const otherSkills: Skill[][] = [
       img: "https://h.top4top.io/p_2451wuqe73.png",
       link: "https://laravel.com/",
     },
+    {
+      name: "tRPC",
+      img: "https://l.top4top.io/p_263759do21.png",
+      link: "https://trpc.io/",
+    },
+    {
+      name: "Docusaurus",
+      img: "https://c.top4top.io/p_2637mgnir1.png",
+      link: "https://docusaurus.io/",
+    }
   ],
 ];
 
