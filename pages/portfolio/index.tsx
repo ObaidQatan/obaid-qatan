@@ -6,7 +6,7 @@ import Head from "next/head";
 import PortfolioScreen from "../../src/components/Portfolio";
 
 const Portfolio = () => {
-  const { t } = useTranslation("profile");
+  const { t } = useTranslation("portfolio");
   const { t: _ } = useTranslation("common");
   const { isDark } = useDarkMode();
 
