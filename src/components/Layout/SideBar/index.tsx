@@ -18,7 +18,9 @@ const SideBar = () => {
         isDark ? "bg-[#08192a] text-white" : "bg-[#fff] text-slate-600"
       } fixed top-0 h-screen w-[50%] max-w-md z-[200] items-center`}
       style={{
-        boxShadow: "0 0 10px 0 rgba(0, 0, 0)",
+        boxShadow: isDark
+          ? "0 0 50px 0 rgba(0, 0, 0)"
+          : "0 0 50px 0 rgba(0, 0, 0, 0.2)",
         borderRadius: isArabic ? "0 0 20px 0" : "0 0 0 20px",
         outlineStyle: "dashed",
         outlineWidth: "thin",
@@ -32,7 +34,7 @@ const SideBar = () => {
         } p-2 bg-inherit flex flex-col`}
         style={{
           borderRadius: "50% 0 0 50%",
-          boxShadow: "-4px 0 5px 0 rgba(0, 0, 0, 0.2)",
+          boxShadow: "-2px 0 5px 0 rgba(0, 0, 0, 0.2)",
         }}
       >
         <svg
@@ -52,14 +54,14 @@ const SideBar = () => {
         </svg>
       </div>
       {/* ------------- Conent Here-------------- */}
-      <ul className="flex flex-col items-center w-[80%] bottom-2 absolute">
+      <ul className="flex flex-col items-center w-[80%] top-4 absolute">
         <li className="w-full py-1">
           <Link href={router.asPath} locale={isArabic ? "en" : "ar"}>
             <a>
               <Button
-                variant="outline"
+                variant="subtle"
                 color="gray"
-                className="text-[#C3C3C3] hover:text-[#43D2D6]"
+                className="!text-[#43D2D6]"
                 style={{
                   width: "100%",
                 }}

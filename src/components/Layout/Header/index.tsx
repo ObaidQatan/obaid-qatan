@@ -13,7 +13,7 @@ const Header = () => {
   const { isDark, toggleColorScheme } = useDarkMode();
 
   return (
-    <header className="flex justify-between p-3 max-w-7xl w-full sticky top-0 z-[100] bg-inherit text-[#43D2D6]">
+    <header className="flex justify-between p-3 max-w-[1420px] w-full sticky top-0 z-[100] bg-inherit text-[#43D2D6]">
       <div className="flex">
         <Link href="/">
           <a>

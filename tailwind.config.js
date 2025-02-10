@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        "center": "0 0 5px var(--tw-shadow-colored)",
-      }
+        center: "0 0 5px var(--tw-shadow-colored)",
+      },
     },
   },
   plugins: [],
-}
+};
