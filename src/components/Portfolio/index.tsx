@@ -7,7 +7,7 @@ import dayjs from "dayjs";
 import { capitalize, truncate } from "lodash";
 import { PortfolioItem } from "../../types";
 import { XIcon } from "lucide-react";
-import { cn } from "../../utils";
+import { cn } from "../../utils/index";
 
 function PortfolioScreen() {
   const { t } = useTranslation("portfolio");
