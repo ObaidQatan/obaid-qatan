@@ -6,7 +6,6 @@ import useDarkMode from "../../hooks/useDarkMode";
 import dayjs from "dayjs";
 import { capitalize, truncate } from "lodash";
 import { PortfolioItem } from "../../types";
-import { AnimatePresence, motion } from "framer-motion";
 import { XIcon } from "lucide-react";
 import { cn } from "../../utils";
 
