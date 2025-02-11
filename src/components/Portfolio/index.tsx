@@ -7,8 +7,13 @@ import dayjs from "dayjs";
 import { capitalize, truncate } from "lodash";
 import { PortfolioItem } from "../../types";
 import { XIcon } from "lucide-react";
-import { cn } from "../../utils";
 import SkeletonLoader from "../ui/skeleton-loader";
+import { twMerge } from "tailwind-merge";
+import { type ClassValue, clsx } from "clsx";
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 function PortfolioScreen() {
   const { t } = useTranslation("portfolio");
