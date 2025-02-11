@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { LoaderCircleIcon, RotateCwIcon } from "lucide-react";
 import React, { Fragment, useCallback, useEffect, useState } from "react";
-import { cn } from "../../utils";
+import { twMerge } from "tailwind-merge";
+import { type ClassValue, clsx } from "clsx";
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 const Img: React.FC<
   React.ImgHTMLAttributes<HTMLImageElement> & {
