@@ -1,5 +1,10 @@
 import React from "react";
-import { cn } from "../../utils";
+import { twMerge } from "tailwind-merge";
+import { type ClassValue, clsx } from "clsx";
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 interface SkeletonProps {
   className?: string;
