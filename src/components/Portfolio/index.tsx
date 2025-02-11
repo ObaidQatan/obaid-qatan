@@ -7,7 +7,8 @@ import dayjs from "dayjs";
 import { capitalize, truncate } from "lodash";
 import { PortfolioItem } from "../../types";
 import { XIcon } from "lucide-react";
-import { cn } from "./../../utils";
+import { cn } from "../../utils";
+import SkeletonLoader from "../ui/skeleton-loader";
 
 function PortfolioScreen() {
   const { t } = useTranslation("portfolio");
@@ -41,9 +42,11 @@ function PortfolioScreen() {
                 height={200}
               />
             </div>
-            <h3 className="font-bold text-xs text-gray-400">{record.title}</h3>
+            <h3 className="font-bold text-xs text-gray-400">
+              {t(record.title)}
+            </h3>
             <p className="opacity-90">
-              {truncate(record.description, { length: 140 })}
+              {truncate(t(record.description), { length: 140 })}
             </p>
             <p className="text-xs text-gray-400 mt-auto">
               {dayjs(record.createdAt).format("DD MMM YYYY")}
@@ -67,18 +70,20 @@ function PortfolioScreen() {
             )}
           >
             <div className="flex items-start justify-between gap-4">
-              <h3 className="text-xl font-bold">{selectedItem.title}</h3>
+              <h3 className="text-xl font-bold font-serif">
+                {t(selectedItem.title)}
+              </h3>
               <XIcon
                 className="min-h-5 min-w-5 cursor-pointer"
                 onClick={() => setSelectedItem(null)}
               />
             </div>
-            <div className="flex-1 flex-row flex max-md:flex-col max-h-[calc(100%-50px)]">
+            <div className="flex-1 flex-row flex max-md:flex-col max-h-[calc(100%-50px)] max-md:max-h-fit max-md:overflow-y-auto">
               <div
                 className={cn(
                   "details",
                   "scrollbar-transparent",
-                  "overflow-y-auto h-full max-md:h-fit max-md:w-full flex-1 flex-col gap-8 flex pe-4 pt-4"
+                  "md:overflow-y-auto h-full max-md:h-fit max-md:w-full flex-1 flex-col gap-8 flex pe-4 pt-4"
                 )}
               >
                 <div>
@@ -89,7 +94,16 @@ function PortfolioScreen() {
                   <span className="font-bold">
                     {capitalize(t("project description"))}
                   </span>
-                  <p>{selectedItem.description}</p>
+                  <p>
+                    {t(selectedItem.description)
+                      .split("\n")
+                      .map((line, index) => (
+                        <span key={index}>
+                          {line}
+                          <br />
+                        </span>
+                      ))}
+                  </p>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="font-bold">
@@ -116,7 +130,7 @@ function PortfolioScreen() {
                 className={cn(
                   "media",
                   "scrollbar-transparent",
-                  "overflow-y-auto h-full max-md:h-fit max-md:w-full w-[60%] flex-col gap-8 flex p-4"
+                  "md:overflow-y-auto h-full max-md:h-fit max-md:w-full w-[60%] flex-col gap-8 flex p-4"
                 )}
               >
                 {selectedItem.imagesUrls.map((imgUrl, i) => (
@@ -130,6 +144,9 @@ function PortfolioScreen() {
                       className="w-full h-full"
                       width={200}
                       height={200}
+                      loadingComponent={
+                        <SkeletonLoader className="h-[400px] max-sm:h-full w-full" />
+                      }
                     />
                   </div>
                 ))}

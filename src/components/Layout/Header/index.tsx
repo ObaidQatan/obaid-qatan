@@ -1,14 +1,13 @@
 import { Button } from "@mantine/core";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import useDarkMode from "../../../hooks/useDarkMode";
 import useDetectSmallScreen from "../../../hooks/useDetectSmallScreen";
+import React from "react";
+import LanguageSelector from "../language-selector";
 
 const Header = () => {
-  const { lang, t } = useTranslation("common");
-  const isArabic = lang === "ar";
-  const router = useRouter();
+  const { t } = useTranslation("common");
   const isMobile = useDetectSmallScreen();
   const { isDark, toggleColorScheme } = useDarkMode();
 
@@ -75,18 +74,8 @@ const Header = () => {
 
       {!isMobile && (
         <ul className="flex justify-end items-center grow">
-          <li className="mx-2">
-            <Link href={router.asPath} locale={isArabic ? "en" : "ar"}>
-              <a>
-                <Button
-                  variant="outline"
-                  color="gray"
-                  className="text-[#C3C3C3] hover:text-[#43D2D6]"
-                >
-                  {isArabic ? t("en") : t("ar")}
-                </Button>
-              </a>
-            </Link>
+          <li className="mx-2" dir="ltr">
+            <LanguageSelector />
           </li>
           <li className="mx-2">
             <Link href="/profile">

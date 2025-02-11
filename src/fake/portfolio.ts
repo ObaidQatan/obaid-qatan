@@ -72,8 +72,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/67563c44-69f3-4209-a912-b470b201f234",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/c4e14a6b-cfbc-4088-a0fc-3787502348e6",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/345bfe03-7a5c-4463-9d80-1a564958c94e",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/ec8be595-2421-42f3-8075-f01fbe2ab89a",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/fdfb96f1-8ad4-4f9a-94c7-1bfc67e213f9",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -94,8 +92,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/a0578ee9-11e1-4edb-bc53-ccd38f79a6b1",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/5ce0f9e8-70f0-4f61-ad13-a5ae448f3dd7",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/6ab8da33-a969-460e-95a3-3a73bc4d48e9",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/ec8be595-2421-42f3-8075-f01fbe2ab89a",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/f829eb46-3fa7-47f3-8c40-6dc578d303bd",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -103,7 +99,7 @@ export const portfolio: PortfolioItem[] = [
     id: "4",
     title: "A marketplace and showroom for local furniture",
     description:
-      "A platform that offers a digital marketplace and showroom for browsing and purchasing local furniture. It provides a virtual space to explore and select unique furniture pieces, ensuring users enjoy a seamless and engaging online shopping experience",
+      "A platform that offers a digital marketplace and showroom for browsing and purchasing local furniture by providing a virtual space to explore and select unique furniture pieces ensuring users enjoy a seamless and engaging online shopping experience",
     tags: [
       { name: "React" },
       { name: "Vite" },
@@ -120,17 +116,15 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/dd176c6e-98a1-4105-befb-b2d62fa91c6f",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/d13f702d-fca5-4438-a2f6-c6ba61275aa4",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/e9554cf2-343a-4476-81e6-48c84169c7ba",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/af413c37-d184-46c5-ae9a-147307244191",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/f19fffe0-9d5a-4d88-8544-036d8b45b52e",
     ],
     createdAt: new Date().toISOString(),
   },
   {
     id: "5",
     title:
-      "Medical Academy: A website with a blog, dashboard, and trainer program",
+      "Medical Academy is a website with a blog & dashboard and trainer program",
     description:
-      "Infinity Medical Academy is a leading provider of high-quality training and educational services in healthcare. It aims to empower individuals and organizations to achieve their professional and academic goals through innovative learning solutions and comprehensive training programs",
+      "Infinity Medical Academy is a leading provider of high quality training and educational services in healthcare aims to empower individuals and organizations to achieve their professional and academic goals through innovative learning solutions and comprehensive training programs",
     tags: [
       { name: "React" },
       { name: "Next.js" },
@@ -154,8 +148,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/db48671e-0ecf-4ff3-bdc5-acd79b59f770",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/76c0e172-b917-489f-8922-512175dbc515",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/3ad15bfb-f551-4faa-929d-48e33e103cf8",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/8c56ce95-95c6-49d4-8ad1-b8553d9625c3",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/f19fffe0-9d5a-4d88-8544-036d8b45b52e",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -178,26 +170,15 @@ export const portfolio: PortfolioItem[] = [
     imagesUrls: [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/1ab0a47d-af18-42d9-a9ec-bf72e680c644",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/bd610143-066f-4c6e-a1e6-039ec38c5ffb",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/8c56ce95-95c6-49d4-8ad1-b8553d9625c3",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/af413c37-d184-46c5-ae9a-147307244191",
     ],
     createdAt: new Date().toISOString(),
   },
   {
     id: "7",
     title:
-      "Volunteer organization: landing page, blog, donations, payment gateway",
-    description: `- Balkan Volunteer Organization: Landing page and dashboard for the blog, achievements, donations, and payment gateway.
-
-- The platform showcases completed charity projects ("Achievements") and ongoing projects open for donations.
-
-- Enables fundraising for open charity projects via the PayPal payment gateway.
-
-- Displays the association's identity, achievements, and contact information.
-
-- A blog for the association's posts.
-
-- An interactive admin dashboard for managing all platform features.`,
+      "Volunteer organization landing page & blog & donations & payment gateway",
+    description:
+      "Balkan Volunteer Organization Landing page and dashboard for the blog & achievements & donations & and payment gateway\n\nThe platform showcases completed charity projects called Achievements and ongoing projects open for donations\n\nEnables fundraising for open charity projects via the PayPal payment gateway\n\nDisplays the association's identity & achievements & contact information\n\nA blog for the association's posts\n\nAn interactive admin dashboard for managing all platform features",
     tags: [
       { name: "React" },
       { name: "Next.js" },
@@ -218,8 +199,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/27eaf16f-ae2d-4c5c-b440-1e0b56bd8131",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/5777be9f-de01-490c-9a5f-e767f9d6f37b",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/43a66774-46c7-43f4-a8c9-35f37f9897de",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/415a5ce6-046c-4db2-b5fe-2fe042989005",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/abdc7670-51bf-4560-b580-b4554170e970",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -260,8 +239,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/909498f8-8d77-48b1-aae0-a400aaf323aa",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/22532525-306f-4959-a39a-9e3d3e071dd7",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/75c65059-3646-4fe9-bf59-d55ee57ed1d2",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/2b0e269c-34fb-4d7d-a037-bbbfea0343d8",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/abdc7670-51bf-4560-b580-b4554170e970",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -280,8 +257,7 @@ export const portfolio: PortfolioItem[] = [
     thumbnailUrl:
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/77a9b11e-8a60-4ec4-be5a-6b0962fb73dd",
     imagesUrls: [
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/2b0e269c-34fb-4d7d-a037-bbbfea0343d8",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/415a5ce6-046c-4db2-b5fe-2fe042989005",
+      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/77a9b11e-8a60-4ec4-be5a-6b0962fb73dd",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -289,7 +265,7 @@ export const portfolio: PortfolioItem[] = [
     id: "10",
     title: "Job market",
     description:
-      "A job market website in both Arabic and English, built using React, Next.js",
+      "A job market website in both Arabic and English built using React Nextjs",
     tags: [
       { name: "React" },
       { name: "Next.js" },
@@ -302,8 +278,6 @@ export const portfolio: PortfolioItem[] = [
     imagesUrls: [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/af7ffafc-bdca-4e94-97d7-d273fabddb56",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/b95d2136-929c-446b-9940-c3dfe7030271",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/b62915f4-5a92-4dc7-82f8-668c984f342b",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/fd9fe98a-3c21-4a6a-ba54-6e74d3453abe",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -335,8 +309,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/61212598-de6a-41a3-b18c-9383188e67e3",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/aaca90d9-cf95-4c47-b247-baa0773d1b8c",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/ed7102c6-4349-45bf-9bfe-9c745ae3d974",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/88e4b182-9462-4de3-8c1e-27c84e79c00f",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/fd9fe98a-3c21-4a6a-ba54-6e74d3453abe",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -359,8 +331,6 @@ export const portfolio: PortfolioItem[] = [
     imagesUrls: [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/fb2c1dcf-2509-4c2c-ae48-fc3ae0b780df",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/b94c5ce0-97ef-4271-aee3-f91e0c2f554e",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/88e4b182-9462-4de3-8c1e-27c84e79c00f",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/b62915f4-5a92-4dc7-82f8-668c984f342b",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -381,8 +351,6 @@ export const portfolio: PortfolioItem[] = [
     imagesUrls: [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/4c1e8ef7-716f-43b8-9914-d4049d655bfd",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/e93b7ff2-ba28-4a99-96fa-09cb55979eff",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/7d6ca156-c8f7-4233-82b9-06ae8b3ccab1",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/1d9d1029-5e56-4b53-a226-ecf2d2845330",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -403,8 +371,6 @@ export const portfolio: PortfolioItem[] = [
     imagesUrls: [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/96335741-6bcf-4a88-9322-e14e072d0be2",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/05b89db9-f131-4283-917a-2e2fb7aacd11",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/eb48daed-e499-49fe-9c98-8bdb2abe9d56",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/1d9d1029-5e56-4b53-a226-ecf2d2845330",
     ],
     createdAt: new Date().toISOString(),
   },
@@ -427,8 +393,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/754b9e64-8a57-4b50-ad95-053dbb5bb84a",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/5aea1048-d1ac-455b-97b5-b8437bda1a3e",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/e97064e1-dff3-4acd-94af-a88a06484e71",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/eb48daed-e499-49fe-9c98-8bdb2abe9d56",
-      "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/7d6ca156-c8f7-4233-82b9-06ae8b3ccab1",
     ],
     createdAt: new Date().toISOString(),
   },

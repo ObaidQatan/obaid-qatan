@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import useDarkMode from "../../../hooks/useDarkMode";
+import LanguageSelector from "../language-selector";
 
 const SideBar = () => {
   const { t } = useTranslation("common");
@@ -55,21 +56,8 @@ const SideBar = () => {
       </div>
       {/* ------------- Conent Here-------------- */}
       <ul className="flex flex-col items-center w-[80%] top-4 absolute">
-        <li className="w-full py-1">
-          <Link href={router.asPath} locale={isArabic ? "en" : "ar"}>
-            <a>
-              <Button
-                variant="subtle"
-                color="gray"
-                className="!text-[#43D2D6]"
-                style={{
-                  width: "100%",
-                }}
-              >
-                {isArabic ? t("en") : t("ar")}
-              </Button>
-            </a>
-          </Link>
+        <li className="w-full py-1 text-center">
+          <LanguageSelector />
         </li>
         <li className="mx-2 w-full py-1">
           <Link href="/profile">
