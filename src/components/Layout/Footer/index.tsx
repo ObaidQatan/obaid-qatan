@@ -9,7 +9,7 @@ const Footer = ({
 }) => {
   return (
     <footer
-      className={`text-center p-2.5 border-t border-t-[#696969] text-[#C3C3C3] max-w-7xl w-full ${className}`}
+      className={`text-center p-2.5 border-t border-t-[#696969] text-[#C3C3C3] max-w-[1420px] w-full ${className}`}
     >
       {children}
     </footer>

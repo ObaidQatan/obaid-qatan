@@ -1,4 +1,4 @@
-const nextTranslate = require('next-translate')
+const nextTranslate = require("next-translate");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = nextTranslate({
@@ -6,10 +6,10 @@ const nextConfig = nextTranslate({
   swcMinify: true,
 
   i18n: {
-    locales: ['en', 'ar'],
-    defaultLocale: 'en',
+    locales: ["en", "ar", "id"],
+    defaultLocale: "en",
   },
-})
+});
 
 nextConfig.images = {
   domains: [
@@ -28,6 +28,6 @@ nextConfig.images = {
     "f.top4top.io",
     "g.top4top.io",
   ],
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
