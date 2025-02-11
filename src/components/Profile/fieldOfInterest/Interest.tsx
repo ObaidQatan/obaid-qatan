@@ -13,7 +13,7 @@ const Interest = ({ data }: { data: { interest: string; level: number } }) => {
           wordBreak: "break-word",
         }}
       >
-        {t(`fieldOfInterestContent.${camelCase(data.interest)}`)}:{" "}
+        {t(data.interest)}:{" "}
       </h3>
       <div className="h-8 flex-1">
         <NormaSkillBar value={data.level} />

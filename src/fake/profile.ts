@@ -111,7 +111,7 @@ export const fields: Field[] = [
           to: "4-1-2023",
         },
         content: WorkExperienceTimeLine6,
-      }
+      },
     ],
   },
   {
@@ -186,12 +186,20 @@ export const personalInformation: PersonalInfoField[] = [
 
 export const fieldOfInterest: InterestField[] = [
   {
-    interest: "Software Development",
+    interest: "Web Development",
     level: 5,
   },
   {
-    interest: "Web Development",
-    level: 4,
+    interest: "Mobile Development",
+    level: 5,
+  },
+  {
+    interest: "Building Startups From A to Z",
+    level: 5,
+  },
+  {
+    interest: "AI Integration",
+    level: 5,
   },
 ];
 
@@ -216,7 +224,7 @@ export const favouriteSkills: Skill[][] = [
       name: "GraphQL",
       img: "https://l.top4top.io/p_2451uyb0g4.png",
       link: "https://graphql.org/",
-    }
+    },
   ],
   [
     {
@@ -385,7 +393,7 @@ export const otherSkills: Skill[][] = [
       name: "Docusaurus",
       img: "https://c.top4top.io/p_2637mgnir1.png",
       link: "https://docusaurus.io/",
-    }
+    },
   ],
 ];
 

@@ -19,8 +19,10 @@
   },
   "fieldOfInterestContent": {
     "interest": "Interest",
-    "softwareDevelopment": "Software Development",
-    "webDevelopment": "Web Development"
+    "Software Development": "Software Development",
+    "Web Development": "Web Development",
+    "Mobile Development": "Mobile Development",
+    "AI Integration": "AI Integration"
   },
   "skill": {
     "javaScript": "JavaScript",
@@ -68,7 +70,7 @@
     "workedAtBobAppsTechCompanyForItSolutions": "Worked at Bob Apps Tech Company for IT Solutions",
     "fullStackWebDeveloper": "Full Stack Web Developer",
     "mevnStack": "MEVN Stack",
-    "webDevelopment": "Web Development",
+    "Web Development": "Web Development",
     "apIs": "APIs",
     "softwareConsultancy": "Software Consultancy",
     "personalTrainer": "Personal Trainer",

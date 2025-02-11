@@ -19,8 +19,10 @@
   },
   "fieldOfInterestContent": {
     "interest": "الاهتمام",
-    "softwareDevelopment": "تطوير البرمجيات",
-    "webDevelopment": "تطوير الويب"
+    "Software Development": "تطوير البرمجيات",
+    "Web Development": "تطوير مواقع وتطبيقات الويب",
+    "Mobile Development": "تطوير تطبيقات الجوال",
+    "AI Integration": "التكامُل مع الذكاء الاصطناعي"
   },
   "skill": {
     "javaScript": "JavaScript",
@@ -68,7 +70,7 @@
     "workedAtBobAppsTechCompanyForItSolutions": "شركة بوب ابس لحلول تكنولوجيا المعلومات",
     "fullStackWebDeveloper": "مطور ويب فل ستاك",
     "mevnStack": "ستاك MEVN",
-    "webDevelopment": "تطوير الويب",
+    "Web Development": "تطوير الويب",
     "apIs": "واجهات برمجة التطبيقات (APIs)",
     "softwareConsultancy": "استشارات برمجية",
     "personalTrainer": "مدرب شخصي",
