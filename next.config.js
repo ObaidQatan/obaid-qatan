@@ -27,6 +27,9 @@ nextConfig.images = {
     "d.top4top.io",
     "f.top4top.io",
     "g.top4top.io",
+    "trpc.io",
+    "capacitorjs.com",
+    "avatars.githubusercontent.com",
   ],
 };
 

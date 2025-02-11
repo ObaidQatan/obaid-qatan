@@ -221,53 +221,53 @@ export const favouriteSkills: Skill[][] = [
       link: "https://nodejs.org/en/",
     },
     {
-      name: "GraphQL",
-      img: "https://l.top4top.io/p_2451uyb0g4.png",
-      link: "https://graphql.org/",
-    },
-  ],
-  [
-    {
-      name: "Astro",
-      img: "https://i.top4top.io/p_2451m5n6r1.png",
-      link: "https://astro.build/",
-    },
-    {
-      name: "Nest.js",
-      img: "https://a.top4top.io/p_2451gd4md5.png",
-      link: "https://nestjs.com/",
-    },
-    {
       name: "PostgreSQL",
       img: "https://d.top4top.io/p_2451rkpfk8.png",
       link: "https://www.postgresql.org/",
     },
-    {
-      name: "Prisma",
-      img: "https://e.top4top.io/p_2451iz5x39.png",
-      link: "https://www.prisma.io/",
-    },
   ],
   [
     {
-      name: "Electron",
-      img: "https://k.top4top.io/p_24518f9qo3.png",
-      link: "https://www.electronjs.org/",
+      name: "Capacitor.js",
+      img: "https://capacitorjs.com/docs/img/components/product-dropdown/logo-dark.png",
+      link: "https://capacitorjs.com/",
     },
     {
-      name: "React Native",
-      img: "https://j.top4top.io/p_2451r74tj2.png",
-      link: "https://reactnative.dev/",
+      name: "Tailwind CSS",
+      img: "https://l.top4top.io/p_24514xxow7.png",
+      link: "https://tailwindcss.com/",
+    },
+    {
+      name: "ShadCN UI",
+      img: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
+      link: "https://ui.shadcn.com/",
     },
     {
       name: "Supabase",
       img: "https://j.top4top.io/p_263731n2n1.png",
       link: "https://supabase.com/",
     },
+  ],
+  [
     {
-      name: "Tailwind CSS",
-      img: "https://l.top4top.io/p_24514xxow7.png",
-      link: "https://tailwindcss.com/",
+      name: "Prisma",
+      img: "https://e.top4top.io/p_2451iz5x39.png",
+      link: "https://www.prisma.io/",
+    },
+    {
+      name: "TypeScript",
+      img: "https://img.icons8.com/color/48/000000/typescript.png",
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      name: "Sass",
+      img: "https://img.icons8.com/color/48/000000/sass.png",
+      link: "https://sass-lang.com/",
+    },
+    {
+      name: "DigitalOcean",
+      img: "https://a.top4top.io/p_33290t5o91.png",
+      link: "https://www.digitalocean.com/",
     },
   ],
 ];
@@ -290,19 +290,9 @@ export const otherSkills: Skill[][] = [
       link: "https://www.w3schools.com/css/",
     },
     {
-      name: "TypeScript",
-      img: "https://img.icons8.com/color/48/000000/typescript.png",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
       name: "Vue.js",
       img: "https://img.icons8.com/color/48/000000/vue-js.png",
       link: "https://vuejs.org/",
-    },
-    {
-      name: "Sass",
-      img: "https://img.icons8.com/color/48/000000/sass.png",
-      link: "https://sass-lang.com/",
     },
     {
       name: "Bootstrap",
@@ -320,9 +310,29 @@ export const otherSkills: Skill[][] = [
       link: "https://www.docker.com/",
     },
     {
+      name: "Electron",
+      img: "https://k.top4top.io/p_24518f9qo3.png",
+      link: "https://www.electronjs.org/",
+    },
+    {
+      name: "React Native",
+      img: "https://j.top4top.io/p_2451r74tj2.png",
+      link: "https://reactnative.dev/",
+    },
+    {
       name: "EJS",
       img: "https://f.top4top.io/p_2451crrp01.png",
       link: "https://ejs.co/",
+    },
+    {
+      name: "Astro",
+      img: "https://i.top4top.io/p_2451m5n6r1.png",
+      link: "https://astro.build/",
+    },
+    {
+      name: "Nest.js",
+      img: "https://a.top4top.io/p_2451gd4md5.png",
+      link: "https://nestjs.com/",
     },
     {
       name: "Express.js",
@@ -388,6 +398,11 @@ export const otherSkills: Skill[][] = [
       name: "tRPC",
       img: "https://l.top4top.io/p_263759do21.png",
       link: "https://trpc.io/",
+    },
+    {
+      name: "GraphQL",
+      img: "https://l.top4top.io/p_2451uyb0g4.png",
+      link: "https://graphql.org/",
     },
     {
       name: "Docusaurus",
