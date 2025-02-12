@@ -461,7 +461,7 @@ export const linksGroups: LinksGroup[] = [
       {
         id: 3,
         name: "YouTube",
-        url: "https://www.youtube.com/channel/mobarmejAcademy/",
+        url: "https://www.youtube.com/@Noopejs/",
       },
       {
         id: 4,
@@ -478,11 +478,6 @@ export const linksGroups: LinksGroup[] = [
         id: 1,
         name: "Email",
         url: "mailto:ogaten27@gmail.com",
-      },
-      {
-        id: 2,
-        name: "Facebook",
-        url: "https://www.facebook.com/obead.gaten/",
       },
     ],
   },
