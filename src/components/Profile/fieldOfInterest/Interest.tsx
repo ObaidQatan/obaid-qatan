@@ -15,7 +15,7 @@ const Interest = ({ data }: { data: { interest: string; level: number } }) => {
       >
         {t(data.interest)}:{" "}
       </h3>
-      <div className="h-8 flex-1">
+      <div className="h-8 flex-1 mt-auto">
         <NormaSkillBar value={data.level} />
       </div>
     </div>

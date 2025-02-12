@@ -108,7 +108,15 @@ export const fields: Field[] = [
         id: 9,
         title: {
           from: "2-1-2023",
-          to: "4-1-2023",
+          to: "8-1-2023",
+        },
+        content: WorkExperienceTimeLine6,
+      },
+      {
+        id: 10,
+        title: {
+          from: "10-23-2024",
+          to: "Present",
         },
         content: WorkExperienceTimeLine6,
       },
@@ -146,7 +154,7 @@ export const fields: Field[] = [
         id: 12,
         title: {
           from: "12-10-2020",
-          to: "Present",
+          to: "10-24-2024",
         },
         content: EducationTimeLine4,
       },
@@ -225,13 +233,13 @@ export const favouriteSkills: Skill[][] = [
       img: "https://d.top4top.io/p_2451rkpfk8.png",
       link: "https://www.postgresql.org/",
     },
-  ],
-  [
     {
       name: "Capacitor.js",
       img: "https://capacitorjs.com/docs/img/components/product-dropdown/logo-dark.png",
       link: "https://capacitorjs.com/",
     },
+  ],
+  [
     {
       name: "Tailwind CSS",
       img: "https://l.top4top.io/p_24514xxow7.png",
@@ -247,8 +255,6 @@ export const favouriteSkills: Skill[][] = [
       img: "https://j.top4top.io/p_263731n2n1.png",
       link: "https://supabase.com/",
     },
-  ],
-  [
     {
       name: "Prisma",
       img: "https://e.top4top.io/p_2451iz5x39.png",
@@ -259,6 +265,8 @@ export const favouriteSkills: Skill[][] = [
       img: "https://img.icons8.com/color/48/000000/typescript.png",
       link: "https://www.typescriptlang.org/",
     },
+  ],
+  [
     {
       name: "Sass",
       img: "https://img.icons8.com/color/48/000000/sass.png",
@@ -484,13 +492,18 @@ export const linksGroups: LinksGroup[] = [
     links: [
       {
         id: 1,
-        name: "CV",
-        url: "https://sem4-algo.herokuapp.com/other/cv.pdf",
+        name: "Resume",
+        url: "https://e.top4top.io/f_MnTpoEFs3UK_4mfD7IAtvw/1739501649/3330vh6vt1.pdf",
       },
       {
         id: 2,
-        name: "Mobarmej Academy",
-        url: "https://mobarmejacademy.vercel.app/",
+        name: "Mostaql",
+        url: "https://mostaql.com/u/Obaid_Qatan",
+      },
+      {
+        id: 3,
+        name: "Upwork",
+        url: "https://www.upwork.com/freelancers/~01362e9dd3e6b6812b",
       },
     ],
   },

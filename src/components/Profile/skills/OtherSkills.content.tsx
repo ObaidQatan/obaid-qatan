@@ -23,7 +23,7 @@ const OtherSkillsContent = () => {
           cols={5}
           breakpoints={[{ maxWidth: 600, cols: 3 }]}
           key={i}
-          className="mb-5 p-2"
+          className="mb-5 py-2"
         >
           {collection.map((skill, j) => (
             <Link href={skill.link} key={j}>

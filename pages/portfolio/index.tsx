@@ -13,7 +13,7 @@ const Portfolio = () => {
   return (
     <Layout className="items-center flex-col">
       <Head>
-        <title>{_("appName") + "|" + t("portfolio")}</title>
+        <title>{_("appName") + " | " + t("portfolio")}</title>
       </Head>
 
       <PortfolioScreen />

@@ -16,7 +16,7 @@ const Profile = () => {
   return (
     <Layout className="items-center flex-col">
       <Head>
-        <title>{_("appName") + "|" + t("profile")}</title>
+        <title>{_("appName") + " | " + t("profile")}</title>
       </Head>
 
       <div className="w-[150px] h-[150px] rounded-full relative overflow-hidden z-10 shadow-md shadow-[#0000004d]">
@@ -55,7 +55,7 @@ const Profile = () => {
         <div
           key={f.id}
           id={f.name}
-          className="flex flex-col w-[90%] min-h-[200px] min-w-[300px] p-2 mt-4"
+          className="flex flex-col w-[90%] min-h-[200px] min-w-[300px] py-2 mt-4"
         >
           <h3 className="border-b border-b-cyan-500 text-cyan-500">
             {t(camelCase(f.name)).toUpperCase()}

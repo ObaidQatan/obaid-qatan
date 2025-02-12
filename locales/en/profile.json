@@ -17,13 +17,12 @@
     "location": "Location",
     "age": "Age"
   },
-  "fieldOfInterestContent": {
-    "interest": "Interest",
-    "Software Development": "Software Development",
-    "Web Development": "Web Development",
-    "Mobile Development": "Mobile Development",
-    "AI Integration": "AI Integration"
-  },
+  "interest": "Interest",
+  "Software Development": "Software Development",
+  "Web Development": "Web Development",
+  "Mobile Development": "Mobile Development",
+  "AI Integration": "AI Integration",
+  "Building Startups From A to Z": "Building Startups From A to Z",
   "skill": {
     "javaScript": "JavaScript",
     "css": "CSS",
@@ -70,7 +69,7 @@
     "workedAtBobAppsTechCompanyForItSolutions": "Worked at Bob Apps Tech Company for IT Solutions",
     "fullStackWebDeveloper": "Full Stack Web Developer",
     "mevnStack": "MEVN Stack",
-    "Web Development": "Web Development",
+    "webDevelopment": "Web Development",
     "apIs": "APIs",
     "softwareConsultancy": "Software Consultancy",
     "personalTrainer": "Personal Trainer",
@@ -80,7 +79,12 @@
     "frontendEngineer": "Frontend Engineer",
     "buildingRichUserInterfacesAndComponentsUsingReact": "Building rich user interfaces and components using React",
     "convertingUiDesignsIntoScalableReactComponents": "Converting UI designs into scalable React components",
-    "documentationPagesUsingDocusaurusAndReact": "Documentation pages using Docusaurus and React"
+    "documentationPagesUsingDocusaurusAndReact": "Documentation pages using Docusaurus and React",
+    "workingAtSaaSTech": "Working At SaaS Tech",
+    "leadSoftwareEngineer": "Lead Software Engineer",
+    "buildingStartupsAndProjectsFromAToZ": "Building startups and projects from A to Z",
+    "fixingEnhancingAndOptimizingSoftwareProducts": "Fixing, enhancing, and optimizing software products",
+    "leadingAndMentoringSoftwareDevelopersEnsuringPolishedSkillsUnderBestSoftwarePracticesAndPatterns": "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns"
   },
   "educationContent": {
     "alNobanSchool": "Al Noban School",
@@ -104,6 +108,9 @@
     "email": "Email",
     "facebook": "Facebook",
     "cv": "CV",
-    "mobarmejAcademy": "Mobarmej Academy"
+    "resume": "Resume",
+    "mobarmejAcademy": "Mobarmej Academy",
+    "mostaql": "Mostaql",
+    "upwork": "Upwork"
   }
 }

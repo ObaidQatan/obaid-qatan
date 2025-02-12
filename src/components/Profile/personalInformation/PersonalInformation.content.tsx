@@ -9,12 +9,12 @@ const PersonalInformationContent = () => {
   const isArabic = lang === "ar";
 
   return (
-    <table className="break-all break-words">
+    <table className="break-all break-words border">
       <tbody>
         {personalInformation.map((infoPair) => (
           <tr key={infoPair.property} className="border-b">
             <td
-              className="text-left w-20 p-1 font-bold"
+              className="text-start w-24 p-2 font-bold"
               style={{
                 wordBreak: "break-word",
               }}
@@ -22,7 +22,7 @@ const PersonalInformationContent = () => {
               {t("personalInformationContent." + camelCase(infoPair.property))}
             </td>
             <td
-              className="text-left p-1"
+              className="text-start p-1"
               style={{
                 wordBreak: "break-word",
               }}
