@@ -27,7 +27,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/62022890-c293-43d0-9e8e-064252c83a4b",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/45e12107-7584-4d6b-bf8c-6999644f03a7",
     ],
-    createdAt: new Date("12-20-2024").toISOString(),
+    createdAt: new Date("09-20-2023").toISOString(),
   },
   {
     id: "2",
@@ -73,7 +73,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/c4e14a6b-cfbc-4088-a0fc-3787502348e6",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/345bfe03-7a5c-4463-9d80-1a564958c94e",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("09-20-2023").toISOString(),
   },
   {
     id: "3",
@@ -93,7 +93,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/5ce0f9e8-70f0-4f61-ad13-a5ae448f3dd7",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/6ab8da33-a969-460e-95a3-3a73bc4d48e9",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("12-20-2023").toISOString(),
   },
   {
     id: "4",
@@ -117,7 +117,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/d13f702d-fca5-4438-a2f6-c6ba61275aa4",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/e9554cf2-343a-4476-81e6-48c84169c7ba",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("04-01-2023").toISOString(),
   },
   {
     id: "5",
@@ -149,7 +149,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/76c0e172-b917-489f-8922-512175dbc515",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/3ad15bfb-f551-4faa-929d-48e33e103cf8",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("09-30-2022").toISOString(),
   },
   {
     id: "6",
@@ -171,7 +171,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/1ab0a47d-af18-42d9-a9ec-bf72e680c644",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/bd610143-066f-4c6e-a1e6-039ec38c5ffb",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("12-16-2023").toISOString(),
   },
   {
     id: "7",
@@ -200,7 +200,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/5777be9f-de01-490c-9a5f-e767f9d6f37b",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/43a66774-46c7-43f4-a8c9-35f37f9897de",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("06-14-2024").toISOString(),
   },
   {
     id: "8",
@@ -240,7 +240,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/22532525-306f-4959-a39a-9e3d3e071dd7",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/75c65059-3646-4fe9-bf59-d55ee57ed1d2",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("10-04-2024").toISOString(),
   },
   {
     id: "9",
@@ -259,7 +259,7 @@ export const portfolio: PortfolioItem[] = [
     imagesUrls: [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/77a9b11e-8a60-4ec4-be5a-6b0962fb73dd",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("10-04-2022").toISOString(),
   },
   {
     id: "10",
@@ -279,7 +279,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/af7ffafc-bdca-4e94-97d7-d273fabddb56",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/b95d2136-929c-446b-9940-c3dfe7030271",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("10-14-2022").toISOString(),
   },
   {
     id: "11",
@@ -310,7 +310,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/aaca90d9-cf95-4c47-b247-baa0773d1b8c",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/ed7102c6-4349-45bf-9bfe-9c745ae3d974",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("05-01-2022").toISOString(),
   },
   {
     id: "12",
@@ -332,7 +332,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/fb2c1dcf-2509-4c2c-ae48-fc3ae0b780df",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/b94c5ce0-97ef-4271-aee3-f91e0c2f554e",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("01-07-2022").toISOString(),
   },
   {
     id: "13",
@@ -352,7 +352,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/4c1e8ef7-716f-43b8-9914-d4049d655bfd",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/e93b7ff2-ba28-4a99-96fa-09cb55979eff",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("10-30-2021").toISOString(),
   },
   {
     id: "14",
@@ -372,7 +372,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/96335741-6bcf-4a88-9322-e14e072d0be2",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/05b89db9-f131-4283-917a-2e2fb7aacd11",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("02-07-2020").toISOString(),
   },
   {
     id: "15",
@@ -394,6 +394,6 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/5aea1048-d1ac-455b-97b5-b8437bda1a3e",
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/e97064e1-dff3-4acd-94af-a88a06484e71",
     ],
-    createdAt: new Date().toISOString(),
+    createdAt: new Date("12-17-2019").toISOString(),
   },
 ];

@@ -8,25 +8,46 @@ const TimeLine6 = () => {
       <ul>
         <li>
           <h3 className="font-bold text-[20px]">
-            - {t(`workExperienceContent.${camelCase("Worked At Zevi AI")}`)}.
+            - {t(`workExperienceContent.${camelCase("Working At SaaS Tech")}`)}.
           </h3>
         </li>
         <li>
           <h3>
-            - {t(`workExperienceContent.${camelCase("Frontend Engineer")}`)}.
+            -{" "}
+            {t(`workExperienceContent.${camelCase("Lead Software Engineer")}`)}.
           </h3>
         </li>
         <li>
           <h3>
-            - {t(`workExperienceContent.${camelCase("Building rich user interfaces and components using React")}`)}.
+            -{" "}
+            {t(
+              `workExperienceContent.${camelCase(
+                "Building startups and projects from A to Z"
+              )}`
+            )}
+            .
           </h3>
         </li>
         <li>
-          <h3>- {t(`workExperienceContent.${camelCase("Converting UI designs into scalable React components")}`)}.</h3>
+          <h3>
+            -{" "}
+            {t(
+              `workExperienceContent.${camelCase(
+                "Fixing, enhancing, and optimizing software products"
+              )}`
+            )}
+            .
+          </h3>
         </li>
         <li>
           <h3>
-            - {t(`workExperienceContent.${camelCase("Documentation pages using Docusaurus and React")}`)}.
+            -{" "}
+            {t(
+              `workExperienceContent.${camelCase(
+                "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns"
+              )}`
+            )}
+            .
           </h3>
         </li>
       </ul>

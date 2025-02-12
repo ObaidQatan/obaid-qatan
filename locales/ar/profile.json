@@ -17,11 +17,12 @@
     "location": "الموقع",
     "age": "العمر"
   },
-  "fieldOfInterestContent": {
-    "interest": "الاهتمام",
-    "softwareDevelopment": "تطوير البرمجيات",
-    "webDevelopment": "تطوير الويب"
-  },
+  "interest": "الاهتمام",
+  "Software Development": "تطوير البرمجيات",
+  "Web Development": "تطوير مواقع وتطبيقات الويب",
+  "Mobile Development": "تطوير تطبيقات الجوال",
+  "AI Integration": "التكامُل مع الذكاء الاصطناعي",
+  "Building Startups From A to Z": "بناء المشاريع الناشئة من الألف إلى الياء",
   "skill": {
     "javaScript": "JavaScript",
     "css": "CSS",
@@ -78,7 +79,12 @@
     "frontendEngineer": "مهندس واجهات مستخدم",
     "buildingRichUserInterfacesAndComponentsUsingReact": "بناء واجهات مستخدم متطورة باستخدام React",
     "convertingUiDesignsIntoScalableReactComponents": "تحويل تصاميم واجهات المستخدم إلى مكونات React قابلة للتوسع",
-    "documentationPagesUsingDocusaurusAndReact": "صفحات التوثيق باستخدام Docusaurus و React"
+    "documentationPagesUsingDocusaurusAndReact": "صفحات التوثيق باستخدام Docusaurus و React",
+    "workingAtSaaSTech": "شركة ساس تك للحلول البرمجية",
+    "leadSoftwareEngineer": "مهندس برمجيات رئيسي",
+    "buildingStartupsAndProjectsFromAToZ": "بناء المشاريع الناشئة من الألف إلى الياء",
+    "fixingEnhancingAndOptimizingSoftwareProducts": "إصلاح وتحسين المنتجات البرمجية",
+    "leadingAndMentoringSoftwareDevelopersEnsuringPolishedSkillsUnderBestSoftwarePracticesAndPatterns": "قيادة وتوجيه مطوري البرمجيات، مما يضمن مهارات متطورة تحت أفضل الممارسات والأنماط البرمجية"
   },
   "educationContent": {
     "alNobanSchool": "مدرسة النوبان للتعليم الأساسي",
@@ -102,6 +108,9 @@
     "email": "البريد الالكتروني",
     "facebook": "فيسبوك",
     "cv": "السيرة ذاتية",
-    "mobarmejAcademy": "أكاديمية مبرمج"
+    "resume": "السيرة ذاتية",
+    "mobarmejAcademy": "أكاديمية مبرمج",
+    "mostaql": "منصة مستقل",
+    "upwork": "منصة Upwork"
   }
 }

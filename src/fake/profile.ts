@@ -108,10 +108,18 @@ export const fields: Field[] = [
         id: 9,
         title: {
           from: "2-1-2023",
-          to: "4-1-2023",
+          to: "8-1-2023",
         },
         content: WorkExperienceTimeLine6,
-      }
+      },
+      {
+        id: 10,
+        title: {
+          from: "10-23-2024",
+          to: "Present",
+        },
+        content: WorkExperienceTimeLine6,
+      },
     ],
   },
   {
@@ -146,7 +154,7 @@ export const fields: Field[] = [
         id: 12,
         title: {
           from: "12-10-2020",
-          to: "Present",
+          to: "10-24-2024",
         },
         content: EducationTimeLine4,
       },
@@ -186,12 +194,20 @@ export const personalInformation: PersonalInfoField[] = [
 
 export const fieldOfInterest: InterestField[] = [
   {
-    interest: "Software Development",
+    interest: "Web Development",
     level: 5,
   },
   {
-    interest: "Web Development",
-    level: 4,
+    interest: "Mobile Development",
+    level: 5,
+  },
+  {
+    interest: "Building Startups From A to Z",
+    level: 5,
+  },
+  {
+    interest: "AI Integration",
+    level: 5,
   },
 ];
 
@@ -213,43 +229,26 @@ export const favouriteSkills: Skill[][] = [
       link: "https://nodejs.org/en/",
     },
     {
-      name: "GraphQL",
-      img: "https://l.top4top.io/p_2451uyb0g4.png",
-      link: "https://graphql.org/",
-    }
-  ],
-  [
-    {
-      name: "Astro",
-      img: "https://i.top4top.io/p_2451m5n6r1.png",
-      link: "https://astro.build/",
-    },
-    {
-      name: "Nest.js",
-      img: "https://a.top4top.io/p_2451gd4md5.png",
-      link: "https://nestjs.com/",
-    },
-    {
       name: "PostgreSQL",
       img: "https://d.top4top.io/p_2451rkpfk8.png",
       link: "https://www.postgresql.org/",
     },
     {
-      name: "Prisma",
-      img: "https://e.top4top.io/p_2451iz5x39.png",
-      link: "https://www.prisma.io/",
+      name: "Capacitor.js",
+      img: "https://capacitorjs.com/docs/img/components/product-dropdown/logo-dark.png",
+      link: "https://capacitorjs.com/",
     },
   ],
   [
     {
-      name: "Electron",
-      img: "https://k.top4top.io/p_24518f9qo3.png",
-      link: "https://www.electronjs.org/",
+      name: "Tailwind CSS",
+      img: "https://l.top4top.io/p_24514xxow7.png",
+      link: "https://tailwindcss.com/",
     },
     {
-      name: "React Native",
-      img: "https://j.top4top.io/p_2451r74tj2.png",
-      link: "https://reactnative.dev/",
+      name: "ShadCN UI",
+      img: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
+      link: "https://ui.shadcn.com/",
     },
     {
       name: "Supabase",
@@ -257,9 +256,26 @@ export const favouriteSkills: Skill[][] = [
       link: "https://supabase.com/",
     },
     {
-      name: "Tailwind CSS",
-      img: "https://l.top4top.io/p_24514xxow7.png",
-      link: "https://tailwindcss.com/",
+      name: "Prisma",
+      img: "https://e.top4top.io/p_2451iz5x39.png",
+      link: "https://www.prisma.io/",
+    },
+    {
+      name: "TypeScript",
+      img: "https://img.icons8.com/color/48/000000/typescript.png",
+      link: "https://www.typescriptlang.org/",
+    },
+  ],
+  [
+    {
+      name: "Sass",
+      img: "https://img.icons8.com/color/48/000000/sass.png",
+      link: "https://sass-lang.com/",
+    },
+    {
+      name: "DigitalOcean",
+      img: "https://a.top4top.io/p_33290t5o91.png",
+      link: "https://www.digitalocean.com/",
     },
   ],
 ];
@@ -282,19 +298,9 @@ export const otherSkills: Skill[][] = [
       link: "https://www.w3schools.com/css/",
     },
     {
-      name: "TypeScript",
-      img: "https://img.icons8.com/color/48/000000/typescript.png",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
       name: "Vue.js",
       img: "https://img.icons8.com/color/48/000000/vue-js.png",
       link: "https://vuejs.org/",
-    },
-    {
-      name: "Sass",
-      img: "https://img.icons8.com/color/48/000000/sass.png",
-      link: "https://sass-lang.com/",
     },
     {
       name: "Bootstrap",
@@ -312,9 +318,29 @@ export const otherSkills: Skill[][] = [
       link: "https://www.docker.com/",
     },
     {
+      name: "Electron",
+      img: "https://k.top4top.io/p_24518f9qo3.png",
+      link: "https://www.electronjs.org/",
+    },
+    {
+      name: "React Native",
+      img: "https://j.top4top.io/p_2451r74tj2.png",
+      link: "https://reactnative.dev/",
+    },
+    {
       name: "EJS",
       img: "https://f.top4top.io/p_2451crrp01.png",
       link: "https://ejs.co/",
+    },
+    {
+      name: "Astro",
+      img: "https://i.top4top.io/p_2451m5n6r1.png",
+      link: "https://astro.build/",
+    },
+    {
+      name: "Nest.js",
+      img: "https://a.top4top.io/p_2451gd4md5.png",
+      link: "https://nestjs.com/",
     },
     {
       name: "Express.js",
@@ -382,10 +408,15 @@ export const otherSkills: Skill[][] = [
       link: "https://trpc.io/",
     },
     {
+      name: "GraphQL",
+      img: "https://l.top4top.io/p_2451uyb0g4.png",
+      link: "https://graphql.org/",
+    },
+    {
       name: "Docusaurus",
       img: "https://c.top4top.io/p_2637mgnir1.png",
       link: "https://docusaurus.io/",
-    }
+    },
   ],
 ];
 
@@ -461,13 +492,18 @@ export const linksGroups: LinksGroup[] = [
     links: [
       {
         id: 1,
-        name: "CV",
-        url: "https://sem4-algo.herokuapp.com/other/cv.pdf",
+        name: "Resume",
+        url: "https://e.top4top.io/f_MnTpoEFs3UK_4mfD7IAtvw/1739501649/3330vh6vt1.pdf",
       },
       {
         id: 2,
-        name: "Mobarmej Academy",
-        url: "https://mobarmejacademy.vercel.app/",
+        name: "Mostaql",
+        url: "https://mostaql.com/u/Obaid_Qatan",
+      },
+      {
+        id: 3,
+        name: "Upwork",
+        url: "https://www.upwork.com/freelancers/~01362e9dd3e6b6812b",
       },
     ],
   },

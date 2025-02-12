@@ -17,11 +17,12 @@
     "location": "Lokasi",
     "age": "Usia"
   },
-  "fieldOfInterestContent": {
-    "interest": "Minat",
-    "softwareDevelopment": "Pengembangan Perangkat Lunak",
-    "webDevelopment": "Pengembangan Web"
-  },
+  "interest": "Minat",
+  "Software Development": "Pengembangan Perangkat Lunak",
+  "Web Development": "Pengembangan Web",
+  "Mobile Development": "Pengembangan Aplikasi Seluler",
+  "AI Integration": "Integrasi Kecerdasan Buatan",
+  "Building Startups From A to Z": "Membangun Startup Dari A hingga Z",
   "skill": {
     "javaScript": "JavaScript",
     "css": "CSS",
@@ -78,7 +79,12 @@
     "frontendEngineer": "Insinyur Frontend",
     "buildingRichUserInterfacesAndComponentsUsingReact": "Membangun Antarmuka Pengguna dan Komponen yang Kaya Menggunakan React",
     "convertingUiDesignsIntoScalableReactComponents": "Mengubah Desain UI Menjadi Komponen React yang Dapat Diskala",
-    "documentationPagesUsingDocusaurusAndReact": "Halaman Dokumentasi Menggunakan Docusaurus dan React"
+    "documentationPagesUsingDocusaurusAndReact": "Halaman Dokumentasi Menggunakan Docusaurus dan React",
+    "workingAtSaaSTech": "Bekerja di SaaS Tech",
+    "leadSoftwareEngineer": "Insinyur Perangkat Lunak Utama",
+    "buildingStartupsAndProjectsFromAToZ": "Membangun startup dan proyek dari A hingga Z",
+    "fixingEnhancingAndOptimizingSoftwareProducts": "Memperbaiki, meningkatkan, dan mengoptimalkan produk perangkat lunak",
+    "leadingAndMentoringSoftwareDevelopersEnsuringPolishedSkillsUnderBestSoftwarePracticesAndPatterns": "Memimpin dan membimbing pengembang perangkat lunak, memastikan keterampilan yang halus di bawah praktik dan pola perangkat lunak terbaik"
   },
   "educationContent": {
     "alNobanSchool": "Sekolah Al Noban",
@@ -101,7 +107,9 @@
     "instagram": "Instagram",
     "email": "Email",
     "facebook": "Facebook",
-    "cv": "CV",
-    "mobarmejAcademy": "Akademi Mobarmej"
+    "resume": "CV",
+    "mobarmejAcademy": "Akademi Mobarmej",
+    "mostaql": "Mostaql",
+    "upwork": "Upwork"
   }
 }
