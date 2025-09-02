@@ -43,6 +43,18 @@ const Layout = ({
             {t("obaidQatanEn")}
           </a>
         </Link>
+        <ul className="flex items-center gap-3">
+          <li>
+            <Link href="/terms-and-conditions">
+              <a className="underline text-[#43D2D6]">
+                {t("termsAndConditions")}
+              </a>
+            </Link>
+          </li>
+          <Link href="/privacy-policy">
+            <a className="underline text-[#43D2D6]">{t("privacyPolicy")}</a>
+          </Link>
+        </ul>
       </Footer>
     </PageWrapper>
   );
