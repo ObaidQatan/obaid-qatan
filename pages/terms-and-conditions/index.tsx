@@ -73,12 +73,11 @@ All projects follow a **milestone-based payment plan**, typically structured as:
 >| **Note:** The payment structure can be overridden in case of a mutually agreed contract.
 
 ### **3.2 Payment Methods**
-Accepted methods:
-- **Western Union**.
-- **PayPal (Friends & Family):** PayPal transaction fee may apply.
-- **Bank Wire Transfer:** Local/Cross-board tax adjustments may apply.
-- **Mostaql:** Subject to Mostaql terms and conditions.
-- **Payment Gateway Portal:** Local/Cross-board taxes and tax adjustments may apply.
+For your convenience, payment options include:
+
+- **Bank Wire Transfer** (for direct bank-to-bank payments)
+- **Mostaql** (for clients using the platform; subject to its terms)
+- **Secure Online Payments** (credit cards, PayPal, Apple Pay, and more — powered by a trusted global payment processor)
 
 All payments are final and non-refundable once a milestone is completed, as per the Contract.
 
@@ -105,10 +104,16 @@ Refunds may be considered **only if**:
 
 In such cases, a partial refund may be issued for **undelivered milestones**, minus any work completed.
 
-### **4.3 PayPal Disputes**
-- If a Client initiates a **PayPal dispute or chargeback** after a milestone is completed, it will be contested.
-- The Developer reserves the right to suspend delivery, withhold source code, and pursue legal action if a dispute is deemed invalid.
-- PayPal (Goods & Services) does not comply with the refund policy, therefore, it will not be accepted as a payment method -as of the current time.
+### **4.3 Payment Disputes & Chargebacks**
+
+When payments are processed through **Paddle**, as the Merchant of Record, Paddle handles all customer disputes, chargebacks, and fraud investigations in accordance with its [User Agreement](https://paddle.com/legal/user-agreement/) and [Acceptable Use Policy](https://paddle.com/legal/acceptable-use-policy/).
+
+- I commit to delivering the services as outlined in the Contract.
+- If a dispute is initiated, I will cooperate fully with Paddle by providing necessary documentation.
+- Chargebacks filed **after milestone delivery** may be contested by Paddle if they violate the terms of service.
+- In cases of invalid or abusive disputes, Paddle may take appropriate action, including suspension of buyer privileges.
+
+For payments made outside of Paddle (e.g., bank transfers or Mostaql), standard contractual terms apply, and unresolved conflicts may be subject to dispute resolution as outlined in the Contract.
 
 ---
 
