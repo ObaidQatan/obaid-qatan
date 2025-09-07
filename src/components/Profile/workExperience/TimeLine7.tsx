@@ -8,17 +8,22 @@ const TimeLine6 = () => {
       <ul>
         <li>
           <h3 className="font-bold text-[20px]">
-            - {t(`workExperienceContent.${camelCase("Worked At Zevi Ai")}`)}.
+            - {t(`workExperienceContent.${camelCase("Working At SaaS Tech")}`)}.
           </h3>
         </li>
         <li>
-          <h3>- {t(`workExperienceContent.frontendEngineer`)}.</h3>
+          <h3>
+            -{" "}
+            {t(`workExperienceContent.${camelCase("Lead Software Engineer")}`)}.
+          </h3>
         </li>
         <li>
           <h3>
             -{" "}
             {t(
-              `workExperienceContent.buildingRichUserInterfacesAndComponentsUsingReact`
+              `workExperienceContent.${camelCase(
+                "Building startups and projects from A to Z"
+              )}`
             )}
             .
           </h3>
@@ -27,7 +32,9 @@ const TimeLine6 = () => {
           <h3>
             -{" "}
             {t(
-              `workExperienceContent.convertingUiDesignsIntoScalableReactComponents`
+              `workExperienceContent.${camelCase(
+                "Fixing, enhancing, and optimizing software products"
+              )}`
             )}
             .
           </h3>
@@ -36,7 +43,9 @@ const TimeLine6 = () => {
           <h3>
             -{" "}
             {t(
-              `workExperienceContent.documentationPagesUsingDocusaurusAndReact`
+              `workExperienceContent.${camelCase(
+                "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns"
+              )}`
             )}
             .
           </h3>

@@ -13,6 +13,7 @@ import WorkExperienceTimeLine3 from "../components/Profile/workExperience/TimeLi
 import WorkExperienceTimeLine4 from "../components/Profile/workExperience/TimeLine4";
 import WorkExperienceTimeLine5 from "../components/Profile/workExperience/TimeLine5";
 import WorkExperienceTimeLine6 from "../components/Profile/workExperience/TimeLine6";
+import WorkExperienceTimeLine7 from "../components/Profile/workExperience/TimeLine7";
 import { EducationField } from "../types/EducationField";
 import { Field } from "../types/Field";
 import { InterestField } from "../types/InterestField";
@@ -118,7 +119,7 @@ export const fields: Field[] = [
           from: "10-23-2024",
           to: "Present",
         },
-        content: WorkExperienceTimeLine6,
+        content: WorkExperienceTimeLine7,
       },
     ],
   },
