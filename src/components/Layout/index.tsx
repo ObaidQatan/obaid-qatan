@@ -1,7 +1,5 @@
 import { useHotkeys } from "@mantine/hooks";
 import useTranslation from "next-translate/useTranslation";
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 import useDarkMode from "../../hooks/useDarkMode";
@@ -11,7 +9,6 @@ import Header from "./Header";
 import Main from "./Main";
 import PageWrapper from "./PageWrapper";
 import SideBar from "./SideBar";
-import { cn } from "../../utils";
 
 const Layout = ({
   children,
@@ -45,10 +42,15 @@ const Layout = ({
           </a>
         </Link>
         <div
-          className={cn(
-            "flex flex-col gap-2 w-full items-start text-black",
-            isDark && "text-white"
-          )}
+          className={
+            //   cn(
+            //   "flex flex-col gap-2 w-full items-start text-black",
+            //   isDark && "text-white"
+            // )
+            `flex flex-col gap-2 w-full items-start ${
+              isDark ? "text-white" : "text-black"
+            }`
+          }
         >
           <h3 className="text-lg font-bold text-cyan-500">{t("myServices")}</h3>
           <div></div>
