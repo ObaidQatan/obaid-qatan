@@ -11,6 +11,7 @@ import Header from "./Header";
 import Main from "./Main";
 import PageWrapper from "./PageWrapper";
 import SideBar from "./SideBar";
+import { cn } from "../../utils";
 
 const Layout = ({
   children,
@@ -43,6 +44,22 @@ const Layout = ({
             {t("obaidQatanEn")}
           </a>
         </Link>
+        <div
+          className={cn(
+            "flex flex-col gap-2 w-full items-start text-black",
+            isDark && "text-white"
+          )}
+        >
+          <h3 className="text-lg font-bold text-cyan-500">{t("myServices")}</h3>
+          <div></div>
+          <Link href="/pricing/mco">
+            <a className="hover:underline">{t("managedCloudOperations")}</a>
+          </Link>
+          <Link href="/pricing/sam">
+            <a className="hover:underline">{t("supportAndMaintenance")}</a>
+          </Link>
+        </div>
+        <br />
         <ul className="flex items-center gap-3">
           <li>
             <Link href="/terms-and-conditions">

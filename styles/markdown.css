@@ -51,6 +51,11 @@
     text-align: left;
 }
 
+[dir="rtl"] .markdown-content th,
+.markdown-content td {
+    text-align: right;
+}
+
 .markdown-content th {
     background-color: #00ffff58;
 }
