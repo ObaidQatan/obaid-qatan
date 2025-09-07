@@ -1,6 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
-import Layout from "../../src/components/Layout";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
