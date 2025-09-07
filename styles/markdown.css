@@ -81,3 +81,7 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.markdown-content hr {
+    margin: 20px 0;
+}
