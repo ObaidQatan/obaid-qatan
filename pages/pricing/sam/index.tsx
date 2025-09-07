@@ -2,10 +2,128 @@ import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import LanguageSelector from "../../../src/components/Layout/language-selector";
 
 const SupportAndMaintenancePlans = () => {
-  const { t: _ } = useTranslation("common");
-  const content = `
+  const { t: _, lang } = useTranslation("common");
+  const content =
+    lang === "ar"
+      ? `
+# الدعم والصيانة
+
+حافظ على تطبيقك آمناً وذو أداء جيد مع دعم احترافي مستمر.
+
+بعد الإطلاق، ما زال تطبيقك يحتاج إلى رعاية: إصلاح الأخطاء، التحديثات، وتحسينات بسيطة. أقدم خططاً منظمة للصيانة لضمان سير العمل بسلاسة.
+
+> **ملاحظة:** في الوقت الحالي، تقتصر خطط الدعم والصيانة على المشاريع التي قمنا ببنائها نحن.
+
+---
+
+#### 🟢 **خطة الصيانة المنتظمة
+
+مثالية للعملاء الذين يرغبون في الاطمئنان بعد الإطلاق. تشمل إصلاح الأخطاء، والتحديثات الأمنية، واستجابات منتظمة للحفاظ على استقرار تطبيقك.
+
+**✅ ما يشمله:**
+- إصلاح الأخطاء (المشاكل بعد الإطلاق)
+- التصحيحات الأمنية (الاعتماديات، الأطر البرمجية)
+- تحديثات بسيطة (تحسينات أو تعديلات صغيرة)
+- مراقبة الأداء
+- استجابة الدعم خلال 24 ساعة عمل
+- فحص صحي ربع سنوي
+
+| دورة الفوترة | السعر الشهري | الإجمالي المدفوع | التوفير |
+|--------------|-------------|------------|------|
+| شهريًا | 120.40 دولارًا | 120.40 دولارًا | – |
+| كل 6 أشهر | 89.30 دولارًا | 535.80 دولارًا | ~26% |
+| **سنوياً** | **83.34 دولارًا** | **1,000.08 دولارًا** | **~30%** |
+
+---
+
+#### 🔵 **خطة "خليها علينا"**
+*استجابة أسرع وصيانة استباقية للمشاريع*
+
+مخصصة للعملاء الذين يحتاجون إلى استجابة أسرع، وموثوقية أعلى، ومعالجة أولوية للتحديثات والمشكلات.
+
+**✅ ما يشمله:**
+##### كل ما في خطة الرعاية المنتظمة، بالإضافة إلى:
+- استجابة أولوية خلال **12 ساعة عمل**
+- تحديثات منتظمة للاعتماديات
+- إعداد نشر بدون توقف
+- مراجعة شهرية للأداء
+- حتى **ساعتين شهريًا** من تحسينات الميزات البسيطة (مثل تعديلات النماذج، تحديثات الواجهة)
+- فحوصات صحية أسبوعية
+- تنسيق الدعم في الحالات الطارئة
+
+| دورة الفوترة | السعر الشهري | الإجمالي المدفوع | التوفير |
+|--------------|---------------|------------|------|
+| شهريًا | 289.02 دولارًا | 289.02 دولارًا | – |
+| كل 6 أشهر | 214.45 دولارًا | 1,286.70 دولارًا | ~26% |
+| **سنوياً** | **200.00 دولارًا** | **2,400.00 دولارًا** | **~31%** |
+
+[اتصل بي →](mailto:ogaten27@gmail.com)
+
+---
+*للاطلاع على تفاصيل نطاق الخدمة وشروط الدفع والدعم، يرجى مراجعة [الشروط والأحكام](/terms-and-conditions) و [سياسة الخصوصية](/privacy-policy).*
+`
+      : lang === "id"
+      ? `
+# Pembantu dan Pemeliharaan
+
+Jaga aplikasi Anda tetap aman dan berfungsi dengan dukungan profesional yang berkelanjutan.
+
+Setelah peluncuran, aplikasi Anda tetap membutuhkan perawatan: perbaikan bug, pembaruan, dan penyempurnaan kecil. Saya menawarkan paket pemeliharaan terstruktur agar semuanya tetap berjalan lancar.
+
+> **Catatan:** Saat ini, paket dukungan dan pemeliharaan hanya tersedia untuk proyek-proyek yang telah kami bangun.
+
+---
+
+#### 🟢 **Paket Perawatan Rutin**
+
+Ideal bagi klien yang menginginkan ketenangan setelah peluncuran. Termasuk perbaikan bug, pembaruan keamanan, dan respons tepat waktu untuk menjaga stabilitas aplikasi Anda.
+
+**✅ Yang Termasuk:**
+- Perbaikan bug (masalah setelah peluncuran)
+- Pembaruan keamanan (dependensi, framework)
+- Pembaruan kecil (penyempurnaan atau penyesuaian minor)
+- Pemantauan kinerja
+- Respons dukungan dalam waktu **24 jam kerja**
+- Pemeriksaan kesehatan berkala tiap 3 bulan
+
+| Siklus Penagihan | Harga Bulanan | Total Dibayar | Hemat |
+|------------------|-------------|------------|------|
+| Bulanan | $120,40 | $120,40 | – |
+| Setiap 6 Bulan | $89,30 | $535,80 | ~26% |
+| **Tahunan** | **$83,34** | **$1.000,08** | **~30%** |
+
+---
+
+#### 🔵 **Paket Kami Siap Mendukung Anda**
+*Respons lebih cepat dan pemeliharaan proaktif untuk aplikasi penting*
+
+Untuk klien yang membutuhkan penanganan lebih cepat, keandalan lebih tinggi, serta prioritas dalam pembaruan dan penanganan masalah.
+
+**✅ Yang Termasuk:**
+##### Semua fitur dalam Paket Perawatan Rutin, ditambah:
+- Respons prioritas dalam **12 jam kerja**
+- Pembaruan dependensi rutin
+- Pengaturan deployment tanpa downtime
+- Tinjauan kinerja bulanan
+- Hingga **2 jam/bulan** untuk peningkatan fitur kecil (misalnya penyesuaian form, pembaruan UI)
+- Pemeriksaan kesehatan mingguan
+- Koordinasi dukungan darurat
+
+| Siklus Penagihan | Harga Bulanan | Total Dibayar | Hemat |
+|------------------|---------------|------------|------|
+| Bulanan | $289,02 | $289,02 | – |
+| Setiap 6 Bulan | $214,45 | $1.286,70 | ~26% |
+| **Tahunan** | **$200,00** | **$2.400,00** | **~31%** |
+
+[Saya Ingin Dukungan →](mailto:ogaten27@gmail.com)
+
+---
+*Untuk detail cakupan layanan, ketentuan pembayaran, dan dukungan, silakan baca [Syarat dan Ketentuan](/terms-and-conditions) serta [Kebijakan Privasi](/privacy-policy).*
+`
+      : `
 # Support & Maintenance
 
 Keep your application secure and functional with professional ongoing support.
@@ -64,13 +182,17 @@ For clients who need faster turnaround, higher reliability, and priority handlin
 `;
 
   return (
-    <section dir="ltr" className="bg-[#03101c] text-white p-4">
+    <section
+      dir={lang === "ar" ? "rtl" : "ltr"}
+      className="bg-[#03101c] text-white p-4"
+    >
       <article className="markdown-content">
         <Head>
           <title>
             {_("appName") + " | " + _("managedCloudOperationsPlans")}
           </title>
         </Head>
+        <LanguageSelector />
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </article>
     </section>
