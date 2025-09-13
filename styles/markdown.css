@@ -52,7 +52,7 @@
 }
 
 [dir="rtl"] .markdown-content th,
-.markdown-content td {
+[dir="rtl"] .markdown-content td {
     text-align: right;
 }
 

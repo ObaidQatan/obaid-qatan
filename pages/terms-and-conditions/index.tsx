@@ -14,7 +14,7 @@ const TermsAndConditions = () => {
 **Website:** [obaid.saas-tech.net](https://obaid.saas-tech.net)  
 **Contact:** ogaten27@gmail.com
 
-Welcome to **Obaid Qatan**, a freelance software development service based in **Indonesia**. By engaging with me for custom software development, web applications, mobile apps, or related services (collectively, the “Services”), you agree to the following Terms and Conditions (“Terms”). These Terms form a legally binding agreement between you (“Client”) and me (“Developer”).
+Welcome to **Mr. Obaid Qatan**'s page, a freelancer who provider software development services based in **Indonesia**. By engaging with me for custom software development, web applications, mobile apps, or related services (collectively, the “Services”), you agree to the following Terms and Conditions (“Terms”). These Terms form a legally binding agreement between you (“Client”) and me (“Developer”).
 
 If you do not agree with any part of these Terms, please do not proceed with the engagement.
 
@@ -25,10 +25,12 @@ If you do not agree with any part of these Terms, please do not proceed with the
 The Developer provides custom software development services, including but not limited to:
 - Web and mobile application development
 - UI/UX design
-- Backend and database architecture
+- Backend and database architecture design
 - API integration
 - Technical documentation
-- Post-launch support (optional)
+- Post-launch support & maintenance
+- Managed Cloud Operations
+- Technical consultancy
 
 All Services are delivered according to a **project-specific agreement** (the “Contract”), which outlines:
 - Project scope
@@ -51,7 +53,7 @@ This Terms and Conditions page applies to all engagements unless otherwise state
   - Milestone-based timeline
   - Payment schedule
   - Intellectual property terms
-  - Support and hosting options
+  - Support and managed cloud operations options
 
 Verbal discussions or emails do not constitute a binding agreement.
 
@@ -65,7 +67,7 @@ All projects follow a **milestone-based payment plan**, typically structured as:
 | Payment Stage | Percentage | Due |
 |---------------|------------|-----|
 | Operational Costs | 20% | Upon contract signing |
-| Pre-Midway Payment | 25% | After 25% of UI/UX and backend completion |
+| Pre-Midway Payment | 25% | After 25% of UI/UX and database architecture |
 | Midway Payment | 25% | After UI/UX and backend phases are complete |
 | Handing Payment | 30% | Upon final delivery of the product |
 
@@ -76,9 +78,11 @@ For your convenience, payment options include:
 
 - **Bank Wire Transfer** (for direct bank-to-bank payments)
 - **Mostaql** (for clients using the platform; subject to its terms)
-- **Secure Online Payments** (credit cards, PayPal, Apple Pay, and more — powered by a trusted global payment processor)
+- **Merchant of Record** (credit cards, PayPal, Apple Pay, and more — powered by a trusted global payment processor)
 
 All payments are final and non-refundable once a milestone is completed, as per the Contract.
+
+>| **Note:** Gumroad is the Merchant of Record I use at the moment. However, I reserve the right to change the payment processor in the future. My terms and conditions will be updated accordingly.
 
 ### **3.3 Late Payments**
 - Work will be paused if a payment is overdue by more than **5 business days**.
@@ -105,14 +109,14 @@ In such cases, a partial refund may be issued for **undelivered milestones**, mi
 
 ### **4.3 Payment Disputes & Chargebacks**
 
-When payments are processed through **Paddle**, as the Merchant of Record, Paddle handles all customer disputes, chargebacks, and fraud investigations in accordance with its [User Agreement](https://paddle.com/legal/user-agreement/) and [Acceptable Use Policy](https://paddle.com/legal/acceptable-use-policy/).
+When payments are processed through **Gumroad**, as the Merchant of Record, Gumroad handles all customer disputes, chargebacks, and fraud investigations in accordance with its [Terms of Service Agreement](https://gumroad.com/terms).
 
 - I commit to delivering the services as outlined in the Contract.
-- If a dispute is initiated, I will cooperate fully with Paddle by providing necessary documentation.
-- Chargebacks filed **after milestone delivery** may be contested by Paddle if they violate the terms of service.
-- In cases of invalid or abusive disputes, Paddle may take appropriate action, including suspension of buyer privileges.
+- If a dispute is initiated, I will cooperate fully with Gumroad by providing necessary documentation.
+- Chargebacks filed **after milestone delivery** may be contested by Gumroad if they violate the terms of service.
+- In cases of invalid or abusive disputes, Gumroad may take appropriate action, including suspension of buyer privileges.
 
-For payments made outside of Paddle (e.g., bank transfers or Mostaql), standard contractual terms apply, and unresolved conflicts may be subject to dispute resolution as outlined in the Contract.
+For payments made outside of Gumroad (e.g., bank transfers or Mostaql), standard contractual terms apply, and unresolved conflicts may be subject to dispute resolution as outlined in the Contract.
 
 ---
 
