@@ -75,7 +75,7 @@ In the course of delivering software development services, I may use trusted thi
 - **Figma** – For UI/UX design and prototyping. No personal client data is shared beyond project collaboration needs.
 - **GitHub / GitLab** – For secure code hosting and version control. Source code is stored privately and access is restricted.
 - **Twilio / 360dialog** – For WhatsApp Business API integration (if applicable). Message data is handled per their privacy policies.
-- **Paddle (paddle.com)** – As the **Merchant of Record**, Paddle processes all online payments securely. If you pay via credit card, PayPal, Apple Pay, or other digital methods, your **payment details are collected and managed directly by Paddle**, not by me. Paddle handles tax compliance, fraud prevention, and subscription billing in accordance with [its own Privacy Policy](https://www.paddle.com/legal/privacy).
+- **Gumroad (gumroad.com)** – As the **Merchant of Record**, Gumroad processes all online payments securely. If you pay via credit card, PayPal, Apple Pay, or other digital methods, your **payment details are collected and managed directly by Gumroad**, not by me. Gumroad handles tax compliance, fraud prevention, and subscription billing in accordance with [its own Privacy Policy](https://gumroad.com/privacy).
 - **Bank Wire Transfers & Mostaql** – For clients using direct bank transfers or the Mostaql platform. These are subject to their respective terms and privacy policies.
 
 I only share the minimum necessary information required to deliver the service, and I do not store or process sensitive payment data on my own systems. All third-party services are selected for their security, compliance, and adherence to data protection standards.

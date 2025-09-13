@@ -15,6 +15,8 @@ const SupportAndMaintenancePlans = () => {
 
 بعد الإطلاق، ما زال تطبيقك يحتاج إلى رعاية: إصلاح الأخطاء، التحديثات، وتحسينات بسيطة. أقدم خططاً منظمة للصيانة لضمان سير العمل بسلاسة.
 
+يمكنك شراء الخطة من خلال الضغط [هنا](https://qatan.gumroad.com/l/sam) - أو التواصل معي على [ogaten27@gmail.com](mailto:ogaten27@gmail.com).
+
 > **ملاحظة:** في الوقت الحالي، تقتصر خطط الدعم والصيانة على المشاريع التي قمنا ببنائها نحن.
 
 ---
@@ -73,6 +75,8 @@ Jaga aplikasi Anda tetap aman dan berfungsi dengan dukungan profesional yang ber
 
 Setelah peluncuran, aplikasi Anda tetap membutuhkan perawatan: perbaikan bug, pembaruan, dan penyempurnaan kecil. Saya menawarkan paket pemeliharaan terstruktur agar semuanya tetap berjalan lancar.
 
+Layanan ini dapat dibeli dengan mengklik [di sini](https://qatan.gumroad.com/l/sam) -atau dengan menghubungi saya di [ogaten27@gmail.com](mailto:ogaten27@gmail.com).
+
 > **Catatan:** Saat ini, paket dukungan dan pemeliharaan hanya tersedia untuk proyek-proyek yang telah kami bangun.
 
 ---
@@ -129,6 +133,8 @@ Untuk klien yang membutuhkan penanganan lebih cepat, keandalan lebih tinggi, ser
 Keep your application secure and functional with professional ongoing support.
 
 After launch, your app still needs care: bug fixes, updates, and minor improvements. I offer structured maintenance plans to keep everything running smoothly.
+
+The service can be purchased by clicking [here](https://qatan.gumroad.com/l/sam) -or by contacting me at [ogaten27@gmail.com](mailto:ogaten27@gmail.com).
 
 > **Note:** As of the current time, support and maintenance plans are limited to projects we have built.
 
