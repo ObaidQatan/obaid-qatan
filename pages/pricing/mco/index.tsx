@@ -17,6 +17,8 @@ const ManagedCloudOperationsPlans = () => {
 
 تشمل جميع الباقات الصيانة الاستباقية، وتقوية الأمان، وإدارة خبراء ديفأوبس — مع الاستضافة على منصات سحابية موثوقة تحت إشرافي.
 
+يمكنك شراء الخطة من خلال الضغط [هنا](https://qatan.gumroad.com/l/mco) - أو التواصل معي على [ogaten27@gmail.com](mailto:ogaten27@gmail.com).
+
 ---
 
 ## اختر خطتك
@@ -101,6 +103,8 @@ Saya mengelola seluruh siklus hidup lingkungan aplikasi Anda, mulai dari pengatu
 
 Semua paket mencakup pemeliharaan proaktif, pengamanan sistem, dan manajemen DevOps oleh ahli — dihosting di platform cloud terpercaya di bawah pengawasan saya.
 
+Layanan ini dapat dibeli dengan mengklik [di sini](https://qatan.gumroad.com/l/mco) -atau dengan menghubungi saya di [ogaten27@gmail.com](mailto:ogaten27@gmail.com).
+
 ---
 
 ## Pilih Paket Anda
@@ -183,6 +187,8 @@ Keep your application running smoothly with fully managed deployment, infrastruc
 I handle the full lifecycle of your app’s environment, from secure setup to ongoing monitoring, backups, and scalability. No technical skills required.
 
 All plans include proactive maintenance, security hardening, and expert DevOps management — hosted on trusted cloud platforms under my supervision.
+
+The service can be purchased by clicking [here](https://qatan.gumroad.com/l/mco) -or by contacting me at [ogaten27@gmail.com](mailto:ogaten27@gmail.com).
 
 ---
 
