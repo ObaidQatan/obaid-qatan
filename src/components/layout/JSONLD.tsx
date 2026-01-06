@@ -3,7 +3,7 @@ export function JSONLD() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Obaid Qatan",
-    url: "https://obaid-qatan.vercel.app",
+    url: "https://obaid.saas-tech.net",
     jobTitle: "Senior Full-stack Developer",
     alumniOf: "MS Ramaiah Institute of Technology",
     description:
@@ -11,8 +11,8 @@ export function JSONLD() {
     sameAs: [
       "https://github.com/ObaidQatan",
       "https://www.linkedin.com/in/obaid-qatan-7699bb185/",
-      "https://www.instagram.com/obekas_dono/",
-      "https://www.youtube.com/@Noopejs/",
+      "https://www.instagram.com/obaid_qatan/",
+      "https://www.youtube.com/@obaid_qatan_coding",
     ],
   };
 

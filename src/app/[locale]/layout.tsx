@@ -66,7 +66,7 @@ export default async function RootLayout({
             attribute="class"
             defaultTheme="dark"
             enableSystem
-            disableTransitionOnChange
+            // disableTransitionOnChange
           >
             <PageWrapper>{children}</PageWrapper>
           </ThemeProvider>
