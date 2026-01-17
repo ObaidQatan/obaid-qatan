@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Copy, Check, Mail, MapPin, ExternalLink } from "lucide-react";
 import { useState } from "react";
+import { Link } from "@/i18n/routing";
 
 export function Contact() {
   const t = useTranslations("common");
@@ -32,8 +33,8 @@ export function Contact() {
               {t("contactMe") || "Let's Connect"}
             </h2>
             <p className="text-xl text-muted-foreground max-w-md">
-              Have a project in mind or just want to say hi? I&apos;m always
-              open to new opportunities.
+              {t("contactMeDescription") ||
+                "Have a project in mind or just want to say hi? I&apos;m always open to new opportunities."}
             </p>
           </div>
 
@@ -44,7 +45,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground uppercase font-bold tracking-wider">
-                  Email
+                  {t("email") || "Email"}
                 </p>
                 <div className="flex items-center gap-2">
                   <p className="text-lg font-medium">{email}</p>
@@ -70,9 +71,9 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground uppercase font-bold tracking-wider">
-                  Location
+                  {t("location") || "Location"}
                 </p>
-                <p className="text-lg font-medium">Bangalore, India</p>
+                <p className="text-lg font-medium">{t("CURRENT_LOCATION")}</p>
               </div>
             </div>
           </div>
@@ -84,7 +85,7 @@ export function Contact() {
               asChild
             >
               <a href={`mailto:${email}`}>
-                Say Hello
+                {t("sayHello") || "Say Hello"}
                 <ExternalLink className="ml-2 w-5 h-5" />
               </a>
             </Button>
@@ -103,9 +104,12 @@ export function Contact() {
               <div className="w-20 h-20 rounded-full bg-primary mx-auto mb-6 flex items-center justify-center">
                 <Mail className="w-10 h-10 text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-bold">Available for Hire</h3>
+              <h3 className="text-2xl font-bold">
+                {t("availableForHire") || "Available for Hire"}
+              </h3>
               <p className="text-muted-foreground">
-                Currently based in Bangalore, working globally.
+                {t("currentlyBasedInBangaloreWorkingGlobally") ||
+                  "Currently based in Bangalore, working globally."}
               </p>
             </div>
           </div>
@@ -121,24 +125,18 @@ export function Contact() {
           </span>
         </p>
         <nav className="flex items-center gap-8">
-          <a
-            href="#"
+          <Link
+            href="/legal/terms-and-conditions"
             className="text-sm text-muted-foreground hover:text-primary transition-all"
           >
-            Terms
-          </a>
-          <a
-            href="#"
+            {t("termsAndConditions") || "Terms and Conditions"}
+          </Link>
+          <Link
+            href="/legal/privacy-policy"
             className="text-sm text-muted-foreground hover:text-primary transition-all"
           >
-            Privacy
-          </a>
-          <a
-            href="#"
-            className="text-sm text-muted-foreground hover:text-primary transition-all"
-          >
-            Cookies
-          </a>
+            {t("privacyPolicy") || "Privacy Policy"}
+          </Link>
         </nav>
       </footer>
     </section>

@@ -65,5 +65,15 @@
   },
   "skills": "Keterampilan",
   "workExperience": "Pengalaman Kerja",
-  "contactMe": "Hubungi Saya"
+  "contactMe": "Hubungi Saya",
+  "contactMeDescription": "Punya ide atau visi proyek yang ingin diwujudkan? Mari kita jadikannya realitas digital. Saya selalu terbuka untuk diskusi peluang kerja dan kemitraan yang ambisius.",
+  "email": "Email",
+  "location": "Lokasi",
+  "sayHello": "Katakan Halo",
+  "availableForHire": "Tersedia untuk Dipekerjakan",
+  "currentlyBasedInBangaloreWorkingGlobally": "Saat ini berbasis di Bangalore, bekerja secara global.",
+  "terms": "Syarat",
+  "privacy": "Privasi",
+  "cookies": "Kuki",
+  "CURRENT_LOCATION": "Bangalore, India"
 }

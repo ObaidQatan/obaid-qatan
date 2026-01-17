@@ -65,5 +65,15 @@
   },
   "skills": "Skills",
   "workExperience": "Work Experience",
-  "contactMe": "Contact Me"
+  "contactMe": "Contact Me",
+  "contactMeDescription": "Ready to transform your vision into a digital reality? Let's talk. I’m always open to discussing work opportunities and ambitious partnerships.",
+  "email": "Email",
+  "location": "Location",
+  "sayHello": "Say Hello",
+  "availableForHire": "Available for Hire",
+  "currentlyBasedInBangaloreWorkingGlobally": "Currently based in Bangalore, working globally.",
+  "terms": "Terms",
+  "privacy": "Privacy",
+  "cookies": "Cookies",
+  "CURRENT_LOCATION": "Bangalore, India"
 }
