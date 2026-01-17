@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Cairo, Outfit, Inter } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -8,14 +8,20 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { JSONLD } from "@/components/layout/JSONLD";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const cairo = Cairo({
+  variable: "--font-cairo",
+  subsets: ["arabic"],
 });
 
 const outfit = Outfit({
   variable: "--font-outfit",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -58,7 +64,11 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${inter.variable} ${outfit.variable} antialiased min-h-screen bg-background font-sans`}
+        className={cn("antialiased min-h-screen bg-background font-sans", {
+          [cairo.variable]: locale === "ar",
+          [outfit.variable]: locale !== "ar",
+          [inter.variable]: locale !== "ar",
+        })}
       >
         <JSONLD />
         <NextIntlClientProvider messages={messages}>

@@ -109,5 +109,5 @@
 
 /* RTL Support for Typography */
 [dir="rtl"] {
-  font-family: "Inter", sans-serif; /* Adjust for Arabic if needed */
+  font-family: "Cairo", sans-serif;
 }
