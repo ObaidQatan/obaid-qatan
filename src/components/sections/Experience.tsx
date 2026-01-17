@@ -1,39 +1,14 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { camelCase, startCase } from "lodash";
+import { workExperience } from "@/lib/data/profile";
 
 export function Experience() {
   const t = useTranslations("profile");
-
-  const experiences = [
-    {
-      from: "Oct 2024",
-      to: "Present",
-      title: "Lead Software Engineer",
-      description:
-        "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns.",
-    },
-    {
-      from: "Feb 2023",
-      to: "Aug 2023",
-      title: "Frontend Engineer",
-      description: "Building rich user interfaces and components using React.",
-    },
-    {
-      from: "Jul 2022",
-      to: "Jan 2023",
-      title: "Full Stack Developer",
-      description: "Worked at Bob Apps Tech Company for IT Solutions.",
-    },
-    {
-      from: "Mar 2022",
-      to: "Jun 2022",
-      title: "MEVN Stack Developer",
-      description: "Web Development, APIs, and Software Consultancy.",
-    },
-  ];
+  const locale = useLocale();
 
   return (
     <section id="experience" className="py-24 px-6 lg:px-12 bg-background">
@@ -49,7 +24,7 @@ export function Experience() {
           {/* Vertical Line */}
           <div className="absolute left-0 lg:left-1/2 top-0 bottom-0 w-px bg-border -translate-x-1/2 hidden lg:block" />
 
-          {experiences.map((exp, idx) => (
+          {workExperience.map((exp, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
@@ -58,7 +33,7 @@ export function Experience() {
               transition={{ duration: 0.5 }}
               className={cn(
                 "relative flex flex-col lg:flex-row gap-8 lg:gap-0 items-start lg:items-center",
-                idx % 2 !== 0 ? "lg:flex-row-reverse" : ""
+                idx % 2 !== 0 ? "lg:flex-row-reverse" : "",
               )}
             >
               {/* Dot */}
@@ -67,12 +42,39 @@ export function Experience() {
               <div className="flex-1 lg:w-1/2 lg:px-12">
                 <div className="p-6 rounded-2xl border border-border bg-card hover:border-primary/30 transition-colors shadow-sm">
                   <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-2">
-                    {exp.from} - {exp.to}
+                    {new Date(exp.title.from).toLocaleString(locale, {
+                      year: "numeric",
+                      month: "long",
+                    })}{" "}
+                    ~{" "}
+                    {exp.title.to
+                      ? new Date(exp.title.to).toLocaleString(locale, {
+                          year: "numeric",
+                          month: "long",
+                        })
+                      : startCase(t("present"))}
                   </span>
-                  <h3 className="text-xl font-bold mb-1">{exp.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {exp.description}
-                  </p>
+                  <ul className="list-disc">
+                    {(exp.descriptionLines ?? []).map((line, idx) => (
+                      <li
+                        key={idx}
+                        className={cn(
+                          "text-muted-foreground py-[3px]",
+                          idx === 0 && "list-none",
+                        )}
+                      >
+                        {idx === 0 ? (
+                          <h3 className="text-xl font-bold mb-1">
+                            {t(`workExperienceContent.${camelCase(line)}`)}
+                          </h3>
+                        ) : (
+                          <p className="text-inherit text-sm leading-relaxed">
+                            {t(`workExperienceContent.${camelCase(line)}`)}
+                          </p>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <div className="hidden lg:block flex-1 lg:w-1/2" />

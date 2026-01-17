@@ -9,6 +9,14 @@ export interface InterestField {
   level: number;
 }
 
+export interface WorkExperienceTimeline {
+  title: {
+    from: string;
+    to: string | null;
+  };
+  descriptionLines?: string[];
+}
+
 export const favouriteSkills: Skill[][] = [
   [
     {
@@ -172,3 +180,91 @@ export const fieldOfInterest: InterestField[] = [
   { interest: "UI/UX Design", level: 90 },
   { interest: "AI Integration", level: 80 },
 ];
+
+export const workExperience: WorkExperienceTimeline[] = [
+  {
+    title: {
+      // NOTE: Date(Month - Day - Year)
+      from: "12-1-2018",
+      to: "12-30-2020",
+    },
+    descriptionLines: ["Freelancing.", "Web Design.", "Graphic Design."],
+  },
+  {
+    title: {
+      from: "1-1-2021",
+      to: "12-12-2021",
+    },
+    descriptionLines: [
+      "Worked at Bob Apps Tech Company for IT Solutions.",
+      "Full Stack Web Developer.",
+      "MEVN Stack.",
+    ],
+  },
+  {
+    title: {
+      from: "12-13-2021",
+      to: "3-27-2022",
+    },
+    descriptionLines: [
+      "Freelancing.",
+      "Web Development.",
+      "APIs.",
+      "Software Consultancy.",
+    ],
+  },
+  {
+    title: {
+      from: "3-28-2022",
+      to: "6-28-2022",
+    },
+    descriptionLines: [
+      "Personal Trainer.",
+      "Object Oriented Programming.",
+      "Data Structures and Algorithms.",
+      "Java.",
+    ],
+  },
+  {
+    title: {
+      from: "7-1-2022",
+      to: "1-27-2023",
+    },
+    descriptionLines: [
+      "Freelancing.",
+      "Web Development.",
+      "APIs.",
+      "Software Consultancy.",
+    ],
+  },
+  {
+    title: {
+      from: "2-1-2023",
+      to: "8-1-2023",
+    },
+    descriptionLines: [
+      "Worked at Zevi AI.",
+      "Frontend Engineer.",
+      "Building rich user interfaces and components using React.",
+      "Converting UI designs into scalable React components.",
+      "Documentation pages using Docusaurus and React.",
+    ],
+  },
+  {
+    title: {
+      from: "10-23-2024",
+      to: null,
+    },
+    descriptionLines: [
+      "Working At SaaS Tech.",
+      "Lead Software Engineer.",
+      "Building startups and projects from A to Z.",
+      "Fixing, enhancing, and optimizing software products.",
+      "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns.",
+    ],
+  },
+].sort((a, b) => {
+  const dateA = new Date(a.title.from);
+  const dateB = new Date(b.title.from);
+  return dateB.getTime() - dateA.getTime();
+});

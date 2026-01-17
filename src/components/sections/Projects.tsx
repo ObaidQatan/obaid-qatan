@@ -14,12 +14,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ZoomIn } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { PhotoProvider, PhotoSlider, PhotoView } from "react-photo-view";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import PointerEffectGuard from "../ui/pointer-effect-guard";
+import { truncate } from "lodash";
 
 export function Projects() {
-  const t = useTranslations("common");
+  const t = useTranslations("portfolio");
   const [selectedProject, setSelectedProject] = useState<
     (typeof portfolio)[0] | null
   >(null);
@@ -34,7 +35,7 @@ export function Projects() {
           <div className="h-1 w-20 bg-primary rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {portfolio.map((project, index) => (
             <motion.div
               key={project.id}
@@ -48,12 +49,12 @@ export function Projects() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={project.thumbnailUrl}
-                alt={project.title}
+                alt={t(project.title)}
                 className="object-cover transition-transform duration-500 group-hover:scale-110 w-full h-full absolute inset-0"
               />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                <h3 className="text-white font-bold text-lg mb-2 line-clamp-2">
-                  {project.title}
+                <h3 className="text-white font-bold text-lg mb-2">
+                  {truncate(t(project.title), { length: 60 })}
                 </h3>
                 <div className="flex gap-2 mt-4">
                   <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground">
