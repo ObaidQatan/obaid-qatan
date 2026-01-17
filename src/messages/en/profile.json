@@ -75,6 +75,7 @@
     "personalTrainer": "Personal Trainer",
     "objectOrientedProgramming": "Object Oriented Programming",
     "dataStructuresAndAlgorithms": "Data Structures and Algorithms",
+    "programmingWithJava": "Programming with Java",
     "workedAtZeviAi": "Worked at Zevi AI",
     "frontendEngineer": "Frontend Engineer",
     "buildingRichUserInterfacesAndComponentsUsingReact": "Building rich user interfaces and components using React",
@@ -84,7 +85,15 @@
     "leadSoftwareEngineer": "Lead Software Engineer",
     "buildingStartupsAndProjectsFromAToZ": "Building startups and projects from A to Z",
     "fixingEnhancingAndOptimizingSoftwareProducts": "Fixing, enhancing, and optimizing software products",
-    "leadingAndMentoringSoftwareDevelopersEnsuringPolishedSkillsUnderBestSoftwarePracticesAndPatterns": "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns"
+    "leadingAndMentoringSoftwareDevelopersEnsuringPolishedSkillsUnderBestSoftwarePracticesAndPatterns": "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns",
+    "workingAtWaselCompany": "Working at Wasel Company",
+    "buildingHighQualityWebAndMobileAppsForTheCompanyFromAToZ": "Building high quality web and mobile apps for the company from A to Z",
+    "ensuringWellDesignedAdaptableAndMaintainableDatabaseSystemsTakingBusinessRequirementsIntoConsideration": "Ensuring well designed adaptable and maintainable database systems taking business requirements into consideration",
+    "architectedAndScaledAModularSaaSEcosystemForNestJsAndReactEnablingMultipleVerticalSpecificProductsToShareCoreServicesAndUiComponentsWhileMaintainingStrictDataIsolationIndependentDeploymentAndDomainFidelity": "Architected and scaled a modular SaaS ecosystem for NestJs and React enabling multiple vertical specific products to share core services and ui components while maintaining strict data isolation independent deployment and domain fidelity",
+    "proactivelySpottingRisksAndProposingActionableWellReasonedSolutions": "Proactively spotting risks and proposing actionable well reasoned solutions",
+    "leadingAndMentoringTheFrontendAndBackendTeamsEnsuringPolishedSkillsUnderTheBestSoftwarePracticesAndPatterns": "Leading and mentoring the frontend and backend teams ensuring polished skills under the best software practices and patterns",
+    "scrumBoardMonitoringAndTeamManagement": "Scrum board monitoring and team management",
+    "interviewingJoinersWithAWellAnalyzedCustomStrategyCarryingAnAccuracyOf9630": "Interviewing joiners with a well analyzed custom strategy carrying an accuracy of 96.30%"
   },
   "educationContent": {
     "alNobanSchool": "Al Noban School",

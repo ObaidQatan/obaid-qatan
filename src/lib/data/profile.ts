@@ -222,7 +222,7 @@ export const workExperience: WorkExperienceTimeline[] = [
       "Personal Trainer.",
       "Object Oriented Programming.",
       "Data Structures and Algorithms.",
-      "Java.",
+      "Programming with Java.",
     ],
   },
   {
@@ -261,6 +261,23 @@ export const workExperience: WorkExperienceTimeline[] = [
       "Building startups and projects from A to Z.",
       "Fixing, enhancing, and optimizing software products.",
       "Leading and mentoring software developers, ensuring polished skills under best software practices and patterns.",
+    ],
+  },
+  {
+    title: {
+      from: "05-01-2025",
+      to: null,
+    },
+    descriptionLines: [
+      "Working At Wasel Company.",
+      "Lead Software Engineer.",
+      "Building high-quality web and mobile apps for the company from A to Z.",
+      "Ensuring well-designed, adaptable, and maintainable database systems, taking business requirements into consideration.",
+      "Architected and scaled a modular SaaS ecosystem for NestJS and React, enabling multiple vertical-specific products to share core services and UI components while maintaining strict data isolation, independent deployment, and domain fidelity.",
+      "Proactively spotting risks and proposing actionable, well-reasoned solutions.",
+      "Leading and mentoring the frontend and backend teams, ensuring polished skills under the best software practices and patterns.",
+      "Scrum board monitoring and team management.",
+      "Interviewing joiners with a well-analyzed custom strategy carrying an accuracy of 96.30%.",
     ],
   },
 ].sort((a, b) => {

@@ -26,13 +26,13 @@ export function Hero() {
     {
       id: "youtube",
       icon: Youtube,
-      url: "https://www.youtube.com/@Noopejs/",
+      url: "https://www.youtube.com/@obaid_qatan_coding",
       color: "hover:text-[#ff0000]",
     },
     {
       id: "instagram",
       icon: Instagram,
-      url: "https://www.instagram.com/obekas_dono/",
+      url: "https://www.instagram.com/obaid_qatan",
       color: "hover:text-[#e4405f]",
     },
   ];
@@ -124,7 +124,7 @@ export function Hero() {
                   rel="noopener noreferrer"
                   className={cn(
                     "w-12 h-12 flex items-center justify-center rounded-full border border-border bg-card/50 transition-all hover:scale-110",
-                    social.color
+                    social.color,
                   )}
                 >
                   <social.icon className="w-5 h-5" />

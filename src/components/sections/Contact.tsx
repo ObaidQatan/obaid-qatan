@@ -108,8 +108,8 @@ export function Contact() {
                 {t("availableForHire") || "Available for Hire"}
               </h3>
               <p className="text-muted-foreground">
-                {t("currentlyBasedInBangaloreWorkingGlobally") ||
-                  "Currently based in Bangalore, working globally."}
+                {t("availableForWorkAndContributionsAroundTheWorld") ||
+                  "Available for work and contributions around the world."}
               </p>
             </div>
           </div>
