@@ -176,9 +176,9 @@ export const otherSkills: Skill[] = [
 
 export const fieldOfInterest: InterestField[] = [
   { interest: "Web Development", level: 100 },
-  { interest: "Mobile Development", level: 85 },
-  { interest: "UI/UX Design", level: 90 },
-  { interest: "AI Integration", level: 80 },
+  { interest: "Mobile Development", level: 100 },
+  { interest: "Building Startups From A to Z", level: 100 },
+  { interest: "AI Integration", level: 100 },
 ];
 
 export const workExperience: WorkExperienceTimeline[] = [

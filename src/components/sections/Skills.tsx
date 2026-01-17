@@ -26,7 +26,7 @@ export function Skills() {
         {/* Favorite Tools */}
         <div className="space-y-8">
           <h3 className="text-xl font-semibold text-muted-foreground uppercase tracking-wider">
-            Favourite Tools
+            {t("favouriteTools") || "Favourite Tools"}
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {favouriteSkills.flat().map((skill, index) => (
@@ -69,7 +69,7 @@ export function Skills() {
               className="space-y-3"
             >
               <div className="flex justify-between items-end">
-                <span className="font-bold text-lg">{field.interest}</span>
+                <span className="font-bold text-lg">{t(field.interest)}</span>
                 <span className="text-primary font-mono font-bold">
                   {field.level}%
                 </span>
@@ -82,7 +82,7 @@ export function Skills() {
         {/* Other Tools */}
         <div className="space-y-8 pt-12">
           <h3 className="text-xl font-semibold text-muted-foreground uppercase tracking-wider">
-            Other Tools
+            {t("otherTools") || "Other Tools"}
           </h3>
           <div className="flex flex-wrap gap-4">
             {otherSkills.map((skill, index) => (
