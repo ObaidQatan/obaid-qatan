@@ -62,5 +62,8 @@
     "10": "Oktober",
     "11": "November",
     "12": "Desember"
-  }
+  },
+  "skills": "Keterampilan",
+  "workExperience": "Pengalaman Kerja",
+  "contactMe": "Hubungi Saya"
 }

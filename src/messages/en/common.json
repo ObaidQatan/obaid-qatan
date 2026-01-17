@@ -62,5 +62,8 @@
     "10": "October",
     "11": "November",
     "12": "December"
-  }
+  },
+  "skills": "Skills",
+  "workExperience": "Work Experience",
+  "contactMe": "Contact Me"
 }
