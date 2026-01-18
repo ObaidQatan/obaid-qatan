@@ -36,9 +36,10 @@ export function Sidebar({
       initial={{
         x:
           (isRTL && !sidebarOpen) || (!isRTL && sidebarOpen) ? "-100%" : "100%",
+        animationDelay: 0.2,
       }}
       animate={{ x: sidebarOpen ? 0 : isRTL ? "100%" : "-100%" }}
-      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+      transition={{ duration: 0.3 }}
       className={cn(
         "fixed top-0 bottom-0 h-screen w-16 lg:w-64 start-0 border-e bg-card/50 backdrop-blur-md z-50 transition-all duration-300 max-lg:top-2 max-lg:start-2 max-lg:bottom-auto max-lg:border max-lg:h-auto max-lg:rounded-full",
       )}
