@@ -67,9 +67,28 @@ export function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl lg:text-7xl font-heading font-black tracking-tight leading-[1.1]">
-              {t("hiObaidHere")}
-            </h1>
+            <div className="flex flex-wrap items-center">
+              <h1 className="text-4xl lg:text-7xl font-heading font-black tracking-tight leading-[1.1]">
+                {t("hiObaidHere")}{" "}
+              </h1>
+              <motion.div
+                animate={{ rotate: [0, 14, -8, 14, -4, 10, 0] }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  repeatDelay: 1, // Optional: pause between waves for a more natural feel
+                  ease: "easeInOut",
+                }}
+                style={{
+                  originX: "bottom",
+                  originY: "right",
+                  transformOrigin: "bottom right",
+                }}
+                className="text-4xl lg:text-7xl font-heading font-black tracking-tight leading-[1.1]"
+              >
+                👋
+              </motion.div>
+            </div>
           </motion.div>
 
           <motion.div
