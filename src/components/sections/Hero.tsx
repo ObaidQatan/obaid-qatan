@@ -7,6 +7,12 @@ import { Github, Linkedin, Youtube, Instagram, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { CursorFollow } from "../animate-ui/components/animate/cursor";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/animate-ui/components/animate/tooltip";
 
 export function Hero() {
   const t = useTranslations("common");
@@ -118,20 +124,28 @@ export function Hero() {
             </Button>
 
             <div className="flex gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.id}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cn(
-                    "w-12 h-12 flex items-center justify-center rounded-full border border-border bg-card/50 transition-all hover:scale-110",
-                    social.color,
-                  )}
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
+              <TooltipProvider openDelay={100}>
+                {socialLinks.map((social) => (
+                  <Tooltip key={social.id}>
+                    <TooltipTrigger>
+                      <a
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={cn(
+                          "w-12 h-12 flex items-center justify-center rounded-full border border-border bg-card/50 transition-all hover:scale-110",
+                          social.color,
+                        )}
+                      >
+                        <social.icon className="w-5 h-5" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent className="flex items-center gap-2">
+                      {t(`social.${social.id}`)}
+                    </TooltipContent>
+                  </Tooltip>
+                ))}
+              </TooltipProvider>
             </div>
           </motion.div>
         </div>
