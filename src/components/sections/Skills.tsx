@@ -14,7 +14,7 @@ export function Skills() {
   const t = useTranslations("profile");
 
   return (
-    <section id="skills" className="py-24 px-6 lg:px-12 bg-card/30">
+    <section id="skills" className="py-24 px-6 lg:px-12 bg-card/30 relative">
       <div className="max-w-6xl mx-auto space-y-20">
         <div className="space-y-4">
           <h2 className="text-3xl font-heading font-bold text-primary">

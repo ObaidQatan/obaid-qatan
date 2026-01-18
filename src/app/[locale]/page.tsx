@@ -4,7 +4,11 @@ import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Contact } from "@/components/sections/Contact";
 import { BackToTop } from "@/components/layout/BackToTop";
-import { CursorTrail } from "@/components/layout/CursorTrail";
+import {
+  CursorProvider,
+  Cursor,
+} from "@/components/animate-ui/components/animate/cursor";
+// import { CursorTrail } from "@/components/layout/CursorTrail";
 
 export default async function IndexPage({
   params,
@@ -15,12 +19,17 @@ export default async function IndexPage({
 
   return (
     <div className="flex flex-col w-full">
-      <CursorTrail />
-      <Hero />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
+      {/* <CursorTrail /> */}
+      <CursorProvider global>
+        <Cursor />
+
+        <Hero />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
+      </CursorProvider>
+
       <BackToTop />
     </div>
   );

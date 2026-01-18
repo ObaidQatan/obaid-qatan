@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Youtube, Instagram, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { CursorFollow } from "../animate-ui/components/animate/cursor";
 
 export function Hero() {
   const t = useTranslations("common");
@@ -47,8 +48,9 @@ export function Hero() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 py-20 overflow-hidden"
+      className="min-h-screen flex flex-col justify-center px-6 lg:px-12 py-20 overflow-hidden"
     >
+      <CursorFollow>@{t("appName")}</CursorFollow>
       <div className="absolute top-0 right-0 -z-10 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl opacity-50" />
 
       <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-24">
