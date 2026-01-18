@@ -1,8 +1,7 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
-import { Link, useRouter, usePathname } from "@/i18n/routing";
-import { Languages, Moon, Sun, LayoutGrid } from "lucide-react";
+import { useRouter, usePathname } from "@/i18n/routing";
+import { Languages, MenuIcon, Moon, Sun, XIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import {
   DropdownMenu,
@@ -12,11 +11,16 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { cn } from "@/lib/utils";
 
-export function Navbar() {
-  const t = useTranslations("common");
+export function Navbar({
+  setSidebarOpen,
+  sidebarOpen,
+}: {
+  setSidebarOpen: (open: boolean) => void;
+  sidebarOpen: boolean;
+}) {
   const { setTheme, theme } = useTheme();
-  const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -27,6 +31,26 @@ export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 h-16 z-40 flex items-center justify-end px-6 pointer-events-none">
       <div className="flex items-center gap-4 pointer-events-auto bg-card/80 backdrop-blur-sm border p-1 rounded-full px-2">
+        {/* Sidebar Toggle */}
+        <Button
+          variant="outline"
+          size="icon"
+          className="rounded-full overflow-hidden relative"
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+        >
+          <XIcon
+            className={cn(
+              "transition-all duration-300 absolute",
+              sidebarOpen ? "translate-y-0" : "-translate-y-[200%]",
+            )}
+          />
+          <MenuIcon
+            className={cn(
+              "transition-all duration-300 absolute",
+              sidebarOpen ? "-translate-y-[200%]" : "translate-y-0",
+            )}
+          />
+        </Button>
         {/* Theme Toggle */}
         <Button
           variant="ghost"
@@ -48,13 +72,22 @@ export function Navbar() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => toggleLanguage("en")}>
+            <DropdownMenuItem
+              className="cursor-pointer"
+              onClick={() => toggleLanguage("en")}
+            >
               English
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => toggleLanguage("ar")}>
+            <DropdownMenuItem
+              className="cursor-pointer"
+              onClick={() => toggleLanguage("ar")}
+            >
               العربية
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => toggleLanguage("id")}>
+            <DropdownMenuItem
+              className="cursor-pointer"
+              onClick={() => toggleLanguage("id")}
+            >
               Indonesian
             </DropdownMenuItem>
           </DropdownMenuContent>

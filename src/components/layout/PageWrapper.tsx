@@ -1,22 +1,20 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { Sidebar } from "./Sidebar";
 import { Navbar } from "./Navbar";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 export function PageWrapper({ children }: { children: React.ReactNode }) {
-  const locale = useLocale();
-  const isArabic = locale === "ar";
-
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   return (
     <div className="relative min-h-screen">
-      <Sidebar />
-      <Navbar />
+      <Sidebar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
+      <Navbar setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
       <div
         className={cn(
           "transition-all duration-300 min-h-screen",
-          isArabic ? "pr-16 lg:pr-64" : "pl-16 lg:pl-64"
+          sidebarOpen && "ps-16 lg:ps-64",
         )}
       >
         {children}

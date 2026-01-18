@@ -1,9 +1,10 @@
 "use client";
 
 import { Link } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { User, Code, Briefcase, FolderRoot, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 const navItems = [
   { id: "about", icon: User, label: "profile" },
@@ -13,10 +14,15 @@ const navItems = [
   { id: "contact", icon: Mail, label: "contactMe" },
 ];
 
-export function Sidebar() {
+export function Sidebar({
+  sidebarOpen,
+}: {
+  setSidebarOpen: (open: boolean) => void;
+  sidebarOpen: boolean;
+}) {
   const t = useTranslations("common");
   const locale = useLocale();
-  const isArabic = locale === "ar";
+  const isRTL = locale === "ar";
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -26,14 +32,19 @@ export function Sidebar() {
   };
 
   return (
-    <aside
+    <motion.aside
+      initial={{
+        x:
+          (isRTL && !sidebarOpen) || (!isRTL && sidebarOpen) ? "-100%" : "100%",
+      }}
+      animate={{ x: sidebarOpen ? 0 : isRTL ? "100%" : "-100%" }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
       className={cn(
-        "fixed top-0 bottom-0 h-screen w-16 lg:w-64 border-r bg-card/50 backdrop-blur-md z-50 transition-all duration-300",
-        isArabic ? "right-0 border-l" : "left-0 border-r"
+        "fixed top-0 bottom-0 h-screen w-16 lg:w-64 start-0 border-e bg-card/50 backdrop-blur-md z-50 transition-all duration-300 max-lg:top-2 max-lg:start-2 max-lg:bottom-auto max-lg:border max-lg:h-auto max-lg:rounded-full",
       )}
     >
       <div className="flex flex-col h-full py-8">
-        <div className="px-4 mb-12 flex justify-center lg:justify-start">
+        <div className="px-4 mb-12 flex justify-center lg:justify-start max-lg:flex-col max-lg:items-center">
           <Link
             href="/"
             className="text-primary font-heading font-black text-2xl tracking-tighter"
@@ -51,7 +62,7 @@ export function Sidebar() {
               className={cn(
                 "w-full flex items-center gap-3 px-3 py-3 rounded-lg transition-colors group",
                 "hover:bg-accent hover:text-accent-foreground",
-                "text-muted-foreground"
+                "text-muted-foreground",
               )}
             >
               <item.icon className="w-5 h-5 group-hover:text-primary transition-colors" />
@@ -71,6 +82,6 @@ export function Sidebar() {
           </div>
         </div>
       </div>
-    </aside>
+    </motion.aside>
   );
 }
