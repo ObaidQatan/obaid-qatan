@@ -4,9 +4,9 @@ export const portfolio: PortfolioItem[] = [
   {
     id: "1",
     title:
-      "The website for Petnic, a platform for consultations with veterinaries",
+      "The website for Abdan (formerly Petnic), a platform for consultations with veterinarians",
     description:
-      "The Petnic platform website offers a dedicated online space for veterinary consultations, enabling users to access expert advice and care for their pets conveniently and efficiently",
+      "The Abdan (formerly Petnic) platform website offers a dedicated online space for veterinary consultations, enabling users to access expert advice and care for their pets conveniently and efficiently",
     tags: [
       { name: "React" },
       { name: "Next.js" },

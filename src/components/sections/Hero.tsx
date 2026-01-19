@@ -138,7 +138,7 @@ export function Hero() {
             >
               <a href="#projects">
                 {t("portfolio")}
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ms-2 w-5 h-5 group-hover:translate-x-1 transition-transform rtl:-scale-x-100" />
               </a>
             </Button>
 

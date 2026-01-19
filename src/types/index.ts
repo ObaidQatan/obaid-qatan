@@ -12,4 +12,6 @@ export type PortfolioItem = {
     icon?: LucideIcon;
   }[];
   createdAt: string; // ISO
+  liveUrl?: string;
+  sourceCodeUrl?: string;
 };

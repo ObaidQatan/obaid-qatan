@@ -4,7 +4,8 @@ import { Link } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { User, Code, Briefcase, FolderRoot, Mail } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { CursorTrigger } from "../animate-ui/primitives/animate/cursor";
 
 const navItems = [
   { id: "about", icon: User, label: "profile" },
@@ -57,20 +58,21 @@ export function Sidebar({
 
         <nav className="flex-1 space-y-2 px-2">
           {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className={cn(
-                "w-full flex items-center gap-3 px-3 py-3 rounded-lg transition-colors group",
-                "hover:bg-accent hover:text-accent-foreground",
-                "text-muted-foreground",
-              )}
-            >
-              <item.icon className="w-5 h-5 group-hover:text-primary transition-colors" />
-              <span className="hidden lg:inline font-medium text-sm capitalize">
-                {t(item.label)}
-              </span>
-            </button>
+            <CursorTrigger key={item.id} asChild type="pointer">
+              <button
+                onClick={() => scrollToSection(item.id)}
+                className={cn(
+                  "w-full flex items-center gap-3 px-3 py-3 rounded-lg transition-colors group",
+                  "hover:bg-accent hover:text-accent-foreground",
+                  "text-muted-foreground",
+                )}
+              >
+                <item.icon className="w-5 h-5 group-hover:text-primary transition-colors" />
+                <span className="hidden lg:inline font-medium text-sm capitalize">
+                  {t(item.label)}
+                </span>
+              </button>
+            </CursorTrigger>
           ))}
         </nav>
 
