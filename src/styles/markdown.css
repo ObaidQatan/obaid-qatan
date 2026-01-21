@@ -1,0 +1,92 @@
+/* pages/legal.css */
+.markdown-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #fff;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #03101c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-content h1 {
+    font-size: 2rem;
+    color: cyan;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 10px;
+    margin-bottom: 1em;
+}
+
+.markdown-content h2 {
+    font-size: 1.5rem;
+    color: #01abab;
+    margin-top: 1.5em;
+}
+
+.markdown-content h3 {
+    font-size: 1.25rem;
+    color: #a3d2d2;
+}
+
+.markdown-content ul {
+    list-style: disc;
+}
+
+.markdown-content p,
+.markdown-content li {
+    margin: 0.8em 0;
+}
+
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+.markdown-content th,
+.markdown-content td {
+    border: 1px solid cyan;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+[dir="rtl"] .markdown-content th,
+[dir="rtl"] .markdown-content td {
+    text-align: right;
+}
+
+.markdown-content th {
+    background-color: #00ffff58;
+}
+
+.markdown-content code {
+    font-family: 'Courier New', monospace;
+    background-color: #00ffff58;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.95em;
+}
+
+.markdown-content pre {
+    background-color: #00ffff58;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 0.95em;
+}
+
+.markdown-content a {
+    border-bottom: 1px solid #00ffff;
+    color: #00ffff;
+}
+
+.markdown-content blockquote {
+    background-color: #00ffff10;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.markdown-content hr {
+    margin: 20px 0;
+}

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Cairo, Outfit, Inter } from "next/font/google";
-import "../globals.css";
+import "./main.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/components/theme-provider";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { PageWrapper } from "@/components/layout/PageWrapper";
-import { JSONLD } from "@/components/layout/JSONLD";
 import { cn } from "@/lib/utils";
+import { JSONLD } from "@/components/layout/JSONLD";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -41,7 +41,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function RootLayout({
+export default async function MainLayout({
   children,
   params,
 }: {

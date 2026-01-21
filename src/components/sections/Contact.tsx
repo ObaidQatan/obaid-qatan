@@ -169,13 +169,13 @@ export function Contact() {
         </p>
         <nav className="flex items-center gap-8">
           <Link
-            href="/legal/terms-and-conditions"
+            href="/terms-and-conditions"
             className="text-sm text-muted-foreground hover:text-primary transition-all"
           >
             {t("termsAndConditions") || "Terms and Conditions"}
           </Link>
           <Link
-            href="/legal/privacy-policy"
+            href="/privacy-policy"
             className="text-sm text-muted-foreground hover:text-primary transition-all"
           >
             {t("privacyPolicy") || "Privacy Policy"}
