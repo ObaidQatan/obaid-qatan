@@ -28,6 +28,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/45e12107-7584-4d6b-bf8c-6999644f03a7",
     ],
     createdAt: new Date("09-20-2023").toISOString(),
+    liveUrl: "https://abdan.co/",
   },
   {
     id: "2",
@@ -74,6 +75,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/345bfe03-7a5c-4463-9d80-1a564958c94e",
     ],
     createdAt: new Date("09-20-2023").toISOString(),
+    liveUrl: "https://abdan.co/login/client",
   },
   {
     id: "3",
@@ -150,6 +152,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/3ad15bfb-f551-4faa-929d-48e33e103cf8",
     ],
     createdAt: new Date("09-30-2022").toISOString(),
+    liveUrl: "https://infinity.edu.sa/",
   },
   {
     id: "6",
@@ -201,6 +204,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/43a66774-46c7-43f4-a8c9-35f37f9897de",
     ],
     createdAt: new Date("06-14-2024").toISOString(),
+    liveUrl: "https://balkan-ten.vercel.app/",
   },
   {
     id: "8",
@@ -241,6 +245,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/75c65059-3646-4fe9-bf59-d55ee57ed1d2",
     ],
     createdAt: new Date("10-04-2024").toISOString(),
+    liveUrl: "https://aqar-frontend-chi.vercel.app/",
   },
   {
     id: "9",
@@ -260,6 +265,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/77a9b11e-8a60-4ec4-be5a-6b0962fb73dd",
     ],
     createdAt: new Date("10-04-2022").toISOString(),
+    liveUrl: "https://kaleidoscopic.saas-tech.net/",
   },
   {
     id: "10",
@@ -280,6 +286,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/b95d2136-929c-446b-9940-c3dfe7030271",
     ],
     createdAt: new Date("10-14-2022").toISOString(),
+    liveUrl: "https://jobify-ebon.vercel.app/",
   },
   {
     id: "11",
@@ -311,6 +318,7 @@ export const portfolio: PortfolioItem[] = [
       "https://www.upwork.com/att/download/portfolio/persons/uid/1473015226721746944/profile/projects/files/ed7102c6-4349-45bf-9bfe-9c745ae3d974",
     ],
     createdAt: new Date("05-01-2022").toISOString(),
+    liveUrl: "https://noopejs.saas-tech.net/",
   },
   {
     id: "12",

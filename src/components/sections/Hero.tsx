@@ -13,6 +13,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/animate-ui/components/animate/tooltip";
+import { CursorTrigger } from "../animate-ui/primitives/animate/cursor";
 
 export function Hero() {
   const t = useTranslations("common");
@@ -147,17 +148,19 @@ export function Hero() {
                 {socialLinks.map((social) => (
                   <Tooltip key={social.id}>
                     <TooltipTrigger>
-                      <a
-                        href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={cn(
-                          "w-12 h-12 flex items-center justify-center rounded-full border border-border bg-card/50 transition-all hover:scale-110",
-                          social.color,
-                        )}
-                      >
-                        <social.icon className="w-5 h-5" />
-                      </a>
+                      <CursorTrigger asChild type="pointer">
+                        <a
+                          href={social.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(
+                            "w-12 h-12 flex items-center justify-center rounded-full border border-border bg-card/50 transition-all hover:scale-110",
+                            social.color,
+                          )}
+                        >
+                          <social.icon className="w-5 h-5" />
+                        </a>
+                      </CursorTrigger>
                     </TooltipTrigger>
                     <TooltipContent className="flex items-center gap-2">
                       {t(`social.${social.id}`)}
