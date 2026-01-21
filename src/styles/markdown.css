@@ -1,4 +1,9 @@
-/* pages/legal.css */
+@layer base {
+    .markdown-content * {
+        @apply text-inherit
+    }
+}
+
 .markdown-content {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;

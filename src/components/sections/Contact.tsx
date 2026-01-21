@@ -168,18 +168,22 @@ export function Contact() {
           </span>
         </p>
         <nav className="flex items-center gap-8">
-          <Link
-            href="/terms-and-conditions"
-            className="text-sm text-muted-foreground hover:text-primary transition-all"
-          >
-            {t("termsAndConditions") || "Terms and Conditions"}
-          </Link>
-          <Link
-            href="/privacy-policy"
-            className="text-sm text-muted-foreground hover:text-primary transition-all"
-          >
-            {t("privacyPolicy") || "Privacy Policy"}
-          </Link>
+          <CursorTrigger asChild type="pointer">
+            <Link
+              href="/terms-and-conditions"
+              className="text-sm text-muted-foreground hover:text-primary transition-all"
+            >
+              {t("termsAndConditions") || "Terms and Conditions"}
+            </Link>
+          </CursorTrigger>
+          <CursorTrigger asChild type="pointer">
+            <Link
+              href="/privacy-policy"
+              className="text-sm text-muted-foreground hover:text-primary transition-all"
+            >
+              {t("privacyPolicy") || "Privacy Policy"}
+            </Link>
+          </CursorTrigger>
         </nav>
       </footer>
     </section>
