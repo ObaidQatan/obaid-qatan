@@ -36,6 +36,7 @@ export function Skills() {
                   href={skill.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={skill.name}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -93,6 +94,7 @@ export function Skills() {
                   href={skill.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={skill.name}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

@@ -52,6 +52,7 @@ export function Navbar({
         <Button
           variant="outline"
           size="icon"
+          aria-label="toggle-sidebar"
           className="rounded-full overflow-hidden relative"
           onClick={() => setSidebarOpen(!sidebarOpen)}
         >
@@ -67,11 +68,13 @@ export function Navbar({
               sidebarOpen ? "-translate-y-[200%]" : "translate-y-0",
             )}
           />
+          <span className="sr-only">Toggle Sidebar</span>
         </Button>
         {/* Theme Toggle */}
         <Button
           variant="ghost"
           size="icon"
+          aria-label="toggle-theme"
           className="rounded-full"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
@@ -107,6 +110,7 @@ export function Navbar({
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={t(link.label)}
                     className="flex items-center gap-2"
                   >
                     <Image
