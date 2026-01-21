@@ -3,14 +3,24 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Copy, Check, Mail, MapPin, ExternalLink } from "lucide-react";
+import {
+  Copy,
+  Check,
+  Mail,
+  MapPin,
+  ExternalLink,
+  ExternalLinkIcon,
+} from "lucide-react";
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
+import { CursorTrigger } from "../animate-ui/primitives/animate/cursor";
 
 export function Contact() {
   const t = useTranslations("common");
   const [copied, setCopied] = useState(false);
   const email = "ogaten27@gmail.com";
+  const whatsapp = "+91 7899359479";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -77,6 +87,39 @@ export function Contact() {
               </div>
             </div>
           </div>
+          <br />
+          <CursorTrigger asChild type="pointer">
+            <a
+              href={`https://wa.me/${whatsapp.replaceAll(" ", "").replace("+", "")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 group"
+            >
+              <div className="items-center justify-center group-hover:scale-110 transition-transform">
+                <Image
+                  src="/whatsapp-cloud.png"
+                  alt="whatsapp"
+                  className="w-16 h-16"
+                  width={36}
+                  height={36}
+                />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground uppercase font-bold tracking-wider">
+                  {t("social.whatsapp") || "Whatsapp"}
+                </p>
+                <div className="flex items-center gap-2 text-primary">
+                  <p className="text-lg font-medium underline text-inherit">
+                    {whatsapp}
+                  </p>
+                  <ExternalLinkIcon
+                    className="w-5 h-5"
+                    color="var(--color-primary)"
+                  />
+                </div>
+              </div>
+            </a>
+          </CursorTrigger>
 
           <div className="pt-8">
             <Button
