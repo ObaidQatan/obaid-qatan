@@ -1,17 +1,11 @@
 "use client";
 
-import { useRouter, usePathname } from "@/i18n/routing";
-import { Languages, MenuIcon, Moon, Sun, XIcon } from "lucide-react";
+import { MenuIcon, Moon, Sun, XIcon } from "lucide-react";
 import { useTheme } from "next-themes";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
+import LanguageSelector from "../common/language-selector";
 
 export function Navbar({
   setSidebarOpen,
@@ -21,12 +15,6 @@ export function Navbar({
   sidebarOpen: boolean;
 }) {
   const { setTheme, theme } = useTheme();
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const toggleLanguage = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 h-16 z-40 flex items-center justify-end px-6 pointer-events-none">
@@ -64,34 +52,7 @@ export function Navbar({
         </Button>
 
         {/* Language Selector */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <Languages className="h-[1.2rem] w-[1.2rem] text-primary" />
-              <span className="sr-only">Toggle language</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem
-              className="cursor-pointer"
-              onClick={() => toggleLanguage("en")}
-            >
-              English
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              className="cursor-pointer"
-              onClick={() => toggleLanguage("ar")}
-            >
-              العربية
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              className="cursor-pointer"
-              onClick={() => toggleLanguage("id")}
-            >
-              Indonesian
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <LanguageSelector />
 
         {/* Avatar */}
         <Avatar className="h-10 w-10 border-2 border-primary cursor-pointer hover:scale-110 transition-transform">

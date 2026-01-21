@@ -109,13 +109,8 @@ export function Contact() {
                   {t("social.whatsapp") || "Whatsapp"}
                 </p>
                 <div className="flex items-center gap-2 text-primary">
-                  <p className="text-lg font-medium underline text-inherit">
-                    {whatsapp}
-                  </p>
-                  <ExternalLinkIcon
-                    className="w-5 h-5"
-                    color="var(--color-primary)"
-                  />
+                  <p className="text-lg font-medium underline">{whatsapp}</p>
+                  <ExternalLinkIcon className="w-5 h-5" />
                 </div>
               </div>
             </a>

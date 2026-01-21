@@ -42,15 +42,23 @@ function Button({
   variant = "default",
   size = "default",
   asChild = false,
+  nativeCursor = false,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
+    nativeCursor?: boolean;
   }) {
   const Comp = asChild ? Slot : "button";
+  const Wrapper = nativeCursor ? React.Fragment : CursorTrigger;
 
   return (
-    <CursorTrigger asChild type="pointer">
+    <Wrapper
+      {...((nativeCursor ? {} : { type: "pointer", asChild: true }) as {
+        type: string;
+        asChild?: boolean;
+      })}
+    >
       <Comp
         data-slot="button"
         data-variant={variant}
@@ -58,7 +66,7 @@ function Button({
         className={cn(buttonVariants({ variant, size, className }))}
         {...props}
       />
-    </CursorTrigger>
+    </Wrapper>
   );
 }
 

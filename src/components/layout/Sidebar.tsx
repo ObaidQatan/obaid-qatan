@@ -3,7 +3,15 @@
 import { Link } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
-import { User, Code, Briefcase, FolderRoot, Mail } from "lucide-react";
+import {
+  User,
+  Code,
+  Briefcase,
+  FolderRoot,
+  Mail,
+  CloudCog,
+  PencilRuler,
+} from "lucide-react";
 import { motion } from "motion/react";
 import { CursorTrigger } from "../animate-ui/primitives/animate/cursor";
 
@@ -13,6 +21,11 @@ const navItems = [
   { id: "experience", icon: Briefcase, label: "workExperience" },
   { id: "projects", icon: FolderRoot, label: "portfolio" },
   { id: "contact", icon: Mail, label: "contactMe" },
+];
+
+const services = [
+  { id: "mco", icon: CloudCog, label: "managedCloudOperations" },
+  { id: "sam", icon: PencilRuler, label: "supportAndMaintenance" },
 ];
 
 export function Sidebar({
@@ -72,6 +85,32 @@ export function Sidebar({
                   {t(item.label)}
                 </span>
               </button>
+            </CursorTrigger>
+          ))}
+
+          <hr className="my-4" />
+
+          <h3 className="text-sm font-medium px-3 text-primary hidden lg:inline">
+            {t("myServices")}
+          </h3>
+
+          {services.map((item) => (
+            <CursorTrigger key={item.id} asChild type="pointer">
+              <Link
+                href={`/pricing/${item.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "w-full flex items-center gap-3 px-3 py-3 rounded-lg transition-colors group",
+                  "hover:bg-accent hover:text-accent-foreground",
+                  "text-muted-foreground",
+                )}
+              >
+                <item.icon className="w-5 h-5 group-hover:text-primary transition-colors" />
+                <span className="hidden lg:inline font-medium text-sm capitalize">
+                  {t(item.label)}
+                </span>
+              </Link>
             </CursorTrigger>
           ))}
         </nav>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Cairo, Outfit, Inter } from "next/font/google";
-import "./main.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/components/theme-provider";
