@@ -6,7 +6,13 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "Obaid Qatan",
     description: "Portfolio of Obaid Qatan - Senior Full-stack Developer",
     icons: {
-      icon: "/favicon.ico",
+      other: [
+        {
+          rel: "mask-icon",
+          url: "/safari-pinned-tab.svg",
+          color: "#0f172a",
+        },
+      ],
     },
   };
 }
