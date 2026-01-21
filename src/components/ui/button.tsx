@@ -43,6 +43,7 @@ function Button({
   size = "default",
   asChild = false,
   nativeCursor = false,
+  "aria-label": ariaLabel = "clickable-button",
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
@@ -64,6 +65,7 @@ function Button({
         data-variant={variant}
         data-size={size}
         className={cn(buttonVariants({ variant, size, className }))}
+        aria-label={ariaLabel}
         {...props}
       />
     </Wrapper>

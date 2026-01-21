@@ -62,9 +62,13 @@ export function Contact() {
                   <Button
                     variant="ghost"
                     size="icon"
+                    aria-label="copy email"
                     onClick={copyEmail}
                     className="h-8 w-8 rounded-full"
                   >
+                    <span className="sr-only">
+                      {copied ? "copied" : "copy"}
+                    </span>
                     {copied ? (
                       <Check className="w-4 h-4 text-green-500" />
                     ) : (
@@ -121,8 +125,9 @@ export function Contact() {
               size="lg"
               className="rounded-full h-14 px-8 font-bold"
               asChild
+              aria-label="say-hello-btn"
             >
-              <a href={`mailto:${email}`}>
+              <a href={`mailto:${email}`} aria-label="say-hello-link">
                 {t("sayHello") || "Say Hello"}
                 <ExternalLink className="ml-2 w-5 h-5" />
               </a>
@@ -166,6 +171,7 @@ export function Contact() {
           <CursorTrigger asChild type="pointer">
             <Link
               href="/terms-and-conditions"
+              aria-label="terms-and-conditions-link"
               className="text-sm text-muted-foreground hover:text-primary transition-all"
             >
               {t("termsAndConditions") || "Terms and Conditions"}
@@ -174,6 +180,7 @@ export function Contact() {
           <CursorTrigger asChild type="pointer">
             <Link
               href="/privacy-policy"
+              aria-label="privacy-policy-link"
               className="text-sm text-muted-foreground hover:text-primary transition-all"
             >
               {t("privacyPolicy") || "Privacy Policy"}

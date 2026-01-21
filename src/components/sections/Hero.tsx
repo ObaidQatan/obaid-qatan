@@ -136,8 +136,9 @@ export function Hero() {
               size="lg"
               className="rounded-full px-8 h-14 text-base font-bold group"
               asChild
+              aria-label="portfolio-button"
             >
-              <a href="#projects">
+              <a href="#projects" aria-label="portfolio-link">
                 {t("portfolio")}
                 <ArrowRight className="ms-2 w-5 h-5 group-hover:translate-x-1 transition-transform rtl:-scale-x-100" />
               </a>
@@ -153,6 +154,7 @@ export function Hero() {
                           href={social.url}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={t(`social.${social.id}`)}
                           className={cn(
                             "w-12 h-12 flex items-center justify-center rounded-full border border-border bg-card/50 transition-all hover:scale-110",
                             social.color,

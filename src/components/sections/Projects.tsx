@@ -145,6 +145,7 @@ export function Projects() {
                           href={selectedProject.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label="live-demo"
                           className={cn(
                             "w-full gap-4",
                             !selectedProject.liveUrl && "hidden",
@@ -152,6 +153,7 @@ export function Projects() {
                         >
                           <Button
                             variant="default"
+                            aria-label="live-demo"
                             className={cn("w-full gap-4")}
                           >
                             <ExternalLink className="h-4 w-4" />{" "}
@@ -169,6 +171,7 @@ export function Projects() {
                         >
                           <Button
                             variant="outline"
+                            aria-label="source-code"
                             className={cn("w-full gap-4")}
                           >
                             <Github className="h-4 w-4" /> {t("source code")}
@@ -188,7 +191,10 @@ export function Projects() {
                           {selectedProject.imagesUrls.map(
                             (url: string, i: number) => (
                               <PhotoView key={i} src={url}>
-                                <Button className="relative aspect-square rounded-lg overflow-hidden border size-24">
+                                <Button
+                                  className="relative aspect-square rounded-lg overflow-hidden border size-24"
+                                  aria-label="screenshot"
+                                >
                                   {/* eslint-disable-next-line @next/next/no-img-element */}
                                   <img
                                     src={url}

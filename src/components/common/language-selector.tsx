@@ -30,6 +30,7 @@ function LanguageSelector({
         <Button
           variant="ghost"
           size="icon"
+          aria-label="toggle-language"
           className={cn("rounded-full text-primary", className)}
           nativeCursor={nativeCursor}
         >
